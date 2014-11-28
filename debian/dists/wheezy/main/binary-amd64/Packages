@@ -525,6 +525,22 @@ Description: GNU TLS library - GNU Guile bindings
  .
  This package contains the GNU Guile 2.0 modules.
 
+Package: imgmin
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 53
+Depends: libc6 (>= 2.2.5), libgomp1 (>= 4.2.1), libmagickcore5 (>= 8:6.7.7.10), libmagickwand5 (>= 8:6.7.7.10)
+Homepage: https://github.com/rflynn/imgmin
+Priority: extra
+Section: graphics
+Filename: pool/main/i/imgmin/imgmin_1.0-1_amd64.deb
+Size: 17136
+SHA256: 922c608aa144393048eae3a25eeec3655f1f0125cfaac18d4a67dc33d3686b77
+SHA1: e96ec0148df1bcb7be7d869ba1e83c1f94cd6a25
+MD5sum: 101013031df447faf5e06c3c1654edfe
+Description: Lossy image optimization
+
 Package: ioping
 Version: 0.9-1~bpo70+1
 Architecture: amd64
