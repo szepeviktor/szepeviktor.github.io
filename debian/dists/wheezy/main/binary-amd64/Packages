@@ -1105,6 +1105,48 @@ Description: libmemcached hashing functions and algorithms
  .
  This package provides the libhashkit shared library.
 
+Package: libjpeg-progs
+Source: libjpeg9
+Version: 1:9a-2~bpo70+1
+Architecture: amd64
+Maintainer: Bill Allombert <ballombe@debian.org>
+Installed-Size: 202
+Depends: libc6 (>= 2.7), libjpeg9 (>= 9a)
+Priority: optional
+Section: graphics
+Filename: pool/main/libj/libjpeg9/libjpeg-progs_9a-2~bpo70+1_amd64.deb
+Size: 95690
+SHA256: b4446480764ca09a1012a0ce3b007c9d72a880e092aa8ef222cde255004fa761
+SHA1: 0a787ac44e523bb6841cb3d446033885424ddd91
+MD5sum: 3d5309c61b87a9512011dec573d0bf96
+Description: Programs for manipulating JPEG files
+ This package contains programs for manipulating JPEG files:
+  cjpeg/djpeg: convert to/from the JPEG file format
+  rdjpgcom/wrjpgcom: read/write comments in JPEG files
+  jpegtran: lossless transformations of JPEG files
+  jpegexiforient/exifautotran: manipulate EXIF orientation tag
+
+Package: libjpeg9
+Version: 1:9a-2~bpo70+1
+Architecture: amd64
+Maintainer: Bill Allombert <ballombe@debian.org>
+Installed-Size: 295
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.7)
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/libj/libjpeg9/libjpeg9_9a-2~bpo70+1_amd64.deb
+Size: 142586
+SHA256: e14a7ede82773f91cb89d569a3024d357910e3f07e97c088b5783fc4c52dafd8
+SHA1: 868eacf8c8c826940baa551f3418b2b76ff36a19
+MD5sum: 8306d0be9eb21642d7c68383f9871a49
+Description: Independent JPEG Group's JPEG runtime library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the shared library.
+
 Package: libmemcached-dbg
 Source: libmemcached
 Version: 1.0.18-3
