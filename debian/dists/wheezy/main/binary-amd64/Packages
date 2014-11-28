@@ -1,0 +1,2176 @@
+Package: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 493
+Depends: lsb-base, procps, perl, mime-support, apache2-bin (= 2.4.9-1~bpo70+1), apache2-data (= 2.4.9-1~bpo70+1)
+Recommends: ssl-cert
+Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom, apache2-utils
+Conflicts: apache2.2-common
+Replaces: apache2.2-common
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: httpd
+Filename: pool/main/a/apache2/apache2_2.4.9-1~bpo70+1_amd64.deb
+Size: 195788
+SHA256: 02fc32f555f7cae50de3a8f9d60272ce150d4c382e0baf07825986415492442a
+SHA1: 29debc25f0380f0710d33e42b17b84f871c4645c
+MD5sum: 57364fe3b18208c0c4248bb64258ca04
+Description: Apache HTTP Server
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains the configuration files, init scripts and support
+ scripts. It does not install the actual apache2 binaries.
+
+Package: apache2-bin
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 3530
+Depends: libapr1 (>= 1.5.0), libaprutil1 (>= 1.5.0), libaprutil1-dbd-sqlite3 | libaprutil1-dbd-mysql | libaprutil1-dbd-odbc | libaprutil1-dbd-pgsql | libaprutil1-dbd-freetds, libaprutil1-ldap, libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7), liblua5.1-0, libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), perl
+Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom
+Conflicts: apache2.2-bin (<< 2.3~), apache2.2-common
+Breaks: libapache2-mod-macro (<< 1:2.4.6-1~), libapache2-mod-proxy-html (<< 1:2.4.4-2~)
+Replaces: apache2-mpm-event (<< 2.3~), apache2-mpm-itk (<< 2.3~), apache2-mpm-prefork (<< 2.3~), apache2-mpm-worker (<< 2.3~), apache2.2-bin (<< 2.3~), apache2.2-common, libapache2-mod-macro (<< 1:2.4.6-1~), libapache2-mod-proxy-html (<< 1:2.4.4-2~)
+Provides: apache2-api-20120211, httpd, httpd-cgi
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: httpd
+Filename: pool/main/a/apache2/apache2-bin_2.4.9-1~bpo70+1_amd64.deb
+Size: 998036
+SHA256: 6ce5587ccedb4647db2b47080bda548584f63d851ca2c46073ba4bd3c52db79d
+SHA1: f5ec6fa2a0c2e8e36f0ddc3f9b8e1121dc65464e
+MD5sum: 28a102acd25b58683bd0b17fd907c5af
+Description: Apache HTTP Server (binary files and modules)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains the binaries only and does not set up a working
+ web-server instance. Install the "apache2" package to get a fully working
+ instance. Do not install this package unless you want to set-up the Apache
+ HTTP server entirely on your own.
+
+Package: apache2-data
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: all
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 698
+Conflicts: apache2.2-common
+Replaces: apache2.2-common
+Multi-Arch: foreign
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: httpd
+Filename: pool/main/a/apache2/apache2-data_2.4.9-1~bpo70+1_all.deb
+Size: 162826
+SHA256: d6ea7726c9766e5c1e71c69a8e13d8a37992041ebe442fd54fba939cf0cfb8e9
+SHA1: 4928a9edabc806c88a97bff77fe9ce58e2633d45
+MD5sum: 7b5961c8856097d3a336aa30cf3ed770
+Description: Apache HTTP Server (common files)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains architecture-independent common files such as icons,
+ error pages and static index files.
+
+Package: apache2-dbg
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 9207
+Depends: apache2 (= 2.4.9-1~bpo70+1), apache2-bin (= 2.4.9-1~bpo70+1)
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: debug
+Filename: pool/main/a/apache2/apache2-dbg_2.4.9-1~bpo70+1_amd64.deb
+Size: 2139510
+SHA256: 1c81093da031019b65634f4afcadc6187547db1b4035dab30250434861a4257d
+SHA1: 7ec3a95947ea970c99be973a6401c7ca5d613f6e
+MD5sum: 21cd0a04ceaf483872eb752ebe805c9a
+Description: Apache debugging symbols
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package includes the debugging symbols. It can be used to debug
+ crashing server instances and modules.  See
+ /usr/share/doc/apache2/README.backtrace for more information.
+
+Package: apache2-dev
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 970
+Depends: openssl, libapr1-dev, libaprutil1-dev, debhelper (>= 9), perl
+Conflicts: apache2-prefork-dev, apache2-threaded-dev
+Replaces: apache2-prefork-dev, apache2-threaded-dev
+Provides: apache2-prefork-dev, apache2-threaded-dev, dh-apache2
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: httpd
+Filename: pool/main/a/apache2/apache2-dev_2.4.9-1~bpo70+1_amd64.deb
+Size: 272652
+SHA256: 0dc04c2ffac5631ef377d1da3c80129d6c037b8da77eb805632a4311193c83ac
+SHA1: ee7ce1151f8ddba5b52b2f040387d0c3883152a5
+MD5sum: c1a323289dcd1931283edaf23b67a86d
+Description: Apache HTTP Server (development headers)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package provides development headers and the apxs2 binary for the Apache 2
+ HTTP server useful to develop and link third party additions to the Debian
+ Apache HTTP server package.
+ .
+ It also provides dh_apache2 and dh sequence addons useful to install various
+ Debian Apache2 extensions with debhelper. It supports
+  - Apache 2 module configurations and shared objects
+  - Site configuration files
+  - Global configuration files
+
+Package: apache2-doc
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: all
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 19425
+Recommends: apache2
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: doc
+Filename: pool/main/a/apache2/apache2-doc_2.4.9-1~bpo70+1_all.deb
+Size: 2738236
+SHA256: 15f739b2aad5ae35c67eb0b5f68546554a2fa334835aa9e969d3b704e3e3614e
+SHA1: ce08ba3929c63190dfa55de9d0d9ccb1fb742a49
+MD5sum: 7069ab0897460218fe0c97381af2a30b
+Description: Apache HTTP Server (on-site documentation)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package provides the documentation for the Apache 2 HTTP server. The
+ documentation is shipped in HTML format and can be accessed from a local
+ running Apache HTTP server instance or by browsing the file system directly.
+
+Package: apache2-mpm-event
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2 (= 2.4.9-1~bpo70+1)
+Provides: httpd, httpd-cgi
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/apache2-mpm-event_2.4.9-1~bpo70+1_amd64.deb
+Size: 2408
+SHA256: 8afc51f2338f16b1d609b0cb4a16872d2c90a6b8b7cfdeb37e69cc6be1bfeb00
+SHA1: 06c70f29107c9ad62d7d6565dd7b56fd29a4ab94
+MD5sum: 8e88bb39398a21dbe22d07054aaa2269
+Description: transitional event MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-event and
+ can be safely removed after the  installation is complete.
+
+Package: apache2-mpm-itk
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2 (= 2.4.9-1~bpo70+1), libapache2-mpm-itk
+Provides: httpd, httpd-cgi
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/apache2-mpm-itk_2.4.9-1~bpo70+1_amd64.deb
+Size: 2412
+SHA256: 8415450a56cc28a8ae6654c9a1eb8b9eccb8ac06b9912c91d0a15a544bfed400
+SHA1: 5232c3bd6c5fc125391ea8ce83ac2879d25107cb
+MD5sum: f064c8af550ebf97b51c646a54dfc0d0
+Description: transitional itk MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-itk and
+ can be safely removed after the installation is complete.
+
+Package: apache2-mpm-prefork
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2 (= 2.4.9-1~bpo70+1)
+Provides: httpd, httpd-cgi
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/apache2-mpm-prefork_2.4.9-1~bpo70+1_amd64.deb
+Size: 2412
+SHA256: 3eded299b3fcaa059e1d03d432f6844246ed67d14e3c82c24676e3bcea05ea4e
+SHA1: 3dc704e3e43b17317c5b67390744f70343d644c2
+MD5sum: fc50974a109c9176b8ae41eadf5349d9
+Description: transitional prefork MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-prefork and
+ can be safely removed after the installation is complete.
+
+Package: apache2-mpm-worker
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2 (= 2.4.9-1~bpo70+1)
+Provides: httpd, httpd-cgi
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/apache2-mpm-worker_2.4.9-1~bpo70+1_amd64.deb
+Size: 2412
+SHA256: 9aa6e96680e04941d412e9b229522a97ccbceef5c4d482675c9a6bd98dfd3096
+SHA1: 01329cedfd635a9a29425821253ce6e1af0aa2ce
+MD5sum: fd54a5df18bbad9bc7c92a358f95c14a
+Description: transitional worker MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-worker and
+ can be safely removed after the installation is complete.
+
+Package: apache2-suexec
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2-suexec-pristine (= 2.4.9-1~bpo70+1)
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/apache2-suexec_2.4.9-1~bpo70+1_amd64.deb
+Size: 2388
+SHA256: fd18a15a4d964b11efb6fe1afd8c0f69561e81139eb195714b74baec68e7df80
+SHA1: d490c04418b916631ab8cf919d6b04562e8b4aab
+MD5sum: ae85236318ebd635683e29bce2950669
+Description: transitional package for apache2-suexec-pristine
+ This is a transitional package for apache2-suexec-pristine, and can be safely
+ removed after the installation is complete.
+
+Package: apache2-suexec-custom
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 206
+Depends: libc6 (>= 2.3.4), apache2-bin
+Breaks: apache2-suexec (<< 2.3~)
+Replaces: apache2-suexec (<< 2.3~)
+Provides: apache2-suexec
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: httpd
+Filename: pool/main/a/apache2/apache2-suexec-custom_2.4.9-1~bpo70+1_amd64.deb
+Size: 124702
+SHA256: 8e6c42545da583227d26c8ad7da263cecf870248328485f8484ec7486609c286
+SHA1: e4528d05289bfeec95d5d658e6a947bb9b3cf27f
+MD5sum: cf8266cff428b0ebd8036ba080243d59
+Description: Apache HTTP Server configurable suexec program for mod_suexec
+ Provides a customizable version of the suexec helper program for mod_suexec.
+ This is not the version from upstream, but can be configured with a
+ configuration file.
+ .
+ If you do not need non-standard document root or userdir settings, it is
+ recommended that you use the standard suexec helper program from the
+ apache2-suexec-pristine package instead.
+
+Package: apache2-suexec-pristine
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 193
+Depends: libc6 (>= 2.3.4), apache2-bin
+Breaks: apache2-suexec (<< 2.3~)
+Replaces: apache2-suexec (<< 2.3~)
+Provides: apache2-suexec
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: httpd
+Filename: pool/main/a/apache2/apache2-suexec-pristine_2.4.9-1~bpo70+1_amd64.deb
+Size: 123194
+SHA256: 87ab76e28ca75dcab94523a5c237582914966133c86160da13f31f8153ed3ee0
+SHA1: 51da92cecb4e501e719a277fd0260146b3da99c7
+MD5sum: 36cecbcd768d6a2c572712566e5d232f
+Description: Apache HTTP Server standard suexec program for mod_suexec
+ Provides the standard suexec helper program for mod_suexec. This version is
+ compiled with document root /var/www and userdir suffix public_html. If you
+ need different settings, use the package apache2-suexec-custom.
+
+Package: apache2-utils
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 392
+Depends: libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.5.0), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.1)
+Multi-Arch: foreign
+Homepage: http://httpd.apache.org/
+Priority: optional
+Section: httpd
+Filename: pool/main/a/apache2/apache2-utils_2.4.9-1~bpo70+1_amd64.deb
+Size: 190118
+SHA256: 3ecef060d56ed68cfeea17bc69b3e2b9e97044727f02017cd6fcaf358fc986d6
+SHA1: 8b079120c935cfae4cc5de4cb5f8c4948945e0c4
+MD5sum: 7bae165fc3ad91ced17c95bf8f4a526b
+Description: Apache HTTP Server (utility programs for web servers)
+ Provides some add-on programs useful for any web server.  These include:
+  - ab (Apache benchmark tool)
+  - fcgistarter (Start a FastCGI program)
+  - logresolve (Resolve IP addresses to hostname in logfiles)
+  - htpasswd (Manipulate basic authentication files)
+  - htdigest (Manipulate digest authentication files)
+  - htdbm (Manipulate basic authentication files in DBM format, using APR)
+  - htcacheclean (Clean up the disk cache)
+  - rotatelogs (Periodically stop writing to a logfile and open a new one)
+  - split-logfile (Split a single log including multiple vhosts)
+  - checkgid (Checks whether the caller can setgid to the specified group)
+  - check_forensic (Extract mod_log_forensic output from Apache log files)
+  - httxt2dbm (Generate dbm files for use with RewriteMap)
+
+Package: apache2.2-bin
+Source: apache2
+Version: 2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2-bin (= 2.4.9-1~bpo70+1)
+Breaks: gnome-user-share (<< 3.8.0-2~), libapache2-mod-dnssd (<< 0.6-3.1~)
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/apache2.2-bin_2.4.9-1~bpo70+1_amd64.deb
+Size: 2426
+SHA256: cd93bfa31b752a07c59ef3fc99581d2130c5bd133292b6a1cfe5a3171e130e9b
+SHA1: 511029571e5a1465e7c27545a1f41b5e859b4a8f
+MD5sum: 2f88862ed615de867e6066455a4d993e
+Description: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: drush
+Version: 6.2.0
+Architecture: all
+Maintainer: Antoine Beaupré <anarcat@debian.org>
+Installed-Size: 1385
+Depends: php5-cli (>= 5.2), php-console-table
+Recommends: wget | curl, php5-mysql | php5-pgsql
+Suggests: git, mysql-client, drupal7
+Conflicts: drush-make
+Replaces: drush-make
+Homepage: https://github.com/drush-ops/drush
+Priority: optional
+Section: php
+Filename: pool/main/d/drush/drush_6.2.0_all.deb
+Size: 336186
+SHA256: e81137084ba8979c896e6861d8a02a8cd5736bdef8c98ab2337554de1813d5ff
+SHA1: bc5d974b0329ca74d74f7b3c81799d30f3b8a003
+MD5sum: 8a6fbde812ed878e53a03f5302c27d72
+Description: command line shell and Unix scripting interface for Drupal
+ drush is a command line shell and Unix scripting interface for
+ Drupal, a veritable Swiss Army knife designed to make life easier for
+ Drupal power users who spend a lot of time hacking away at the
+ command prompt.
+ .
+ Drush core ships with lots of useful commands for interacting with code
+ like modules/themes/profiles. Similarly, it runs update.php, executes
+ sql queries and DB migrations, and misc utilities like run cron or clear
+ cache.
+
+Package: fail2ban
+Version: 0.9.1-1
+Architecture: all
+Maintainer: Yaroslav Halchenko <debian@onerussian.com>
+Installed-Size: 1094
+Depends: python3 (>= 3.2.3-3~), init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
+Recommends: iptables, whois, python3-pyinotify
+Suggests: mailx, system-log-daemon, python3-systemd
+Homepage: http://www.fail2ban.org
+Priority: optional
+Section: net
+Filename: pool/main/f/fail2ban/fail2ban_0.9.1-1_all.deb
+Size: 294480
+SHA256: f7b379b66b61a5d654c1537bbf92662769b7b744840df837c07b89a4a8b512ba
+SHA1: 2dee420ba03f75fabfc9e76f4f50c3cc5d750862
+MD5sum: 85422c24f85ec786a5cf1d68c4746799
+Description: ban hosts that cause multiple authentication errors
+ Fail2ban monitors log files (e.g. /var/log/auth.log,
+ /var/log/apache/access.log) and temporarily or persistently bans
+ failure-prone addresses by updating existing firewall rules.  Fail2ban allows
+ easy specification of different actions to be taken such as to ban an
+ IP using iptables or hostsdeny rules, or simply to send a
+ notification email.
+ .
+ By default, it comes with filter expressions for various services
+ (sshd, apache, qmail, proftpd, sasl etc.) but configuration can be
+ easily extended for monitoring any other text file.  All filters and
+ actions are given in the config files, thus fail2ban can be adopted
+ to be used with a variety of files and firewalls.
+
+Package: gnutls-bin
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1706
+Depends: libc6 (>= 2.8), libgmp10, libgnutls28 (>= 3.2.10-0), libhogweed2, libidn11 (>= 1.13), libnettle4, libp11-kit0 (>= 0.20), libtasn1-6 (>= 3.4-0), zlib1g (>= 1:1.1.4)
+Multi-Arch: foreign
+Homepage: http://www.gnutls.org/
+Priority: optional
+Section: net
+Filename: pool/main/g/gnutls28/gnutls-bin_3.2.15-1~bpo70+2_amd64.deb
+Size: 831732
+SHA256: eaeb3003093a74284a2d9d621fba87912ca2109f4cfa0b97d2ae9e560f50428a
+SHA1: e61fb88d2dc702aa70ba9970c0bfb21d6c9fad48
+MD5sum: 7512398628aed4337bc258560f13ec26
+Description: GNU TLS library - commandline utilities
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains a commandline interface to the GNU TLS library, which
+ can be used to set up secure connections from e.g. shell scripts, debugging
+ connection issues or managing certificates.
+
+Package: gnutls-doc
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: all
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 7337
+Depends: dpkg (>= 1.15.4) | install-info
+Multi-Arch: foreign
+Homepage: http://www.gnutls.org/
+Priority: optional
+Section: doc
+Filename: pool/main/g/gnutls28/gnutls-doc_3.2.15-1~bpo70+2_all.deb
+Size: 3639168
+SHA256: 41c1ce9c22b7323ce9bdda36bdd58d22bc5006e814bf9958a50d32e4083c3f97
+SHA1: fb57897ec01ad56c753c7226afee0f0f4f55973d
+MD5sum: b4e8a89be313ebe2f5b78f359f50a392
+Description: GNU TLS library - documentation and examples
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains all the GnuTLS documentation.
+
+Package: guile-gnutls
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 432
+Depends: guile-2.0-libs, libc6 (>= 2.4), libgc1c2 (>= 1:7.1), libgnutls28 (>= 3.2.10-0), guile-2.0
+Homepage: http://www.gnutls.org/
+Priority: optional
+Section: lisp
+Filename: pool/main/g/gnutls28/guile-gnutls_3.2.15-1~bpo70+2_amd64.deb
+Size: 215830
+SHA256: 9d2f566b208e568b2687339bb40e6cd80465eb3820a6e33b43902067b109ed30
+SHA1: 7d0ef70d4248d3613a90157670593ca7f04141b8
+MD5sum: 7e2931a57fd755793615673c1202787a
+Description: GNU TLS library - GNU Guile bindings
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the GNU Guile 2.0 modules.
+
+Package: jailkit
+Version: 2.17-1
+Architecture: amd64
+Maintainer: Olivier Sessink <olivier@lx.student.wau.nl>
+Installed-Size: 239
+Depends: libc6 (>= 2.3), python (>= 2.1.3)
+Priority: optional
+Section: admin
+Filename: pool/main/j/jailkit/jailkit_2.17-1_amd64.deb
+Size: 95388
+SHA256: 436bd3f6468df41e9809b1a82409905e976b48a73fce3f3da482e251bf963d22
+SHA1: 4f7ae04551d194b4b6270aa48a4d6f531bb55518
+MD5sum: 5cd5c6d1cc4a07165ad5a774932cdb84
+Description: chroot jail utilities
+ Jailkit is a set of utilities to create chroot jails for users, processes
+ and daemons. There are utilities to build a jail, to test a jail, and
+ to run a jail. See 'man jailkit' for further information.
+ The jailkit website is at http://olivier.sessink.nl/jailkit/
+
+Package: lftp
+Version: 4.5.1-1~bpo70+1
+Architecture: amd64
+Maintainer: Noël Köthe <noel@debian.org>
+Installed-Size: 1815
+Depends: libc6 (>= 2.4), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.1.1), libgnutls28 (>= 3.2.10-0), libreadline6 (>= 6.0), libtinfo5, zlib1g (>= 1:1.1.4), netbase
+Homepage: http://lftp.yar.ru/
+Priority: optional
+Section: net
+Filename: pool/main/l/lftp/lftp_4.5.1-1~bpo70+1_amd64.deb
+Size: 770898
+SHA256: 2c72de85e07cf1fa997d176354149a3bb02652c1a663b7e61cfc0c0d17d34fcc
+SHA1: 520a5f8436d3bf783f11325e5ea90896f7f6b9a4
+MD5sum: 2fb861adb865ddcad661e922650ef823
+Description: Sophisticated command-line FTP/HTTP client programs
+ Lftp is a file retrieving tool that supports FTP, HTTP, FISH, SFTP, HTTPS,
+ FTPS and BitTorrent protocols under both IPv4 and IPv6. Lftp has an amazing
+ set of features, while preserving its interface as simple and easy as possible.
+ .
+ The main two advantages over other ftp clients are reliability and ability
+ to perform tasks in background. It will reconnect and reget the file being
+ transferred if the connection broke. You can start a transfer in background
+ and continue browsing on the ftp site. It does this all in one process. When
+ you have started background jobs and feel you are done, you can just exit
+ lftp and it automatically moves to nohup mode and completes the transfers.
+ It has also such nice features as reput and mirror. It can also download a
+ file as soon as possible by using several connections at the same time.
+ .
+ Lftp can also be scriptable, it can be used to mirror sites, it lets you
+ copy files among remote servers (even between FTP and HTTP). It has an
+ extensive online help. It supports bookmarks, and connecting to several
+ ftp/http sites at the same time.
+ .
+ This package also includes lftpget - A simple non-interactive
+ tool for downloading files.
+
+Package: libapache2-mod-fastcgi
+Source: libapache-mod-fastcgi
+Version: 2.4.7~0910052141-1byte3
+Architecture: amd64
+Maintainer: Tatsuki Sugiura <sugi@nemui.org>
+Installed-Size: 250
+Depends: apache2.2-common (>= 2.2.4) | apache2-bin (>= 2.4), libc6 (>= 2.4)
+Homepage: http://www.fastcgi.com/
+Priority: optional
+Section: non-free/web
+Filename: pool/main/liba/libapache-mod-fastcgi/libapache2-mod-fastcgi_2.4.7~0910052141-1byte3_amd64.deb
+Size: 77670
+SHA256: cf7ffa72854418f1571f0445357197359e160ba4de910ec91ae67392ca0a809e
+SHA1: 97323d0509e42f01bfb9ebfa83269e9f5f502d7f
+MD5sum: 50654daac26dde1aa691f57342cbb8f9
+Description: Apache 2 FastCGI module for long-running CGI scripts
+ This is a FastCGI module for the Apache 2.x web server.  FastCGI is an
+ open standard for communicating between a web server and a long-running
+ web application.  CGI scripts supporting FastCGI can be started as a
+ daemon and process multiple requests without restarting.  This is
+ particularly useful for scripts written in languages like Perl, as it
+ saves the cost of recompiling the scripts and its loaded modules with
+ each invocation.
+
+Package: libapache2-mod-macro
+Source: apache2 (2.4.9-1~bpo70+1)
+Version: 1:2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2-bin (= 2.4.9-1~bpo70+1)
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/libapache2-mod-macro_2.4.9-1~bpo70+1_amd64.deb
+Size: 2400
+SHA256: 9a1bfcbcc9b10fe663accb09354c188edc617c68ebd8051b135b050c80efd772
+SHA1: ec2260d0cbe308b928127c122f2bdd1fc7d8b1c0
+MD5sum: 509db7abceda22bb1190bc088a272352
+Description: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: libapache2-mod-proxy-html
+Source: apache2 (2.4.9-1~bpo70+1)
+Version: 1:2.4.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 22
+Depends: apache2-bin (= 2.4.9-1~bpo70+1)
+Homepage: http://httpd.apache.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/a/apache2/libapache2-mod-proxy-html_2.4.9-1~bpo70+1_amd64.deb
+Size: 2412
+SHA256: 85fe82ff126f9cd446b53a0df155d8a3c64c111ce44abc299156ca2ef9bf3402
+SHA1: 7e757ee55025f6c74c742e02a4f680a2fadb6243
+MD5sum: ca911bc0ee7561827cc7b5a48a3a97fe
+Description: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: libapache2-mpm-itk
+Source: mpm-itk
+Version: 2.4.7-03-1~bpo70+1
+Architecture: amd64
+Maintainer: Steinar H. Gunderson <sesse@debian.org>
+Installed-Size: 77
+Depends: libc6 (>= 2.4), libcap2 (>= 2.10), apache2-api-20120211
+Breaks: apache2 (<< 2.4.6-4~)
+Replaces: apache2 (<< 2.4.6-4~)
+Homepage: http://mpm-itk.sesse.net/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mpm-itk/libapache2-mpm-itk_2.4.7-03-1~bpo70+1_amd64.deb
+Size: 14528
+SHA256: a288cd8a382cd8936bef8db684f5f140ca1a6e3980b4cfe181f568dca6e2fa84
+SHA1: e010666ca35b044a1aaaf186b06f63dcc4dd8f5c
+MD5sum: aadd7de6a086e309e241c941c92243eb
+Description: multiuser module for Apache
+ The mpm-itk module, although not technically a Multi-Processing Module (MPM)
+ (although it used to be) enhances the classical "prefork" module (that is,
+ without threads), in such a way that it allows you to constrain each
+ individual vhost to a particular system user and group. This allows you to run
+ several different web sites on a single server without worrying that they will
+ be able to read each others' files. mpm-itk is largely independent of e.g.
+ what scripting technology is in use on your server; in particular, it does not
+ require you to run your scripts as CGI to get the extra security benefit.
+
+Package: libapr1
+Source: apr
+Version: 1.5.0-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 281
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.10), libuuid1 (>= 2.16)
+Conflicts: libapr1.0
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr/libapr1_1.5.0-1~bpo70+2_amd64.deb
+Size: 113492
+SHA256: 0b68de9e502b31486c6c137eb94cd4625fa75214fee8c52b9c8a33ee2bd012b6
+SHA1: edea78674f90425b7c2e4bc9ac9e01f256aeb404
+MD5sum: aade8c67716d72f3a37e13c2e54fdc73
+Description: Apache Portable Runtime Library
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+
+Package: libaprutil1
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 267
+Pre-Depends: multiarch-support
+Depends: libapr1 (>= 1.4.8-2~), libc6 (>= 2.4), libdb5.1, libexpat1 (>= 2.0.1), libssl1.0.0 (>= 1.0.0), libuuid1 (>= 2.16)
+Breaks: libapr1 (<< 1.4.8-2~)
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr-util/libaprutil1_1.5.3-1~bpo70+1_amd64.deb
+Size: 100254
+SHA256: ed91e87a942ed351a6725de559464749624d5ccc933e8d0665f5e02d0552b916
+SHA1: 565cd980a3c928af4b45a660480576236a4f8ed5
+MD5sum: bf2c1456e5b26ce19c51fc756810ce5c
+Description: Apache Portable Runtime Utility Library
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+
+Package: libaprutil1-dbd-mysql
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 77
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1), libc6 (>= 2.3), libmysqlclient18 (>= 5.5.24+dfsg-1), zlib1g (>= 1:1.1.4)
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr-util/libaprutil1-dbd-mysql_1.5.3-1~bpo70+1_amd64.deb
+Size: 23176
+SHA256: 739c5a8320679b0730779e9a5eeedb3e76ff20fff9e6f9a12bf04a2154303bbe
+SHA1: 96e669d9473dd08b55fcb471e62fbc4754d73ae1
+MD5sum: 821e7749ed65ff376bebaf30fff45762
+Description: Apache Portable Runtime Utility Library - MySQL Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the MySQL database driver.
+
+Package: libaprutil1-dbd-odbc
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 84
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1), libc6 (>= 2.4), libodbc1 (>= 2.2.11) | unixodbc (>= 2.2.11)
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr-util/libaprutil1-dbd-odbc_1.5.3-1~bpo70+1_amd64.deb
+Size: 27158
+SHA256: 0396cfaece6ad746f54f2f59cd5898920558ed626bf72b79e919efd962d20c6f
+SHA1: 66d48e914dcc3eee49a0e7054f96f075bc7a7b6f
+MD5sum: 88b6e43009d86dbf0c1073a323365401
+Description: Apache Portable Runtime Utility Library - ODBC Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the ODBC database driver.
+
+Package: libaprutil1-dbd-pgsql
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 76
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1), libc6 (>= 2.2.5), libpq5
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr-util/libaprutil1-dbd-pgsql_1.5.3-1~bpo70+1_amd64.deb
+Size: 23000
+SHA256: e2602e6a93569d3530c25a45a234e4040ad05de5e320c75dba4f1add40c30897
+SHA1: ad84d66b18204d08c3ff18906d48474435b58b23
+MD5sum: 8a636c89bbbc7f61c508283b69c85c77
+Description: Apache Portable Runtime Utility Library - PostgreSQL Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the PostgreSQL database driver.
+
+Package: libaprutil1-dbd-sqlite3
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 72
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1), libc6 (>= 2.2.5), libsqlite3-0 (>= 3.5.9)
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr-util/libaprutil1-dbd-sqlite3_1.5.3-1~bpo70+1_amd64.deb
+Size: 20662
+SHA256: da0f5caa1a42dd6618eea9c051fa64792c6a358d5645bb0ffb35ce786c75f3a5
+SHA1: 2ee13c53e9c188064c804d0050b49f21446bc0a1
+MD5sum: 23cadfa128c9555f18162e9ed720dc90
+Description: Apache Portable Runtime Utility Library - SQLite3 Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the SQLite3 database driver.
+
+Package: libaprutil1-dbg
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 448
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1)
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: extra
+Section: debug
+Filename: pool/main/a/apr-util/libaprutil1-dbg_1.5.3-1~bpo70+1_amd64.deb
+Size: 317642
+SHA256: c5ac77fab122f708bc147982c667433511fed9f301460222e5b1d8407402191b
+SHA1: 3fa5c2511460200a525fd38c5d1a796212cb0a9d
+MD5sum: bb7abb80d6dfa9decbccdcb16386f7b4
+Description: Apache Portable Runtime Utility Library - Debugging Symbols
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the debugging symbols for APR util.
+
+Package: libaprutil1-dev
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 4062
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1), libldap2-dev, libexpat1-dev, libpcre3-dev, libapr1-dev (>= 1.2.2-1), libsqlite3-dev, libpq-dev, libmysqlclient-dev
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/a/apr-util/libaprutil1-dev_1.5.3-1~bpo70+1_amd64.deb
+Size: 628916
+SHA256: 18751a1ad0dfb99c9eac6be4ab96ac90064638b5283ed9825ab44d9160c91c62
+SHA1: 4e771710aa23ecdc7c570825d64d9d2979ed1b77
+MD5sum: 8559d38be159d5aee134803a6da7e6a0
+Description: Apache Portable Runtime Utility Library - Development Headers
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains development headers for APR util.
+
+Package: libaprutil1-ldap
+Source: apr-util
+Version: 1.5.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Installed-Size: 64
+Depends: libaprutil1 (= 1.5.3-1~bpo70+1), libc6 (>= 2.2.5), libldap-2.4-2 (>= 2.4.7)
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apr-util/libaprutil1-ldap_1.5.3-1~bpo70+1_amd64.deb
+Size: 18168
+SHA256: 0567c89281a7a97f51630257f7a31502ea721df654192025fcb590f18e74dbca
+SHA1: 895627e492a2b216acba3db979b0c05d974cd9e4
+MD5sum: 68a084958d34e834eed75651c04fa4dc
+Description: Apache Portable Runtime Utility Library - LDAP Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the LDAP driver.
+
+Package: libgnutls-xssl0
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 63
+Pre-Depends: multiarch-support
+Depends: libgnutls28 (= 3.2.15-1~bpo70+2), libc6 (>= 2.8)
+Multi-Arch: same
+Homepage: http://www.gnutls.org/
+Priority: extra
+Section: libs
+Filename: pool/main/g/gnutls28/libgnutls-xssl0_3.2.15-1~bpo70+2_amd64.deb
+Size: 17266
+SHA256: db5420ea5735ff2b3932e9545820be2f65684d4a621e1e82725c4ccd5af26ec4
+SHA1: 57806190b9ad0a87301f9dd68b54fb656ec182a6
+MD5sum: 434a61e7787efd3c6648b2543622448a
+Description: GNU TLS library - XSSL API runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS offers a simplified high-level API to GnuTLS. This API is currently
+ marked experimental.
+
+Package: libgnutls28
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1859
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.8), libgmp10, libhogweed2 (>= 2.7), libnettle4 (>= 2.7), libp11-kit0 (>= 0.20.0), libtasn1-6 (>= 3.4-0), zlib1g (>= 1:1.1.4)
+Suggests: gnutls-bin
+Conflicts: gnutls0, gnutls0.4
+Replaces: gnutls0, gnutls0.4, gnutls3
+Multi-Arch: same
+Homepage: http://www.gnutls.org/
+Priority: standard
+Section: libs
+Filename: pool/main/g/gnutls28/libgnutls28_3.2.15-1~bpo70+2_amd64.deb
+Size: 814228
+SHA256: 19fd4bd2cb2daf7473887c61178c87085ee5033f6994a5177989c9f4ff5e1055
+SHA1: bc07dd3ce9bfd9021a9bf3eba3e14f68d73c538d
+MD5sum: c36cb4d1c0cd8e58b9297651fe5cb008
+Description: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the main runtime library.
+
+Package: libgnutls28-dev
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 2800
+Depends: libgnutls28 (= 3.2.15-1~bpo70+2), libgnutlsxx28 (= 3.2.15-1~bpo70+2), libgnutls-xssl0 (= 3.2.15-1~bpo70+2), nettle-dev (>= 2.5), libc6-dev | libc-dev, zlib1g-dev, libtasn1-6-dev (>= 3.1), libp11-kit-dev (>= 0.20)
+Suggests: gnutls-doc, gnutls-bin, guile-gnutls
+Conflicts: gnutls-dev
+Replaces: gnutls-dev
+Provides: gnutls-dev
+Multi-Arch: same
+Homepage: http://www.gnutls.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/gnutls28/libgnutls28-dev_3.2.15-1~bpo70+2_amd64.deb
+Size: 842442
+SHA256: 8720af6a52c92ea2f52410515b744be97eda80e222c2a823000ee4228e840b91
+SHA1: c4528611d9fe49cfc5fab306edadb7d87b02680b
+MD5sum: 7dd88c83bec4840e787179dd13b228f4
+Description: GNU TLS library - development files
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the GnuTLS development files.
+
+Package: libgnutlsxx28
+Source: gnutls28
+Version: 3.2.15-1~bpo70+2
+Architecture: amd64
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 96
+Pre-Depends: multiarch-support
+Depends: libgnutls28 (= 3.2.15-1~bpo70+2), libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Multi-Arch: same
+Homepage: http://www.gnutls.org/
+Priority: extra
+Section: libs
+Filename: pool/main/g/gnutls28/libgnutlsxx28_3.2.15-1~bpo70+2_amd64.deb
+Size: 21624
+SHA256: 62be57c9019010c69dbfda99fd019beefe7146f3c59add8aaad955df03616c75
+SHA1: 7eb50b6c239f6631a3842f621fe9359b6d13a706
+MD5sum: 7accb2ffcfc350f9fce76a64e13b9bcb
+Description: GNU TLS library - C++ runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the C++ runtime libraries.
+
+Package: libhashkit-dev
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 169
+Depends: libhashkit2 (= 1.0.18-3)
+Breaks: libmemcached-dev (<< 1.0.3-1)
+Replaces: libmemcached-dev (<< 1.0.3-1)
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: optional
+Section: libdevel
+Filename: pool/main/libm/libmemcached/libhashkit-dev_1.0.18-3_amd64.deb
+Size: 46478
+SHA256: 5541a9ff73b9c66fb1f323b2a32fed9cf8875d8d772bf6ef6d00a700f6dbd796
+SHA1: b0fe44151a57633f37899d209cf20558e4824465
+MD5sum: 2e076aa91e9194755b2788a3a4e5eb6f
+Description: libmemcached hashing functions and algorithms (development files)
+ libhashkit is a small and thread-safe client library that provides a
+ collection of useful hashing algorithm. libhashkit is distributed with
+ libmemcached.
+ .
+ This package provides the development files.
+
+Package: libhashkit2
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 121
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Multi-Arch: same
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: optional
+Section: libs
+Filename: pool/main/libm/libmemcached/libhashkit2_1.0.18-3_amd64.deb
+Size: 54350
+SHA256: e18b61ce547e169f98f2b0da87aa94bff0dcc7e47eaf91d58dc62eb82fa0c424
+SHA1: f1b39437bf3bb7e4a0c1ebdf419638ce06c7853d
+MD5sum: 4674765ac079998b083dba02492f854c
+Description: libmemcached hashing functions and algorithms
+ libhashkit is a small and thread-safe client library that provides a
+ collection of useful hashing algorithm. libhashkit is distributed with
+ libmemcached.
+ .
+ This package provides the libhashkit shared library.
+
+Package: libmemcached-dbg
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 1062
+Depends: libhashkit2 (= 1.0.18-3), libmemcached11 (= 1.0.18-3), libmemcachedutil2 (= 1.0.18-3)
+Multi-Arch: same
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: extra
+Section: debug
+Filename: pool/main/libm/libmemcached/libmemcached-dbg_1.0.18-3_amd64.deb
+Size: 827120
+SHA256: 2174c2642b415ff212547116fd373b7abec543e58394cd96a6fb5ef42dc70e1d
+SHA1: a00b0133a9c957c92ec095253859fb4306a55ed4
+MD5sum: 422a84808dd5aa540ff37f7a4dcbca00
+Description: Debug Symbols for libmemcached
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+   * Synchronous and Asynchronous support.
+   * Access to large object support.
+   * Local replication.
+   * TCP and Unix Socket protocols.
+   * A half dozen or so different tuneable hash algorithms.
+   * Implementations of the new cas, replace, and append operators.
+   * Man pages written up on entire API.
+   * Implements both modulo and consistent hashing solutions.
+   * Tools to Manage your Memcached networks.
+ .
+ This package provides debug symbols.
+
+Package: libmemcached-dev
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 880
+Depends: libhashkit-dev (= 1.0.18-3), libmemcached11 (= 1.0.18-3), libmemcachedutil2 (= 1.0.18-3), libsasl2-dev
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: optional
+Section: libdevel
+Filename: pool/main/libm/libmemcached/libmemcached-dev_1.0.18-3_amd64.deb
+Size: 312818
+SHA256: 5325a43b2ad61a63d84461c8b1a14ecaf74f407b8f33ac6caaf08e02379eba4d
+SHA1: c9600ce56204fb5f23ba9401a283dea40039f143
+MD5sum: 71f58df79e4446002bae9bb02e7eba76
+Description: C and C++ client library to the memcached server (development files)
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+   * Synchronous and Asynchronous support.
+   * Access to large object support.
+   * Local replication.
+   * TCP and Unix Socket protocols.
+   * A half dozen or so different tuneable hash algorithms.
+   * Implementations of the new cas, replace, and append operators.
+   * Man pages written up on entire API.
+   * Implements both modulo and consistent hashing solutions.
+   * Tools to Manage your Memcached networks.
+ .
+ This package provides the development files.
+
+Package: libmemcached-tools
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 345
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libmemcached11, libmemcachedutil2, libstdc++6 (>= 4.4.0)
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: optional
+Section: utils
+Filename: pool/main/libm/libmemcached/libmemcached-tools_1.0.18-3_amd64.deb
+Size: 111104
+SHA256: a01d98c5366a771d823aa79e047da7781aa90bb6a3eb1e40d894f69ad45f50e2
+SHA1: 79e8c088a027398b45262371b684aedefa82a548
+MD5sum: 71a83988e5e2d11deb997ab7b8e77f50
+Description: Commandline tools for talking to memcached via libmemcached
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ This package provides several command line tools:
+ .
+   * memccat - Copy the value of a key to standard output
+   * memcflush - Flush the contents of your servers.
+   * memcrm - Remove a key(s) from the server.
+   * memccp - Copy files to a memcached server.
+   * memcstat - Dump the stats of your servers to standard output
+   * memcslap - Generate testing loads on a memcached cluster
+
+Package: libmemcached11
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 267
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libsasl2-2 (>= 2.1.24), libstdc++6 (>= 4.1.1)
+Multi-Arch: same
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: optional
+Section: libs
+Filename: pool/main/libm/libmemcached/libmemcached11_1.0.18-3_amd64.deb
+Size: 116242
+SHA256: 0f0cf6fb63f48ff2451bb6dc21cd800329cdcae8b350befc25140cced429063f
+SHA1: 4c92007f476c9d75228e0c6508b52f5dc1eb5080
+MD5sum: 7c26cd171d7fa2aeef2fb31f4345b242
+Description: C and C++ client library to the memcached server
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+   * Synchronous and Asynchronous support.
+   * Access to large object support.
+   * Local replication.
+   * TCP and Unix Socket protocols.
+   * A half dozen or so different tuneable hash algorithms.
+   * Implementations of the new cas, replace, and append operators.
+   * Man pages written up on entire API.
+   * Implements both modulo and consistent hashing solutions.
+   * Tools to Manage your Memcached networks.
+ .
+ This package provides the libmemcached shared library itself.
+
+Package: libmemcachedutil2
+Source: libmemcached
+Version: 1.0.18-3
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 79
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.3.4), libgcc1 (>= 1:4.1.1), libmemcached11, libstdc++6 (>= 4.1.1)
+Multi-Arch: same
+Homepage: http://libmemcached.org/libMemcached.html
+Priority: optional
+Section: libs
+Filename: pool/main/libm/libmemcached/libmemcachedutil2_1.0.18-3_amd64.deb
+Size: 25182
+SHA256: 7ba585134a1e6d4ae86500616b67a976aec005b67074f5ec2ec49896363d1644
+SHA1: 02e1b33ce22113f6b38b0bd3af243c059b157979
+MD5sum: 228c78122779a0d09f542485e1590399
+Description: library implementing connection pooling for libmemcached
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+   * Synchronous and Asynchronous support.
+   * Access to large object support.
+   * Local replication.
+   * TCP and Unix Socket protocols.
+   * A half dozen or so different tuneable hash algorithms.
+   * Implementations of the new cas, replace, and append operators.
+   * Man pages written up on entire API.
+   * Implements both modulo and consistent hashing solutions.
+   * Tools to Manage your Memcached networks.
+ .
+ This package provides the libmemcachedutil library.
+
+Package: libpcre3
+Source: pcre3
+Version: 1:8.35-1~bpo70+1
+Architecture: amd64
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Installed-Size: 659
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.3)
+Conflicts: libpcre3-dev (<= 4.3-3)
+Breaks: approx (<< 4.4-1~), cduce (<< 0.5.3-2~), cmigrep (<< 1.5-7~), galax (<< 1.1-7~), libpcre-ocaml (<< 6.0.1~), liquidsoap (<< 0.9.2-3~), ocsigen (<< 1.3.3-1~)
+Multi-Arch: same
+Priority: important
+Section: libs
+Filename: pool/main/p/pcre3/libpcre3_8.35-1~bpo70+1_amd64.deb
+Size: 339490
+SHA256: 1706fc86c809977fb22e58ae53e58c891bde95c305f7ad6d0860da031d3317e4
+SHA1: 06889c2c5dc102decf359acb8334250c20f18e9e
+MD5sum: 45afd67d105d0a85bb74446cba6a1acc
+Description: Perl 5 Compatible Regular Expression Library - runtime files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the runtime libraries.
+
+Package: libpcre3-dbg
+Source: pcre3
+Version: 1:8.35-1~bpo70+1
+Architecture: amd64
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Installed-Size: 1230
+Depends: libpcre3 (= 1:8.35-1~bpo70+1), libpcrecpp0 (= 1:8.35-1~bpo70+1)
+Multi-Arch: same
+Priority: extra
+Section: debug
+Filename: pool/main/p/pcre3/libpcre3-dbg_8.35-1~bpo70+1_amd64.deb
+Size: 422730
+SHA256: 98ee5e05885ba9d4bd4756e3d8b7960eaa5786ed44c3672dc4bd103c8f8d91cd
+SHA1: 2675fc0da5886aa8913304040e631eb30f7318e5
+MD5sum: 8724124c2ad9632c037b712c632e4885
+Description: Perl 5 Compatible Regular Expression Library - debug symbols
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the debug symbols,
+
+Package: libpcre3-dev
+Source: pcre3
+Version: 1:8.35-1~bpo70+1
+Architecture: amd64
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Installed-Size: 1032
+Depends: libc6-dev, libpcre3 (= 1:8.35-1~bpo70+1), libpcrecpp0 (= 1:8.35-1~bpo70+1)
+Conflicts: libpcre1-dev, libpcre2-dev
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/pcre3/libpcre3-dev_8.35-1~bpo70+1_amd64.deb
+Size: 471688
+SHA256: ec0dc8ef330cd39054b91e59a1ab6bdeeea13ec4b22acfcce3dab1ba5940d699
+SHA1: d415249030402b23a941a6431be43e976fa59fd2
+MD5sum: ed33edde4acb0e11da795065337d3757
+Description: Perl 5 Compatible Regular Expression Library - development files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the development files, including headers, static
+ libraries, and documentation.
+
+Package: libpcrecpp0
+Source: pcre3
+Version: 1:8.35-1~bpo70+1
+Architecture: amd64
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Installed-Size: 191
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libpcre3 (>= 8.10), libstdc++6 (>= 4.2.1)
+Conflicts: libpcre3 (<< 6.4-1.1)
+Replaces: libpcre3 (<< 6.4-1.1)
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/p/pcre3/libpcrecpp0_8.35-1~bpo70+1_amd64.deb
+Size: 143080
+SHA256: a292100f1080d1deacece6f6786ce2456721474a7f593a47f94f092e33f4358f
+SHA1: acb6a535bbbb4f92562af3a37cac3e1283c82abd
+MD5sum: 0b3d810df84ec7a2194ed2bd26c78ff3
+Description: Perl 5 Compatible Regular Expression Library - C++ runtime files
+ This is a C++ library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the C++ runtime library.
+
+Package: libruby
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 32
+Depends: libruby2.0 (>= 2.0.0.484-1)
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: libs
+Filename: pool/main/r/ruby-defaults/libruby_2.0.0.2~bpo70+1_all.deb
+Size: 8580
+SHA256: e83ad7e25836294b071131949f6726124ecbec7273316d2643034f385aaff0ae
+SHA1: d87ec4af0ef3a6437649d0517b0c35d0378e5bfa
+MD5sum: 7f95da106a3ae93d052a75d2279e370f
+Description: Libraries necessary to run Ruby
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package includes the 'libruby' library, necessary to run Ruby.
+ .
+ This package is a dependency package, which depends on Debian's default Ruby
+ version (currently v2.0).
+
+Package: libruby2.0
+Source: ruby2.0
+Version: 2.0.0.484+really457-3~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 13467
+Depends: libjs-jquery, ruby2.0 (= 2.0.0.484+really457-3~bpo70+1), libc6 (>= 2.11), libffi5 (>= 3.0.4), libgdbm3 (>= 1.8.3), libncurses5 (>= 5.5-5~), libncursesw5 (>= 5.6+20070908), libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.1), libtinfo5, libyaml-0-2, zlib1g (>= 1:1.2.2)
+Multi-Arch: same
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: libs
+Filename: pool/main/r/ruby2.0/libruby2.0_2.0.0.484+really457-3~bpo70+1_amd64.deb
+Size: 4689444
+SHA256: 6d7527f43ac315623be1c6ecd029a7813a3ec6db78a9c8f60197910a0f7cccf7
+SHA1: a8e5c87a2d54d85da07eacfaa1b84087916c8405
+MD5sum: 801078d82ef0d30b3d09b98383e8d508
+Description: Libraries necessary to run Ruby 2.0
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package includes the 'libruby-2.0' library, necessary to run Ruby 2.0.
+ (API version 2.0.0)
+
+Package: libruby2.1
+Source: ruby2.1
+Version: 2.1.2-2~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 14467
+Depends: libjs-jquery, ruby2.1 (= 2.1.2-2~bpo70+1), libc6 (>= 2.11), libffi5 (>= 3.0.4), libgdbm3 (>= 1.8.3), libgmp10, libncurses5 (>= 5.5-5~), libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.1), libtinfo5, libyaml-0-2, zlib1g (>= 1:1.2.2)
+Multi-Arch: same
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: libs
+Filename: pool/main/r/ruby2.1/libruby2.1_2.1.2-2~bpo70+1_amd64.deb
+Size: 5058734
+SHA256: 1d5b1f65c7fd3ffc89c8d477340b6cee5f9288ddc5a3cc4e355392b40b087548
+SHA1: 4897749e62cf1e1b517aa26685dec8f0e4ae2e2c
+MD5sum: 7d30efdced236087247f534f0653c456
+Description: Libraries necessary to run Ruby 2.1
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package includes the 'libruby-2.1' library, necessary to run Ruby 2.1.
+ (API version 2.1.0)
+
+Package: libtcltk-ruby
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 32
+Depends: ruby2.0-tcltk (>= 2.0.0.484-1)
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: ruby
+Filename: pool/main/r/ruby-defaults/libtcltk-ruby_2.0.0.2~bpo70+1_all.deb
+Size: 8482
+SHA256: 38a6e1fbd8bf343792701bd071de81b1ba5e681cf203726e38b2c9c64970b1a3
+SHA1: a8b7c1cc8829ce7db63d64e4ef85b2a789ef11b7
+MD5sum: 15220cb45eda58e06cc32d2440f8ad3e
+Description: Tcl/Tk interface for Ruby
+ tcltklib is an extension library for Ruby.  It makes Ruby
+ programs to be able to use low level interface for the Tcl/Tk.
+ .
+ This package is a dependency package, which depends on Debian's default Ruby
+ version (currently v2.0).
+
+Package: mc
+Version: 3:4.8.12-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Installed-Size: 1417
+Depends: e2fslibs (>= 1.42.2), libc6 (>= 2.11), libglib2.0-0 (>= 2.28.0), libgpm2 (>= 1.20.4), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.5), mc-data (= 3:4.8.12-1~bpo70+1)
+Recommends: mime-support, perl, unzip
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, file, genisoimage, gv, imagemagick, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, xpdf | pdf-viewer, zip
+Provides: mcedit
+Homepage: http://www.midnight-commander.org
+Priority: optional
+Section: utils
+Filename: pool/main/m/mc/mc_4.8.12-1~bpo70+1_amd64.deb
+Size: 505168
+SHA256: 3feeb53b95059596dc23ec1ff8eeb011aa326f491982684fe8fb51de8bdefaef
+SHA1: 97720692e9e8fbd0292307a9ed5fa8d929cfa822
+MD5sum: 283ed6555032f46731d3689a145f7927
+Description: Midnight Commander - a powerful file manager
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+
+Package: mc-data
+Source: mc
+Version: 3:4.8.12-1~bpo70+1
+Architecture: all
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Installed-Size: 5375
+Breaks: mc (<< 3:4.8.1)
+Replaces: mc (<< 3:4.8.1)
+Multi-Arch: foreign
+Homepage: http://www.midnight-commander.org
+Priority: optional
+Section: utils
+Filename: pool/main/m/mc/mc-data_4.8.12-1~bpo70+1_all.deb
+Size: 1187992
+SHA256: 3f6f3d7f1be4ca62a8ce9d410bab13b7a4f6a6102a0c5bacf8353ba293c23025
+SHA1: 725b0dd3ed94dc55573e94cf2e7eab2a4949a3f0
+MD5sum: 72b00538c27289c6732982e10d325dee
+Description: Midnight Commander - a powerful file manager -- data files
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+ .
+ This package provides architecture independent files
+
+Package: mc-dbg
+Source: mc
+Version: 3:4.8.12-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Installed-Size: 1599
+Depends: mc (= 3:4.8.12-1~bpo70+1)
+Suggests: gdb
+Homepage: http://www.midnight-commander.org
+Priority: extra
+Section: debug
+Filename: pool/main/m/mc/mc-dbg_4.8.12-1~bpo70+1_amd64.deb
+Size: 1441196
+SHA256: b1499601f9de6e64b277507e0efd6f65de64d11ad88673460b06302153c4e9cd
+SHA1: aa739776885c332cbdd8e4d635650b92997114bf
+MD5sum: cda3036aadb442370883df6d256536cb
+Description: Midnight Commander - a powerful file manager - debug package
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+ .
+ This package contains debugging information for mc.
+
+Package: monit
+Version: 1:5.10-1
+Architecture: amd64
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Installed-Size: 747
+Depends: libc6 (>= 2.11), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.1), lsb-base (>= 3.2-13)
+Suggests: exim4 | postfix | mail-transport-agent, sysvinit-core
+Homepage: http://mmonit.com/monit/
+Priority: optional
+Section: admin
+Filename: pool/main/m/monit/monit_5.10-1_amd64.deb
+Size: 285008
+SHA256: 7994c4054c366cc22de3866c75bb27ca9b0ea560cb9f9383af2d355da12adf3b
+SHA1: 48e960361bbfb92ed0092426679e4a11354e7380
+MD5sum: f7785bccd34258ae75092913773c593f
+Description: utility for monitoring and managing daemons or similar programs
+ monit is a utility for monitoring and managing daemons or similar
+ programs running on a Unix system. It will start specified programs
+ if they are not running and restart programs not responding.
+ .
+ monit supports:
+  * Daemon mode - poll programs at a specified interval
+  * Monitoring modes - active, passive or manual
+  * Start, stop and restart of programs
+  * Group and manage groups of programs
+  * Process dependency definition
+  * Logging to syslog or own logfile
+  * Configuration - comprehensive controlfile
+  * Runtime and TCP/IP port checking (tcp and udp)
+  * SSL support for port checking
+  * Unix domain socket checking
+  * Process status and process timeout
+  * Process cpu usage
+  * Process memory usage
+  * Process zombie check
+  * Check the systems load average
+  * Check a file or directory timestamp
+  * Alert, stop or restart a process based on its characteristics
+  * MD5 checksum for programs started and stopped by monit
+  * Alert notification for program timeout, restart, checksum, stop
+    resource and timestamp error
+  * Flexible and customizable email alert messages
+  * Protocol verification. HTTP, FTP, SMTP, POP, IMAP, NNTP, SSH, DWP,
+    LDAPv2 and LDAPv3
+  * An http interface with optional SSL support to make monit
+    accessible from a webbrowser
+
+Package: optipng
+Version: 0.7.5-1~bpo70+1
+Architecture: amd64
+Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Installed-Size: 208
+Depends: libc6 (>= 2.11), libpng12-0 (>= 1.2.13-4), zlib1g (>= 1:1.1.4)
+Homepage: http://optipng.sourceforge.net/
+Priority: optional
+Section: graphics
+Filename: pool/main/o/optipng/optipng_0.7.5-1~bpo70+1_amd64.deb
+Size: 93254
+SHA256: 295174a2c194ce2bf4dc1e15a3cd232eeb02aab7f88dc8fe31ebb10e2bd1d261
+SHA1: ac64565c69bc3b56d3c389e84637c44c4d42bc1c
+MD5sum: f13236e33828177b6fc6e9aab3a4c560
+Description: advanced PNG (Portable Network Graphics) optimizer
+ OptiPNG is a PNG optimizer that recompresses the image files to a smaller
+ size. It losslessly reduces the bit depth, the color type and the color
+ palette of the image, runs a suite of compression methods and strategies,
+ and selects the compression parameters that yield the smallest output file.
+ It also recognizes several external file formats like BMP, GIF, TIFF and
+ PNM (PBM, PGM, PPM).
+
+Package: pcregrep
+Source: pcre3
+Version: 1:8.35-1~bpo70+1
+Architecture: amd64
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Installed-Size: 76
+Depends: libc6 (>= 2.3), libpcre3 (>= 8.10)
+Replaces: pgrep (<< 4.5)
+Priority: optional
+Section: utils
+Filename: pool/main/p/pcre3/pcregrep_8.35-1~bpo70+1_amd64.deb
+Size: 29598
+SHA256: 2fff20a067dbc5f3a3873538c75014c2dcdc2a2bf604dd21bcfa0d4542ca41e2
+SHA1: e47417eb321bc4b2f46989a16939b81d0dbd81a7
+MD5sum: 84199772afe615e9051946b0327210ba
+Description: grep utility that uses perl 5 compatible regexes.
+ Perl-style regexps have many useful features that the standard POSIX ones
+ don't; this is basically the same as grep but with the different
+ regexp syntax.
+ .
+ The other reason for the existence of pcregrep is that its source code is an
+ example of programming with libpcre.
+
+Package: php-console-table
+Version: 1.2.0-1~bpo70+1
+Architecture: all
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Installed-Size: 106
+Depends: php5 (>= 4.3.10), php-pear (>= 1.4.0~b1)
+Recommends: php-console-color2 (>= 0.1.2)
+Homepage: http://pear.php.net/package/Console_Table
+Priority: optional
+Section: php
+Filename: pool/main/p/php-console-table/php-console-table_1.2.0-1~bpo70+1_all.deb
+Size: 19394
+SHA256: 311931a0550b2d452db28781014e38bb47adb6d3b5304331cffc38d7f19a01dc
+SHA1: ff5d85def44337495c2fc0db88d54aca48ee199f
+MD5sum: d5ad3a39b8050b172eeeaa8ba4a94aff
+Description: Library that makes it easy to build console style tables
+ Provides a Console_Table class with methods such as addRow(), insertRow(),
+ addCol() etc. to build console tables with or without headers and with user
+ defined table rules, padding, and alignment.
+
+Package: php-wpcli
+Version: 0.16.0
+Architecture: all
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Depends: php5-cli, php5-mysql | php5-mysqlnd, mysql-client
+Homepage: http://wp-cli.org/
+Priority: optional
+Section: php
+Filename: pool/main/p/php-wpcli/php-wpcli_0.16.0_all.deb
+Size: 345592
+SHA256: 455ebf808cec06d10dde92011f3eca1afab823b7376154b08f5989eb74ad6409
+SHA1: 4f6ad082475b3c9de864f4d9680d7ea85f08600f
+MD5sum: abdd80d440f045abcaaaf1d6b39bfd0a
+Description: wp-cli is a set of command-line tools for managing
+ WordPress installations. You can update plugins, set up multisite
+ installs and much more, without using a web browser.
+
+Package: ri
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 32
+Depends: ruby2.0 (>= 2.0.0.484-1)
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: ruby
+Filename: pool/main/r/ruby-defaults/ri_2.0.0.2~bpo70+1_all.deb
+Size: 8618
+SHA256: 1ceb333be4cde50ba399e91e790d308ace6d78af9becc253c096864e243360c9
+SHA1: d0c22e47c5bfd59e02ae43929052fa2a1066ff83
+MD5sum: 1df039f80fa68f9a6dbd1e1bc09fb85b
+Description: Ruby Interactive reference
+ ri is a command line tool that displays descriptions of built-in Ruby
+ methods, classes, and modules. For methods, it shows you the calling
+ sequence and a description. For classes and modules, it shows a
+ synopsis along with a list of the methods the class or module
+ implements.
+ .
+ This package provides ri command and descriptions about Ruby.
+ This package provides the ri documentation for the Ruby standard library.
+ The ri executable itself is in the ruby package.
+ .
+ This package is a dependency package, which depends on Debian's default Ruby
+ version (currently v2.0).
+
+Package: ruby
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 46
+Depends: ruby2.0 (>= 2.0.0.484-1)
+Suggests: ri, ruby-dev
+Breaks: apt-listbugs (<< 0.1.6), rbenv (<= 0.4.0-1), ruby-switch (<= 0.1.0)
+Replaces: irb, rdoc, rubygems
+Provides: irb, rdoc, rubygems
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: ruby
+Filename: pool/main/r/ruby-defaults/ruby_2.0.0.2~bpo70+1_all.deb
+Size: 9900
+SHA256: 7f4e91cfe3b2f6bd4de9a0bc5bc5e0a098fbef593a819d7c6ff0be9cbb5e38e6
+SHA1: ec16f686f1d8cdd4df35c7d4991d6a06e234899e
+MD5sum: 3d3648bec1a48e6e1517488ab2749e29
+Description: Interpreter of object-oriented scripting language Ruby (default version)
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package is a dependency package, which depends on Debian's default Ruby
+ version (currently v2.0).
+
+Package: ruby-all-dev
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 44
+Depends: ruby2.0 (>= 2.0.0.484-1), ruby2.0-dev (>= 2.0.0.484-1), ruby2.1, ruby2.1-dev
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: devel
+Filename: pool/main/r/ruby-defaults/ruby-all-dev_2.0.0.2~bpo70+1_all.deb
+Size: 8958
+SHA256: de502d408b3f569aaef4e0c4dbb69fceb76ddc6f46889ed41ac980123aae2942
+SHA1: cfc650d2c5c82547a5d42a6abd8e443e5c14910a
+MD5sum: c8b98578f3963445cd61b2d7e9ddb35b
+Description: Header files for compiling extension modules for Ruby (all versions)
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package contains the header files and the mkmf library, necessary
+ to make extension library for Ruby. It is also required to build
+ many gems.
+ .
+ This package is a dependency package, which depends on all versions of Ruby
+ that are supported in Debian.
+
+Package: ruby-dev
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 32
+Depends: ruby2.0-dev (>= 2.0.0.484-1)
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: devel
+Filename: pool/main/r/ruby-defaults/ruby-dev_2.0.0.2~bpo70+1_all.deb
+Size: 8638
+SHA256: 177fc9dd2a1c9d4c371dfcc4687fda1d82398f889f6ce42aeef7964e537895b6
+SHA1: 31dafeef34b823653692a134804ac9bc64be9bac
+MD5sum: 2d986724fcc15f1bbb80996910a02a6f
+Description: Header files for compiling extension modules for Ruby (default version)
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package contains the header files and the mkmf library, necessary
+ to make extension library for Ruby. It is also required to build
+ many gems.
+ .
+ This package is a dependency package, which depends on Debian's default Ruby
+ version (currently v2.0).
+
+Package: ruby-full
+Source: ruby-defaults
+Version: 1:2.0.0.2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 32
+Depends: ruby, ruby-dev, libtcltk-ruby, ri
+Homepage: http://www.ruby-lang.org/
+Priority: optional
+Section: ruby
+Filename: pool/main/r/ruby-defaults/ruby-full_2.0.0.2~bpo70+1_all.deb
+Size: 8562
+SHA256: c0d98b366b9ad75f0783af4c5774adda5e072644c67bf22e34e6dcae0e367497
+SHA1: 95dc1fa6b2eed4faf7b0f78d884039e9441d00b7
+MD5sum: 476903ff4387207e0fe44b3b964ede9f
+Description: Ruby full installation (default version)
+ For many good reasons, the Ruby programming language is split in many
+ small different packages. Installing this package will make sure you have
+ all the packages that add up to a full Ruby installation, with the exception
+ of the Tcl/Tk bindings for Ruby, which are only recommended.
+ .
+ This package is a dependency package, which depends on Debian's default Ruby
+ version (currently v2.0).
+
+Package: ruby2.0
+Version: 2.0.0.484+really457-3~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 396
+Depends: ruby (>= 1:1.9.3.1), rubygems-integration, libc6 (>= 2.2.5), libruby2.0 (>= 2.0.0)
+Provides: ruby-interpreter
+Multi-Arch: foreign
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: ruby
+Filename: pool/main/r/ruby2.0/ruby2.0_2.0.0.484+really457-3~bpo70+1_amd64.deb
+Size: 350246
+SHA256: a509c5c5695b76ed72f76c13b59e640e99dc5391d6ed91e6592742351f336737
+SHA1: 9489c51331172d1c989963023e32c7adcd63b7eb
+MD5sum: a5c1acd0525419c9737eaa1bcf5dbf41
+Description: Interpreter of object-oriented scripting language Ruby
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ In the name of this package, `2.0' indicates the Ruby library compatibility
+ version. This package currently provides the `2.0.x' branch of Ruby.
+
+Package: ruby2.0-dev
+Source: ruby2.0
+Version: 2.0.0.484+really457-3~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 4438
+Depends: libruby2.0 (= 2.0.0.484+really457-3~bpo70+1)
+Multi-Arch: same
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: ruby
+Filename: pool/main/r/ruby2.0/ruby2.0-dev_2.0.0.484+really457-3~bpo70+1_amd64.deb
+Size: 1565362
+SHA256: c877d6cc170f4c5637e9d39f6eca05e93b41aee732d2580c534aeb9c7ca9043d
+SHA1: f46118b30c223f07a223e696c48eb3ac9f8fc279
+MD5sum: 720b939883fdd22cdefb3ef82fa45fe9
+Description: Header files for compiling extension modules for the Ruby 2.0
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package contains the header files and the mkmf library, necessary
+ to make extension library for Ruby 2.0. It is also required to build
+ many gems.
+
+Package: ruby2.0-doc
+Source: ruby2.0
+Version: 2.0.0.484+really457-3~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 22901
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: doc
+Filename: pool/main/r/ruby2.0/ruby2.0-doc_2.0.0.484+really457-3~bpo70+1_all.deb
+Size: 4362918
+SHA256: ecfe67ffb95ab68c43a5c050d9af57544f4f2a4e26bdd0cd5d3778965226db18
+SHA1: 3735e513c916e4cf971f497ffe932f828c4fa704
+MD5sum: 78452be577b533ef4ff2ea2255b20bff
+Description: Documentation for Ruby 2.0
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package contains the autogenerated documentation for Ruby 2.0.
+
+Package: ruby2.0-tcltk
+Source: ruby2.0
+Version: 2.0.0.484+really457-3~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 4618
+Depends: libc6 (>= 2.7), libruby2.0 (>= 2.0.0), libx11-6
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: ruby
+Filename: pool/main/r/ruby2.0/ruby2.0-tcltk_2.0.0.484+really457-3~bpo70+1_amd64.deb
+Size: 1744102
+SHA256: 4539969d23fd5eb7570a4e32691b74c72d1216a6e0076bbf49cc61e58f80355c
+SHA1: b86792c92d43a2f4b48bab586909a777a5ce0875
+MD5sum: e7c4d8e3a58dbc3769b438fe36b7ec12
+Description: Ruby/Tk for Ruby 2.0
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package provides Ruby/Tk, Ruby bindings for the Tk graphical user
+ interface toolkit.
+
+Package: ruby2.1
+Version: 2.1.2-2~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 319
+Depends: ruby (>= 1:1.9.3.1), rubygems-integration, libc6 (>= 2.2.5), libgmp10, libruby2.1 (>= 2.1.0)
+Provides: ruby-interpreter
+Multi-Arch: foreign
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: ruby
+Filename: pool/main/r/ruby2.1/ruby2.1_2.1.2-2~bpo70+1_amd64.deb
+Size: 260088
+SHA256: c55a909a0201aa990bfd04e6f4bef2984733ea990c4bca7b5aae2d6d12001470
+SHA1: 7dee0a3f643152040428cb4324cda398ea3bc868
+MD5sum: 8e88bf53217c08cec032659abe8f6c35
+Description: Interpreter of object-oriented scripting language Ruby
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ In the name of this package, `2.1' indicates the Ruby library compatibility
+ version. This package currently provides the `2.1.x' branch of Ruby.
+
+Package: ruby2.1-dev
+Source: ruby2.1
+Version: 2.1.2-2~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 4230
+Depends: libgmp-dev, libruby2.1 (= 2.1.2-2~bpo70+1)
+Multi-Arch: same
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: ruby
+Filename: pool/main/r/ruby2.1/ruby2.1-dev_2.1.2-2~bpo70+1_amd64.deb
+Size: 1375578
+SHA256: 7533bc85425f43e16f9caedfd8f2fd119c97029a4a937918a3c7237923479391
+SHA1: a39b129ff445e7836f2bd80a1568d95a8446abcf
+MD5sum: 56ecb3157a97e999246969c494550cb4
+Description: Header files for compiling extension modules for the Ruby 2.1
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package contains the header files and the mkmf library, necessary
+ to make extension library for Ruby 2.1. It is also required to build
+ many gems.
+
+Package: ruby2.1-doc
+Source: ruby2.1
+Version: 2.1.2-2~bpo70+1
+Architecture: all
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 23607
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: doc
+Filename: pool/main/r/ruby2.1/ruby2.1-doc_2.1.2-2~bpo70+1_all.deb
+Size: 4461166
+SHA256: 9a3f89a619dc0a07be7a32c6b50613c9d9d10dc517d0156700d7ecec6ce5b067
+SHA1: 9c846cdc95625e58f6ac715117125e9fa7e74d69
+MD5sum: 7fd73e238399f8be3c149d6bd7514b57
+Description: Documentation for Ruby 2.1
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package contains the autogenerated documentation for Ruby 2.1.
+
+Package: ruby2.1-tcltk
+Source: ruby2.1
+Version: 2.1.2-2~bpo70+1
+Architecture: amd64
+Maintainer: Antonio Terceiro <terceiro@debian.org>
+Installed-Size: 2111
+Depends: libc6 (>= 2.4), libgmp10, libruby2.1 (>= 2.1.0), libx11-6, tcl8.5 (>= 8.5.0), tk8.5 (>= 8.5.0)
+Homepage: http://www.ruby-lang.org/
+Priority: extra
+Section: ruby
+Filename: pool/main/r/ruby2.1/ruby2.1-tcltk_2.1.2-2~bpo70+1_amd64.deb
+Size: 559808
+SHA256: 96044b7f0e78dd381bde17d7612d794516c898dd8bbbae888971eaf253bfa8a3
+SHA1: 1e904ee08b7d75e80b93dff0be1ee2a272bfce07
+MD5sum: 1329cb6f1b12cb436dcca94b6853a23c
+Description: Ruby/Tk for Ruby 2.1
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package provides Ruby/Tk, Ruby bindings for the Tk graphical user
+ interface toolkit.
+
+Package: rubygems-integration
+Version: 1.7~bpo70+1
+Architecture: all
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Installed-Size: 54
+Suggests: bundler
+Multi-Arch: foreign
+Priority: optional
+Section: ruby
+Filename: pool/main/r/rubygems-integration/rubygems-integration_1.7~bpo70+1_all.deb
+Size: 5544
+SHA256: f27540929c2d15faceb5031a8ca4eb20075b575c714a4d704f1adda9a5503fcf
+SHA1: 968b3035c1eb1276fdc1e52474b35eb3117df21a
+MD5sum: eba70ea12462026b7f023389143ef33e
+Description: integration of Debian Ruby packages with Rubygems
+ rubygems-integration makes Debian Ruby packages recognizable by Rubygems.
+ Debian Ruby packages may be used to satisfy Rubygems dependencies both with
+ plain Rubygems and with Bundler. This also allows one to use Debian Ruby
+ packages to satisfy dependencies in Rails 3 applications.
+
+Package: sa-compile
+Source: spamassassin
+Version: 3.4.0-1~bpo70+1
+Architecture: all
+Maintainer: Noah Meyerhans <noahm@debian.org>
+Installed-Size: 142
+Depends: spamassassin (>= 3.3.2-8), re2c, gcc, libc6-dev, make
+Enhances: spamassassin
+Conflicts: spamassassin (<= 3.3.2-7)
+Homepage: http://www.spamassassin.org/
+Priority: optional
+Section: mail
+Filename: pool/main/s/spamassassin/sa-compile_3.4.0-1~bpo70+1_all.deb
+Size: 89162
+SHA256: a82306443edfcae86e4f54bc4c4cea83c45fac2c8f7f444fe399d74ddf056974
+SHA1: 03d84a44d3054c103678222d6eb0fd9db4c66f99
+MD5sum: 00aaf45f8cf15d864c503fd78f3bba87
+Description: Tools for compiling SpamAssassin rules into C
+ sa-compile uses "re2c" to compile the site-wide parts of the
+ SpamAssassin ruleset into C code for more efficient processing by
+ spamd or spamassassin.
+
+Package: silversearcher-ag
+Version: 0.21.1~bpo70+1
+Architecture: amd64
+Maintainer: Hajime Mizuno <mizuno-as@ubuntu.com>
+Installed-Size: 108
+Depends: libc6 (>= 2.14), liblzma5 (>= 5.1.1alpha+20120614), libpcre3 (>= 8.21), zlib1g (>= 1:1.1.4)
+Homepage: https://github.com/ggreer/the_silver_searcher
+Priority: extra
+Section: utils
+Filename: pool/main/s/silversearcher-ag/silversearcher-ag_0.21.1~bpo70+1_amd64.deb
+Size: 27244
+SHA256: 6727a9a64185c76dad7d54982a7fb2e2ac24406a9f4af20873ee19fda8379735
+SHA1: 41c00e3515789e4fa5abc5df8e1cafe9236a8a24
+MD5sum: fb6eb0b7fcfd761dc2dae8680e7bfd7f
+Description: very fast grep-like program, altenative to ack-grep
+ The Silver Searcher is grep-like program implemented by C.
+ An attempt to make something better than ack-grep.
+ .
+ It searches pattern about 3–5x faster than ack-grep.
+ It ignores file patterns from your .gitignore and .hgignore.
+
+Package: spamassassin
+Version: 3.4.0-1~bpo70+1
+Architecture: all
+Maintainer: Noah Meyerhans <noahm@debian.org>
+Installed-Size: 3569
+Depends: perl (>= 5.8.0), libhtml-parser-perl (>= 3.43), libsocket6-perl, libsys-hostname-long-perl, libarchive-tar-perl, libwww-perl, libnet-dns-perl (>= 0.34), libnetaddr-ip-perl, perl-modules (>= 5.10) | libio-zlib-perl (>= 1.04), adduser
+Recommends: spamc (>= 2.30), sa-compile, libmail-spf-perl, libsys-syslog-perl, gnupg, libio-socket-inet6-perl
+Suggests: razor (>= 2.361-2), libio-socket-ssl-perl, libdbi-perl, pyzor, libcompress-zlib-perl, libmail-dkim-perl
+Conflicts: gotmail (<= 0.8.1-1), spamass-milter (<< 0.2.0-7)
+Provides: libmail-spamassassin-perl
+Homepage: http://www.spamassassin.org/
+Priority: optional
+Section: mail
+Filename: pool/main/s/spamassassin/spamassassin_3.4.0-1~bpo70+1_all.deb
+Size: 1325512
+SHA256: 0f451cb24d3f370a60c3687dc1d6930180d445c38dcc70379375e4d0097262eb
+SHA1: dbfd57f7c4185f91e92bc80f2795f70e25e3d4ef
+MD5sum: 651d52e1f57a4bb5173c06c10e5f033e
+Description: Perl-based spam filter using text analysis
+ SpamAssassin is a very powerful and fully configurable spam filter
+ with numerous features including automatic white-listing, RBL
+ testing, Bayesian analysis, header and body text analysis. It is
+ designed to be called from a user's .procmail or .forward file, but
+ can also be integrated into a Mail Transport Agent (MTA).
+ .
+ Included in this package is a daemonized form of spamassassin (spamd)
+ which communicates with its client (spamc) via TCP, to reduce the
+ overhead of loading perl with each message. To take advantage of
+ this, you must install the spamc package.
+
+Package: spamc
+Source: spamassassin
+Version: 3.4.0-1~bpo70+1
+Architecture: amd64
+Maintainer: Noah Meyerhans <noahm@debian.org>
+Installed-Size: 185
+Depends: libc6 (>= 2.7), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.1.4)
+Suggests: spamassassin
+Conflicts: spamassassin (<< 2.30-2)
+Homepage: http://www.spamassassin.org/
+Priority: optional
+Section: mail
+Filename: pool/main/s/spamassassin/spamc_3.4.0-1~bpo70+1_amd64.deb
+Size: 126146
+SHA256: 5a9896006a09309457639e302c82ddc3f5ca536955afe45b8a0ebebd513151d1
+SHA1: a7fc53033f8e314645a77ce9f31656f3a9d1ddfa
+MD5sum: 1ec1004e1dc0fec164e38122adfa3c38
+Description: Client for SpamAssassin spam filtering daemon
+ spamc is the client to communicate with spamd, the daemonized form of
+ SpamAssassin (see the spamassassin package). It is written in C for
+ maximum speed and minimum loading overhead.
+ .
+ spamc is quite useful for integrating spamassassin into an MTA or
+ into a .procmailrc file because of its speed.
+ .
+ This package is useless unless you have spamassassin installed,
+ either on this machine or another local machine (i.e. a mail server).
+
+Package: unscd
+Version: 0.51-1~bpo70+1
+Architecture: amd64
+Maintainer: Don Armstrong <don@debian.org>
+Installed-Size: 79
+Depends: libc6 (>> 2.13), libc6 (<< 2.14)
+Conflicts: nscd
+Replaces: nscd
+Provides: nscd
+Homepage: http://busybox.net/~vda/unscd/
+Priority: extra
+Section: admin
+Filename: pool/main/u/unscd/unscd_0.51-1~bpo70+1_amd64.deb
+Size: 22174
+SHA256: 563b3f5baeb4f50f87acdd3a8aaa86a2614711a2d98431ab5f1215e6b9f4429d
+SHA1: 62151c12279914c99a3bb6d1f387e23d80165a44
+MD5sum: 8f546c1cdf65e7299cf27114062a7014
+Description: Micro Name Service Caching Daemon
+ A daemon which handles passwd, group and host lookups for running
+ programs and caches the results for the next query. You only need
+ this package if you are using slow Name Services like LDAP, NIS or
+ NIS+.
+ .
+ This particular NSCD is a complete rewrite of the GNU glibc nscd
+ which is a single threaded server process which offloads all NSS
+ lookups to worker children; cache hits are handled by the parent,
+ and only cache misses start worker children, making the parent immune
+ to resource leaks, hangs, and crashes in NSS libraries.
+ .
+ It should mostly be a drop-in replacement for existing installs using
+ nscd.
+
+Package: wget
+Version: 1.15-1~bpo70+1
+Architecture: amd64
+Maintainer: Noël Köthe <noel@debian.org>
+Installed-Size: 2678
+Depends: libc6 (>= 2.11), libgnutls28 (>= 3.2.10-0), libidn11 (>= 1.13), libnettle4, libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), dpkg (>= 1.15.4) | install-info
+Recommends: ca-certificates
+Conflicts: wget-ssl
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/wget/
+Priority: important
+Section: web
+Filename: pool/main/w/wget/wget_1.15-1~bpo70+1_amd64.deb
+Size: 961448
+SHA256: 31627981c42e6656b4edb79ca6efc718444b4a3ad27965fef9bf2036e208f97d
+SHA1: 42e005609a395c30c037ad1dab0ff3cc81394b46
+MD5sum: 0a5779b610a94fbe08ed3d3db68d6591
+Description: retrieves files from the web
+ Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections
+ by continuing to retrieve a document until the document is fully
+ downloaded. Re-getting files from where it left off works on
+ servers (both HTTP and FTP) that support it. Both HTTP and FTP
+ retrievals can be time stamped, so Wget can see if the remote
+ file has changed since the last retrieval and automatically
+ retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load,
+ speed up retrieval, and provide access behind firewalls.
+

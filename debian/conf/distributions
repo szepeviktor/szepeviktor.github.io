@@ -1,0 +1,11 @@
+Origin: mirror.szepe.net
+Label: mirror.szepe.net
+Codename: wheezy
+Architectures: amd64
+Components: main
+Description: Modern webserver solutions
+SignWith: 451A4FBA
+DebOverride: override.wheezy
+DscOverride: override.wheezy
+DscIndices: Sources Release . .gz .bz2
+DebIndices: Packages Release . .gz .bz2

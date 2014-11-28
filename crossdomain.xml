@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "/xml/dtds/cross-domain-policy.dtd">
+<!-- Flash permission file -->
+<cross-domain-policy>
+    <site-control permitted-cross-domain-policies="master-only"/>
+    <allow-access-from domain="*" />
+</cross-domain-policy>

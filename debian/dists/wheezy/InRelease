@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: mirror.szepe.net
+Label: mirror.szepe.net
+Codename: wheezy
+Date: Wed, 19 Nov 2014 17:26:44 UTC
+Architectures: amd64
+Components: main
+Description: Modern webserver solutions
+MD5Sum:
+ 9076353f36298286eb818f66f60b7296 89556 main/binary-amd64/Packages
+ 631e4555054f9a24b014dc9e000ab9c2 23222 main/binary-amd64/Packages.gz
+ 717aa10347b5e5a252ce64d7ccaaab87 21117 main/binary-amd64/Packages.bz2
+ 29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
+SHA1:
+ a038df23ad36ac05b7cf5190fdca8da4d2168d74 89556 main/binary-amd64/Packages
+ 8a7af2d68b3f41a41e260ff8485e62d4074b7113 23222 main/binary-amd64/Packages.gz
+ 3bd829aa20522a0ff60678f8862b2a945c5673ee 21117 main/binary-amd64/Packages.bz2
+ 8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
+SHA256:
+ d841a0de3522498a5ab7fc12e38f469f86a80209c3bd995811f9ed57612cd3fe 89556 main/binary-amd64/Packages
+ ea2ee8ce31e37022ba6a139d1c78900f907470cf77e3a20be583dadb8fdbba7b 23222 main/binary-amd64/Packages.gz
+ 33a1d8af2e06fb4612189c318079a284fe3cad31d6f02abe03e855564d1e6f2f 21117 main/binary-amd64/Packages.bz2
+ a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAEBAgAGBQJUbNLYAAoJEGqgRTxFGk+6c6QIAK31BaI7iSQUAsyksmNcQfWa
+IocLyktCLh9EHkJzVVhukph+s2lPHE82SWAYJCF0tyirGW+JKGRzzrJBmtoPhG6f
+vne43DkHyJvnziacZWLMewQq+w34mDhrNKRz4GddeQWgMFFZybe+MbzqddjnEeNC
+GJEHBW7KfcV/cvB9YwzD5ja7LlOG+AF+0TAPhC6iQf3/pOePX4ADJ9MLmMoQQu9l
+JvmchSGX5memm5r/8YZOJ0deoKzI60E8BO92yXMXiLi4N5ekthoWYyPGA+26yYh4
+kh++Z1dQuaHqaw4KkOpjoh72W0nzWG1zyeOjP/5eBrAKa+/LatjMYPNyvo8LRlM=
+=V5yG
+-----END PGP SIGNATURE-----
