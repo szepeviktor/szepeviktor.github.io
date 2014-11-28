@@ -1,7 +1,0 @@
-IndexIgnore conf db lists
-HeaderName header.html
-
-<FilesMatch "^[^.]+$|.+\.gpg$|.+\.dsc$">
-    ForceType text/plain
-    Header set Content-Disposition inline
-</FilesMatch>
