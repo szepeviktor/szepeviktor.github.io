@@ -525,6 +525,25 @@ Description: GNU TLS library - GNU Guile bindings
  .
  This package contains the GNU Guile 2.0 modules.
 
+Package: ioping
+Version: 0.9-1~bpo70+1
+Architecture: amd64
+Maintainer: Apollon Oikonomopoulos <apoikos@debian.org>
+Installed-Size: 64
+Depends: libc6 (>= 2.7)
+Homepage: http://code.google.com/p/ioping
+Priority: extra
+Section: admin
+Filename: pool/main/i/ioping/ioping_0.9-1~bpo70+1_amd64.deb
+Size: 16308
+SHA256: b6540a423eb65cac99d6ce4d1f7953c64aece1ec9c495647ec29edb06a3cc522
+SHA1: e09f832ac883553f4ffe1c587661a5f3b557972c
+MD5sum: 370752e1ecbfb390277c9b433f4d0dd4
+Description: Simple disk I/O latency measuring tool
+ ioping monitors disk I/O latency in real time. The main idea behind ioping is
+ to have a utility similar to ping, which will show disk I/O latency in the
+ same way ping shows network latency.
+
 Package: jailkit
 Version: 2.17-1
 Architecture: amd64

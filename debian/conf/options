@@ -1,3 +1,3 @@
 verbose
 ask-passphrase
-basedir /var/www/mirror/server/debian
+basedir /root/szepeviktor.github.io/debian
