@@ -360,6 +360,40 @@ Description: Transitional package for apache2-bin
  This is a transitional package for apache2-bin, and can be safely removed
  after the installation is complete.
 
+Package: automake1.11
+Version: 1:1.11.6-3
+Architecture: all
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 1529
+Depends: autoconf (>= 2.62), autotools-dev (>= 20020320.1)
+Conflicts: automake (<< 1:1.11.6-2~), automake1.10-doc, automake1.5 (<< 1.5-2), automake1.6 (<< 1.6.1-4)
+Replaces: automake (<< 1:1.11.6-2~)
+Provides: automaken
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/automake/
+Priority: optional
+Section: devel
+Filename: pool/main/a/automake1.11/automake1.11_1.11.6-3_all.deb
+Size: 537652
+SHA256: 502e047c28cbb4aa3bd3ac73ca7eddf00ded055da29b5cd1c929e369196305d1
+SHA1: 95f0cb196e7d22ddf40f903afee14bdd6ea7ee35
+MD5sum: ce8c9cf2932e84dc7c4746ff5b5703f7
+Description: Tool for generating GNU Standards-compliant Makefiles
+ Automake is a tool for automatically generating `Makefile.in's from
+ files called `Makefile.am'.
+ .
+ The goal of Automake is to remove the burden of Makefile maintenance
+ from the back of the individual GNU maintainer (and put it on the back
+ of the Automake maintainer).
+ .
+ The `Makefile.am' is basically a series of `make' macro definitions
+ (with rules being thrown in occasionally).  The generated
+ `Makefile.in's are compliant with the GNU Makefile standards.
+ .
+ Automake 1.11 fails to work in a number of situations that Automake
+ 1.4, 1.6, 1.7, 1.8, 1.9 and 1.10 did, so has been renamed so that the
+ previous version can continue to be made available.
+
 Package: drush
 Version: 6.2.0
 Architecture: all
@@ -934,6 +968,88 @@ Description: Apache Portable Runtime Utility Library - LDAP Driver
  .
  This package contains the LDAP driver.
 
+Package: libgmp-dev
+Source: gmp
+Version: 2:6.0.0+dfsg-6~bpo70+1
+Architecture: amd64
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 1862
+Depends: libgmp10 (= 2:6.0.0+dfsg-6~bpo70+1), libgmpxx4ldbl (= 2:6.0.0+dfsg-6~bpo70+1)
+Recommends: libstdc++-4.8-dev | libstdc++-dev
+Suggests: libgmp10-doc, libmpfr-dev
+Conflicts: libgmp10-dev, libgmp3-dev (<< 5.0.1)
+Breaks: guile-1.8-dev (<< 1.8.8+1-1), libcdd-dev (<< 094b.dfsg-4.2), libcln-dev (<< 1.3.2-1.1), libmpc-dev (<< 0.9-3), libmpfr-dev (<< 3.0.1-5), librep-dev (<< 0.90.2-1.3), regina-normal-dev (<< 4.6-3)
+Replaces: libgmp10-dev, libgmp3-dev
+Provides: libgmp10-dev
+Multi-Arch: same
+Homepage: http://gmplib.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/gmp/libgmp-dev_6.0.0+dfsg-6~bpo70+1_amd64.deb
+Size: 691176
+SHA256: c2c4faf111223bec0da028be53b39a94c7b60862c92865c1bd7608f65389ac9c
+SHA1: b6487ab94a87d40db2e05a9865ed44a2b6bef34c
+MD5sum: 962ea73c6dd0f470fc2bebde1af3f51a
+Description: Multiprecision arithmetic library developers tools
+ This development package provides the header files and the symbolic
+ links to allow compilation and linking of programs that use the libraries
+ provided in the libgmp10 package.
+ .
+ Both C and C++ bindings are present in this package.  Package
+ libstdc++-dev is required to use the C++ bindings.
+ .
+ The MPFR library (multiple-precision floating-point) used to be
+ included, but has since been moved to package libmpfr-dev.
+
+Package: libgmp10
+Source: gmp
+Version: 2:6.0.0+dfsg-6~bpo70+1
+Architecture: amd64
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 560
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.7)
+Multi-Arch: same
+Homepage: http://gmplib.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/gmp/libgmp10_6.0.0+dfsg-6~bpo70+1_amd64.deb
+Size: 279042
+SHA256: 41e36eba1b731e17f4103ae8d04a4ed5ac64e377cc48aced83c43b853d4f1492
+SHA1: a482daeae2c9e5461e7a95897ca7253255dc7f7e
+MD5sum: 6b48bd61f3f98420efbbaaf93ecabef8
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+
+Package: libgmpxx4ldbl
+Source: gmp
+Version: 2:6.0.0+dfsg-6~bpo70+1
+Architecture: amd64
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 82
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libgmp10, libstdc++6 (>= 4.4.0)
+Conflicts: libgmp3, libgmpxx4
+Replaces: libgmp3
+Multi-Arch: same
+Homepage: http://gmplib.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/gmp/libgmpxx4ldbl_6.0.0+dfsg-6~bpo70+1_amd64.deb
+Size: 25248
+SHA256: 59342ecbf96dd43c0196aa7e3d7b1ad8428623443b739c448a2872c1420c0aee
+SHA1: 2a34017e56efd2ac5a25a90211f08f16b104ce0f
+MD5sum: 8750af582cef770b53943740b7c8c166
+Description: Multiprecision arithmetic library (C++ bindings)
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+
 Package: libgnutls-xssl0
 Source: gnutls28
 Version: 3.2.15-1~bpo70+2
@@ -1425,6 +1541,54 @@ Description: Perl 5 Compatible Regular Expression Library - C++ runtime files
  .
  This package contains the C++ runtime library.
 
+Package: libpsl-dev
+Source: libpsl
+Version: 0.5.1-1~bpo70+1
+Architecture: amd64
+Maintainer: Tim Rühsen <tim.ruehsen@gmx.de>
+Installed-Size: 147
+Depends: libpsl0 (= 0.5.1-1~bpo70+1)
+Homepage: https://github.com/rockdaboot/libpsl
+Priority: optional
+Section: libdevel
+Filename: pool/main/libp/libpsl/libpsl-dev_0.5.1-1~bpo70+1_amd64.deb
+Size: 26512
+SHA256: 2e5d34bfed50bf9b5d00f0fc76ca5422027c22ae5d1533ed61f23905138b4cf7
+SHA1: 49c71b3ce6752179da64ca703cdf82f7967652ff
+MD5sum: 2d7e842530a0c7e5957860bc55c328c6
+Description: Library for Public Suffix List (development headers)
+ Libpsl allows checking domains against the Public Suffix List,
+ It can be used to avoid privacy-leaking 'super-cookies',
+ 'super domain' certificates, for domain highlighting purposes
+ sorting domain lists by site and more.
+ .
+ This package contains development header files and documentation for
+ developers.
+
+Package: libpsl0
+Source: libpsl
+Version: 0.5.1-1~bpo70+1
+Architecture: amd64
+Maintainer: Tim Rühsen <tim.ruehsen@gmx.de>
+Installed-Size: 518
+Depends: libc6 (>= 2.8), libicu48 (>= 4.8-1)
+Multi-Arch: same
+Homepage: https://github.com/rockdaboot/libpsl
+Priority: optional
+Section: libs
+Filename: pool/main/libp/libpsl/libpsl0_0.5.1-1~bpo70+1_amd64.deb
+Size: 58074
+SHA256: eb324ca097fe8da72c2d5b7ae29b25af8b9e7b55c86b6aa6c264c68b47c88a86
+SHA1: 7b95693b99029b4eed4b1b5b88dfa269225c370a
+MD5sum: d1c3d6931786010aa4fe34a7bbb208ad
+Description: Library for Public Suffix List (shared libraries)
+ Libpsl allows checking domains against the Public Suffix List,
+ It can be used to avoid privacy-leaking 'super-cookies',
+ 'super domain' certificates, for domain highlighting purposes
+ sorting domain lists by site and more.
+ .
+ This package contains runtime libraries.
+
 Package: libruby
 Source: ruby-defaults
 Version: 1:2.0.0.2~bpo70+1
@@ -1694,7 +1858,7 @@ Description: grep utility that uses perl 5 compatible regexes.
  example of programming with libpcre.
 
 Package: php-console-table
-Version: 1.2.0-1~bpo70+1
+Version: 1.2.0-2~bpo70+1
 Architecture: all
 Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
 Installed-Size: 106
@@ -1703,32 +1867,52 @@ Recommends: php-console-color2 (>= 0.1.2)
 Homepage: http://pear.php.net/package/Console_Table
 Priority: optional
 Section: php
-Filename: pool/main/p/php-console-table/php-console-table_1.2.0-1~bpo70+1_all.deb
-Size: 19394
-SHA256: 311931a0550b2d452db28781014e38bb47adb6d3b5304331cffc38d7f19a01dc
-SHA1: ff5d85def44337495c2fc0db88d54aca48ee199f
-MD5sum: d5ad3a39b8050b172eeeaa8ba4a94aff
+Filename: pool/main/p/php-console-table/php-console-table_1.2.0-2~bpo70+1_all.deb
+Size: 20188
+SHA256: fd1af5f7676e3ade13f035928d880f7f3fc72de3dc0a7cfed68607353ee3cd6b
+SHA1: fd66f6072f50b790309ae5b0e3783d2a36dbb8a3
+MD5sum: 441bd287f2ca383f52b12d262241f7e0
 Description: Library that makes it easy to build console style tables
  Provides a Console_Table class with methods such as addRow(), insertRow(),
  addCol() etc. to build console tables with or without headers and with user
  defined table rules, padding, and alignment.
 
 Package: php-wpcli
-Version: 0.16.0
+Version: 0.17.1
 Architecture: all
-Maintainer: Viktor Szépe <viktor@szepe.net>
+Maintainer: Daniel Bachhuber <daniel@handbuilt.co>
 Depends: php5-cli, php5-mysql | php5-mysqlnd, mysql-client
 Homepage: http://wp-cli.org/
 Priority: optional
 Section: php
-Filename: pool/main/p/php-wpcli/php-wpcli_0.16.0_all.deb
-Size: 345592
-SHA256: 455ebf808cec06d10dde92011f3eca1afab823b7376154b08f5989eb74ad6409
-SHA1: 4f6ad082475b3c9de864f4d9680d7ea85f08600f
-MD5sum: abdd80d440f045abcaaaf1d6b39bfd0a
+Filename: pool/main/p/php-wpcli/php-wpcli_0.17.1_all.deb
+Size: 309250
+SHA256: 1b0ee4adb127e611b43e1326a9a64195aa449449021d85c5ecf91e0c2955c907
+SHA1: fcf7ac6e633cc68f31bfd6a94ac34e2f407e8b94
+MD5sum: 7ceab000a092eff50b53a207e48c4015
 Description: wp-cli is a set of command-line tools for managing
  WordPress installations. You can update plugins, set up multisite
  installs and much more, without using a web browser.
+
+Package: publicsuffix
+Version: 20140902-1~bpo70+1
+Architecture: all
+Maintainer: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+Installed-Size: 200
+Homepage: http://publicsuffix.org
+Priority: extra
+Section: net
+Filename: pool/main/p/publicsuffix/publicsuffix_20140902-1~bpo70+1_all.deb
+Size: 63068
+SHA256: 4aaeb57aba2f2574b0716ef887e45ca3db1fd2ddc1d87c6f01c9c1320bdaf659
+SHA1: d73b3bf5bb445c841a106a2e9e9660b83dcb7910
+MD5sum: a8632ae9c8aba717e7bf0af71ad8413f
+Description: accurate, machine-readable list of domain name suffixes
+ A machine-readable list of domain name suffixes that accept public
+ registration.  Each suffix represents the part of a domain name which
+ is not under the control of the individual registrant, which makes
+ the list useful for grouping cookies, deciding same-origin policies,
+ collating spam, and other activities.
 
 Package: ri
 Source: ruby-defaults
@@ -2215,22 +2399,22 @@ Description: Micro Name Service Caching Daemon
  nscd.
 
 Package: wget
-Version: 1.15-1~bpo70+1
+Version: 1.16-1~bpo70+1
 Architecture: amd64
 Maintainer: Noël Köthe <noel@debian.org>
-Installed-Size: 2678
-Depends: libc6 (>= 2.11), libgnutls28 (>= 3.2.10-0), libidn11 (>= 1.13), libnettle4, libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), dpkg (>= 1.15.4) | install-info
+Installed-Size: 2083
+Depends: libc6 (>= 2.11), libgnutls28 (>= 3.2.10-0), libidn11 (>= 1.13), libnettle4, libpcre3 (>= 8.10), libpsl0 (>= 0.4.0), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), dpkg (>= 1.15.4) | install-info
 Recommends: ca-certificates
 Conflicts: wget-ssl
 Multi-Arch: foreign
 Homepage: http://www.gnu.org/software/wget/
 Priority: important
 Section: web
-Filename: pool/main/w/wget/wget_1.15-1~bpo70+1_amd64.deb
-Size: 961448
-SHA256: 31627981c42e6656b4edb79ca6efc718444b4a3ad27965fef9bf2036e208f97d
-SHA1: 42e005609a395c30c037ad1dab0ff3cc81394b46
-MD5sum: 0a5779b610a94fbe08ed3d3db68d6591
+Filename: pool/main/w/wget/wget_1.16-1~bpo70+1_amd64.deb
+Size: 753932
+SHA256: 6d0e067a072dcd1c5e12f3608a73293105dea532e555d50b306aea3c0e338631
+SHA1: dbcbcac9c30fa59f24942f38413ab620a4aeef75
+MD5sum: ecb68ee78a7951f15c6e06cbbe4016e3
 Description: retrieves files from the web
  Wget is a network utility to retrieve files from the web
  using HTTP(S) and FTP, the two most widely used internet
