@@ -533,6 +533,30 @@ Description: Perl 5 Compatible Regular Expression Library - C++ runtime files
  .
  This package contains the C++ runtime library.
 
+Package: libpsl0
+Source: libpsl
+Version: 0.5.1-1~bpo70+1
+Architecture: amd64
+Maintainer: Tim Rühsen <tim.ruehsen@gmx.de>
+Installed-Size: 518
+Depends: libc6 (>= 2.8), libicu48 (>= 4.8-1)
+Multi-Arch: same
+Homepage: https://github.com/rockdaboot/libpsl
+Priority: optional
+Section: libs
+Filename: pool/main/libp/libpsl/libpsl0_0.5.1-1~bpo70+1_amd64.deb
+Size: 57074
+SHA256: f5f0bb3e3ce3f34bf46494db695f6b31acbbc42f8f99e0b29e75e097d95ec499
+SHA1: 4dbedea1c7ad5ed569f27ae4c6ea45fa24d23faa
+MD5sum: 7263b24e1bb43d67b8194bfa2195e953
+Description: Library for Public Suffix List (shared libraries)
+ Libpsl allows checking domains against the Public Suffix List,
+ It can be used to avoid privacy-leaking 'super-cookies',
+ 'super domain' certificates, for domain highlighting purposes
+ sorting domain lists by site and more.
+ .
+ This package contains runtime libraries.
+
 Package: libruby
 Source: ruby-defaults
 Version: 1:2.0.0.2~bpo70+1

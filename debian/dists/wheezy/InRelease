@@ -4,33 +4,33 @@ Hash: SHA1
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: wheezy
-Date: Thu, 04 Dec 2014 02:16:50 UTC
+Date: Thu, 04 Dec 2014 02:23:52 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- b48c2d177eabe0dea125cc8ba5cc5c60 56221 main/binary-amd64/Packages
- 841ba9d977ca11ee9ced5ee69752bf56 16815 main/binary-amd64/Packages.gz
- aafd1c3d88a7b0fd48cf9633f0a39176 15598 main/binary-amd64/Packages.bz2
+ 89f8859c3eb1362a9a725326e30289c4 57078 main/binary-amd64/Packages
+ 5f4afab10edbb23023ce0465df0e76d9 17136 main/binary-amd64/Packages.gz
+ 89beb4da30e954d16eb66b18af668078 15856 main/binary-amd64/Packages.bz2
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
- 44af48ac56e84a97d8088d79a44b75758436cf15 56221 main/binary-amd64/Packages
- eec5f699571389204cdb296aa27f716155925db3 16815 main/binary-amd64/Packages.gz
- 25413ac0c4e443a3b233817b4cf8b66e74bec7d6 15598 main/binary-amd64/Packages.bz2
+ cb9f39897fabd85dd08ae6545ce9db882be3413d 57078 main/binary-amd64/Packages
+ ed71848d3e5be2091aa1bf7ba02f4444a317a271 17136 main/binary-amd64/Packages.gz
+ 350819bbc80bac0fa0536e4cbecc8940f6dcc7f5 15856 main/binary-amd64/Packages.bz2
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
- ba86bed3d7e83eefe4cefa2d1df1042d3360d6cb8abbebb32b0732d80f12ac2f 56221 main/binary-amd64/Packages
- 6550dcc42dca6abe9ff928f5a64fcdd72e108039fd184219c7dee289672c9466 16815 main/binary-amd64/Packages.gz
- 29f867d88273388cb95a1233a3ad2dbbeb0576c2245c910a8af25dfaefcf72f4 15598 main/binary-amd64/Packages.bz2
+ 07e86d8a2db3a29ad667ff5ee17f8111aacd4578c69bf9aca5064b4ccf8f9e98 57078 main/binary-amd64/Packages
+ bffe4744158ae8496ce54612941ab2ccfadb507dba1ad29568b3b89e770eaf5c 17136 main/binary-amd64/Packages.gz
+ 9dec81a71d3c07868256038554973de6c2c6cc10958135da1c514635bfbb9c82 15856 main/binary-amd64/Packages.bz2
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJUf8QTAAoJEGqgRTxFGk+6djcIAJsDpFCPl192L48vdQfwnLaw
-jq6ALCaL0ESfxh/gnZTjvU5CpHXI1hi+uo0pZ/n7mKYyhczu0UzKPqZpnokB/yAK
-44JWPzF6cjG574SH7EW+MOLsIgTo/LYpRJOjfQJHBSKFda8W3ZxumnGmNtaRcJbd
-zxlq4y0gqNqD/TatcZGnDfQ5rrrzMRCRgxU9X/h1ILz4ApgIMn+ZPUQp18WsHR2W
-OeyjicI52wrBJJiBkwcnASCcjcf1NwQ3ZDxwDeT9dLe8mAddsvmYSgNzHHOCTexX
-wrxaxfmZ+06uQAgnRj8CSg4tS+1kXpmtU4k5xJFUj5WfYOqhL7ttfzes4ljV74c=
-=1elE
+iQEcBAEBAgAGBQJUf8W5AAoJEGqgRTxFGk+6KCkH/RC3snGpOvXG2FKGyxnomPpC
+EHwF944UJ2lhaJiRPMhSYPZk7adCoWUQ2VmyC0oJN/4bXL/3nF7cwOOq8UK2jryt
+anIOpQfMBiJI+67P7MXEgDlU6qjY2jpC7yKRpCn2CWxwLAf5gosSTm9HghP6Tmua
+Pog0vy5k2GkxQCk3f7bN8mCgKm6bxP3lFPiTPuuufK1zPDIW8qvft0V8xA4n2qC8
+yXaziOZ6BIh6yljCVKJwEKUsiZQ919dW11mTYoIu9cKtpcyIg0asDOp3HpagEiWz
+qojQQnZO7E35wzJpqJTzO7u2VtHNO4Xrw8ZaNFM9Sj7AatcPzTlyJYb6PXSmCc8=
+=PGfA
 -----END PGP SIGNATURE-----
