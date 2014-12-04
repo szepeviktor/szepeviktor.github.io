@@ -480,29 +480,6 @@ Description: library implementing connection pooling for libmemcached
  .
  This package provides the libmemcachedutil library.
 
-Package: libpcre3-dev
-Source: pcre3
-Version: 1:8.35-1~bpo70+1
-Architecture: amd64
-Maintainer: Mark Baker <mark@mnb.org.uk>
-Installed-Size: 1032
-Depends: libc6-dev, libpcre3 (= 1:8.35-1~bpo70+1), libpcrecpp0 (= 1:8.35-1~bpo70+1)
-Conflicts: libpcre1-dev, libpcre2-dev
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Filename: pool/main/p/pcre3/libpcre3-dev_8.35-1~bpo70+1_amd64.deb
-Size: 471688
-SHA256: ec0dc8ef330cd39054b91e59a1ab6bdeeea13ec4b22acfcce3dab1ba5940d699
-SHA1: d415249030402b23a941a6431be43e976fa59fd2
-MD5sum: ed33edde4acb0e11da795065337d3757
-Description: Perl 5 Compatible Regular Expression Library - development files
- This is a library of functions to support regular expressions whose syntax
- and semantics are as close as possible to those of the Perl 5 language.
- .
- This package contains the development files, including headers, static
- libraries, and documentation.
-
 Package: libpsl0
 Source: libpsl
 Version: 0.5.1-1~bpo70+1

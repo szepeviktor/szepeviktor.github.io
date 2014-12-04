@@ -7,7 +7,9 @@ echo "REMOVE:  reprepro remove wheezy <PKG>"
 echo "reprepro includedeb wheezy *.deb"
 
 
-which index_gen.py &> /dev/null || exit 99
+# apt-get install dpkg-sig
+# index_gen.py: https://github.com/szepeviktor/debian-server-tools/tree/master/package
+which dpkg-sig index_gen.py &> /dev/null || exit 99
 
 pushd debian/
 
