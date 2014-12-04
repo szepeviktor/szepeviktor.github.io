@@ -4,7 +4,7 @@ Hash: SHA1
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: wheezy
-Date: Thu, 04 Dec 2014 03:23:01 UTC
+Date: Thu, 04 Dec 2014 03:25:33 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
@@ -26,11 +26,11 @@ SHA256:
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJUf9OWAAoJEGqgRTxFGk+6+gAH/2gKvDYXkQvRgDgmmAPVlnTX
-m7BGWaG211CDFiTt5wI6CWaZI1ZuKofZm69JuN630c6LdMSIGz/ux28YjkzZEwhT
-i5A5zvfz6ftm/w+9VLn0D7oM8veKLqerPRtwgzuysylkW1RxyA1Zg2/eTVlFwb6b
-iA+1sg5Iw8Rt+q+X6MeYR9PWyyRKz+LQrpzvD7IyauGpb9WXAz+Cikg5kDfC4NMx
-XSu1XBL3zcRNu9iAMu/WmnVKV9OhpJ8wmHOhLxMbKc3pZq825zDNbBzVQkjrySyJ
-MBJjUmMgnEqVd6nEtcnbR0vYTw9dWJshromWs61Tn1FztR6L7EkxiLYbOnaP2Ws=
-=fsfw
+iQEcBAEBAgAGBQJUf9QuAAoJEGqgRTxFGk+69J4H+wZbvNO2KwMah0N0yKzoERpv
+urMgjBll16GqufOnofOY+FvkuYcohD2liKECSoLeWsv4YGupGnQvcvxzjHhM/Mqv
+KCbAEu/b17hoB7sE1T9cV6yqEklXTB583+ptM+1gjJFhM5qghE1Qsyfro2lM5WWc
+ngqbNSKHZeOPUPQ/UwbFKU8SoGa6lAe3DUoqygyZp8G8k5gE+PNIZD8tfxO7Ya4S
+nFc28Ikn90pL18lFtNG0H/SHrSmRuzZ6wOZEee9kYSvjrxl/4jhTrtxl3ykvrDEs
+4Px30O4jroTT7QowDqQiV5ISS0QucphuZbJzPCbO0z4gJPii4bmb+EPs/vq/9lc=
+=3BtI
 -----END PGP SIGNATURE-----

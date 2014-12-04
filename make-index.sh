@@ -22,3 +22,5 @@ sed -i 's|<body>|<head><title>Modern webserver solutions</title></head><body><h1
     index.html
 
 popd
+
+echo "Index generated."
