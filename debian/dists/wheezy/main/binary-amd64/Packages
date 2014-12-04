@@ -46,10 +46,10 @@ Homepage: https://github.com/drush-ops/drush
 Priority: optional
 Section: php
 Filename: pool/main/d/drush/drush_6.2.0_all.deb
-Size: 336186
-SHA256: e81137084ba8979c896e6861d8a02a8cd5736bdef8c98ab2337554de1813d5ff
-SHA1: bc5d974b0329ca74d74f7b3c81799d30f3b8a003
-MD5sum: 8a6fbde812ed878e53a03f5302c27d72
+Size: 336182
+SHA256: bdac8e709a01e5142d860dff788ebeeb658a8e98fefffc5ac814a1dce4033910
+SHA1: c01ebe08de5a5e9aef966fc41824f6e2264d209d
+MD5sum: c710a96548e1b6e3c5dc4bfcac73ae86
 Description: command line shell and Unix scripting interface for Drupal
  drush is a command line shell and Unix scripting interface for
  Drupal, a veritable Swiss Army knife designed to make life easier for
@@ -441,51 +441,6 @@ Description: library implementing connection pooling for libmemcached
  .
  This package provides the libmemcachedutil library.
 
-Package: libpcre3
-Source: pcre3
-Version: 1:8.35-1~bpo70+1
-Architecture: amd64
-Maintainer: Mark Baker <mark@mnb.org.uk>
-Installed-Size: 659
-Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.3)
-Conflicts: libpcre3-dev (<= 4.3-3)
-Breaks: approx (<< 4.4-1~), cduce (<< 0.5.3-2~), cmigrep (<< 1.5-7~), galax (<< 1.1-7~), libpcre-ocaml (<< 6.0.1~), liquidsoap (<< 0.9.2-3~), ocsigen (<< 1.3.3-1~)
-Multi-Arch: same
-Priority: important
-Section: libs
-Filename: pool/main/p/pcre3/libpcre3_8.35-1~bpo70+1_amd64.deb
-Size: 339490
-SHA256: 1706fc86c809977fb22e58ae53e58c891bde95c305f7ad6d0860da031d3317e4
-SHA1: 06889c2c5dc102decf359acb8334250c20f18e9e
-MD5sum: 45afd67d105d0a85bb74446cba6a1acc
-Description: Perl 5 Compatible Regular Expression Library - runtime files
- This is a library of functions to support regular expressions whose syntax
- and semantics are as close as possible to those of the Perl 5 language.
- .
- This package contains the runtime libraries.
-
-Package: libpcre3-dbg
-Source: pcre3
-Version: 1:8.35-1~bpo70+1
-Architecture: amd64
-Maintainer: Mark Baker <mark@mnb.org.uk>
-Installed-Size: 1230
-Depends: libpcre3 (= 1:8.35-1~bpo70+1), libpcrecpp0 (= 1:8.35-1~bpo70+1)
-Multi-Arch: same
-Priority: extra
-Section: debug
-Filename: pool/main/p/pcre3/libpcre3-dbg_8.35-1~bpo70+1_amd64.deb
-Size: 422730
-SHA256: 98ee5e05885ba9d4bd4756e3d8b7960eaa5786ed44c3672dc4bd103c8f8d91cd
-SHA1: 2675fc0da5886aa8913304040e631eb30f7318e5
-MD5sum: 8724124c2ad9632c037b712c632e4885
-Description: Perl 5 Compatible Regular Expression Library - debug symbols
- This is a library of functions to support regular expressions whose syntax
- and semantics are as close as possible to those of the Perl 5 language.
- .
- This package contains the debug symbols,
-
 Package: libpcre3-dev
 Source: pcre3
 Version: 1:8.35-1~bpo70+1
@@ -508,30 +463,6 @@ Description: Perl 5 Compatible Regular Expression Library - development files
  .
  This package contains the development files, including headers, static
  libraries, and documentation.
-
-Package: libpcrecpp0
-Source: pcre3
-Version: 1:8.35-1~bpo70+1
-Architecture: amd64
-Maintainer: Mark Baker <mark@mnb.org.uk>
-Installed-Size: 191
-Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libpcre3 (>= 8.10), libstdc++6 (>= 4.2.1)
-Conflicts: libpcre3 (<< 6.4-1.1)
-Replaces: libpcre3 (<< 6.4-1.1)
-Multi-Arch: same
-Priority: optional
-Section: libs
-Filename: pool/main/p/pcre3/libpcrecpp0_8.35-1~bpo70+1_amd64.deb
-Size: 143080
-SHA256: a292100f1080d1deacece6f6786ce2456721474a7f593a47f94f092e33f4358f
-SHA1: acb6a535bbbb4f92562af3a37cac3e1283c82abd
-MD5sum: 0b3d810df84ec7a2194ed2bd26c78ff3
-Description: Perl 5 Compatible Regular Expression Library - C++ runtime files
- This is a C++ library of functions to support regular expressions whose syntax
- and semantics are as close as possible to those of the Perl 5 language.
- .
- This package contains the C++ runtime library.
 
 Package: libpsl0
 Source: libpsl
@@ -656,22 +587,22 @@ Description: Tcl/Tk interface for Ruby
  version (currently v2.0).
 
 Package: mc
-Version: 3:4.8.12-1~bpo70+1
+Version: 3:4.8.13-2~bpo70+1
 Architecture: amd64
 Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
-Installed-Size: 1417
-Depends: e2fslibs (>= 1.42.2), libc6 (>= 2.11), libglib2.0-0 (>= 2.28.0), libgpm2 (>= 1.20.4), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.5), mc-data (= 3:4.8.12-1~bpo70+1)
+Installed-Size: 1430
+Depends: e2fslibs (>= 1.42.2), libc6 (>= 2.11), libglib2.0-0 (>= 2.28.0), libgpm2 (>= 1.20.4), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.5), mc-data (= 3:4.8.13-2~bpo70+1)
 Recommends: mime-support, perl, unzip
 Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, file, genisoimage, gv, imagemagick, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, xpdf | pdf-viewer, zip
 Provides: mcedit
 Homepage: http://www.midnight-commander.org
 Priority: optional
 Section: utils
-Filename: pool/main/m/mc/mc_4.8.12-1~bpo70+1_amd64.deb
-Size: 505168
-SHA256: 3feeb53b95059596dc23ec1ff8eeb011aa326f491982684fe8fb51de8bdefaef
-SHA1: 97720692e9e8fbd0292307a9ed5fa8d929cfa822
-MD5sum: 283ed6555032f46731d3689a145f7927
+Filename: pool/main/m/mc/mc_4.8.13-2~bpo70+1_amd64.deb
+Size: 502404
+SHA256: fa53b057148590a92718c5f0d3e2149cbbeaf15fc5fbaa62a0453de3b6765b5a
+SHA1: 8bacf2d450ecafc8d1fc695fe5e6208de6307c75
+MD5sum: d1ea3e39f6f3c37faf4a9447a8e453f5
 Description: Midnight Commander - a powerful file manager
  GNU Midnight Commander is a text-mode full-screen file manager. It
  uses a two panel interface and a subshell for command execution. It
@@ -682,21 +613,21 @@ Description: Midnight Commander - a powerful file manager
 
 Package: mc-data
 Source: mc
-Version: 3:4.8.12-1~bpo70+1
+Version: 3:4.8.13-2~bpo70+1
 Architecture: all
 Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
-Installed-Size: 5375
+Installed-Size: 5424
 Breaks: mc (<< 3:4.8.1)
 Replaces: mc (<< 3:4.8.1)
 Multi-Arch: foreign
 Homepage: http://www.midnight-commander.org
 Priority: optional
 Section: utils
-Filename: pool/main/m/mc/mc-data_4.8.12-1~bpo70+1_all.deb
-Size: 1187992
-SHA256: 3f6f3d7f1be4ca62a8ce9d410bab13b7a4f6a6102a0c5bacf8353ba293c23025
-SHA1: 725b0dd3ed94dc55573e94cf2e7eab2a4949a3f0
-MD5sum: 72b00538c27289c6732982e10d325dee
+Filename: pool/main/m/mc/mc-data_4.8.13-2~bpo70+1_all.deb
+Size: 1211392
+SHA256: 769f9c102079ed2677bfa7a16fe6ebbb7b7e85b899b7936ec41e3fdac5e3819d
+SHA1: 0a0713efce18eaddd113661fd9e5150189def8fa
+MD5sum: 2b7d6a934789d2310baf7fffdb3ce062
 Description: Midnight Commander - a powerful file manager -- data files
  GNU Midnight Commander is a text-mode full-screen file manager. It
  uses a two panel interface and a subshell for command execution. It
@@ -706,32 +637,6 @@ Description: Midnight Commander - a powerful file manager -- data files
  servers) and files inside archives to be manipulated like real files.
  .
  This package provides architecture independent files
-
-Package: mc-dbg
-Source: mc
-Version: 3:4.8.12-1~bpo70+1
-Architecture: amd64
-Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
-Installed-Size: 1599
-Depends: mc (= 3:4.8.12-1~bpo70+1)
-Suggests: gdb
-Homepage: http://www.midnight-commander.org
-Priority: extra
-Section: debug
-Filename: pool/main/m/mc/mc-dbg_4.8.12-1~bpo70+1_amd64.deb
-Size: 1441196
-SHA256: b1499601f9de6e64b277507e0efd6f65de64d11ad88673460b06302153c4e9cd
-SHA1: aa739776885c332cbdd8e4d635650b92997114bf
-MD5sum: cda3036aadb442370883df6d256536cb
-Description: Midnight Commander - a powerful file manager - debug package
- GNU Midnight Commander is a text-mode full-screen file manager. It
- uses a two panel interface and a subshell for command execution. It
- includes an internal editor with syntax highlighting and an internal
- viewer with support for binary files. Also included is Virtual
- Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
- servers) and files inside archives to be manipulated like real files.
- .
- This package contains debugging information for mc.
 
 Package: monit
 Version: 1:5.10-1
@@ -801,29 +706,6 @@ Description: advanced PNG (Portable Network Graphics) optimizer
  and selects the compression parameters that yield the smallest output file.
  It also recognizes several external file formats like BMP, GIF, TIFF and
  PNM (PBM, PGM, PPM).
-
-Package: pcregrep
-Source: pcre3
-Version: 1:8.35-1~bpo70+1
-Architecture: amd64
-Maintainer: Mark Baker <mark@mnb.org.uk>
-Installed-Size: 76
-Depends: libc6 (>= 2.3), libpcre3 (>= 8.10)
-Replaces: pgrep (<< 4.5)
-Priority: optional
-Section: utils
-Filename: pool/main/p/pcre3/pcregrep_8.35-1~bpo70+1_amd64.deb
-Size: 29598
-SHA256: 2fff20a067dbc5f3a3873538c75014c2dcdc2a2bf604dd21bcfa0d4542ca41e2
-SHA1: e47417eb321bc4b2f46989a16939b81d0dbd81a7
-MD5sum: 84199772afe615e9051946b0327210ba
-Description: grep utility that uses perl 5 compatible regexes.
- Perl-style regexps have many useful features that the standard POSIX ones
- don't; this is basically the same as grep but with the different
- regexp syntax.
- .
- The other reason for the existence of pcregrep is that its source code is an
- example of programming with libpcre.
 
 Package: php-console-table
 Version: 1.2.0-2~bpo70+1
@@ -1256,20 +1138,20 @@ Description: Tools for compiling SpamAssassin rules into C
  spamd or spamassassin.
 
 Package: silversearcher-ag
-Version: 0.21.1~bpo70+1
+Version: 0.27.0-1~bpo70+1
 Architecture: amd64
 Maintainer: Hajime Mizuno <mizuno-as@ubuntu.com>
-Installed-Size: 108
-Depends: libc6 (>= 2.14), liblzma5 (>= 5.1.1alpha+20120614), libpcre3 (>= 8.21), zlib1g (>= 1:1.1.4)
+Installed-Size: 113
+Depends: libc6 (>= 2.8), liblzma5 (>= 5.1.1alpha+20120614), libpcre3 (>= 8.10), zlib1g (>= 1:1.1.4)
 Homepage: https://github.com/ggreer/the_silver_searcher
 Priority: extra
 Section: utils
-Filename: pool/main/s/silversearcher-ag/silversearcher-ag_0.21.1~bpo70+1_amd64.deb
-Size: 27244
-SHA256: 6727a9a64185c76dad7d54982a7fb2e2ac24406a9f4af20873ee19fda8379735
-SHA1: 41c00e3515789e4fa5abc5df8e1cafe9236a8a24
-MD5sum: fb6eb0b7fcfd761dc2dae8680e7bfd7f
-Description: very fast grep-like program, altenative to ack-grep
+Filename: pool/main/s/silversearcher-ag/silversearcher-ag_0.27.0-1~bpo70+1_amd64.deb
+Size: 34324
+SHA256: be87dce9b7e40f2bc22af110ae0e712a8ab4ebdd652e01b09644b2dacdf0e203
+SHA1: fc9e9cfdc49d341c4cf10f44e2573a3f140c4e53
+MD5sum: 958cd2c79add7568299f9c295e2ce27a
+Description: very fast grep-like program, alternative to ack-grep
  The Silver Searcher is grep-like program implemented by C.
  An attempt to make something better than ack-grep.
  .
@@ -1371,7 +1253,7 @@ Version: 1.16-1~bpo70+1
 Architecture: amd64
 Maintainer: Noël Köthe <noel@debian.org>
 Installed-Size: 2083
-Depends: libc6 (>= 2.11), libgnutls-deb0-28 (>= 3.3.0), libidn11 (>= 1.13), libnettle4, libpcre3 (>= 8.10), libpsl0 (>= 0.4.0), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), dpkg (>= 1.15.4) | install-info
+Depends: libc6 (>= 2.11), libgnutls-deb0-28 (>= 3.3.0), libidn11 (>= 1.13), libnettle4, libpsl0 (>= 0.4.0), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), dpkg (>= 1.15.4) | install-info
 Recommends: ca-certificates
 Conflicts: wget-ssl
 Multi-Arch: foreign
@@ -1379,10 +1261,10 @@ Homepage: http://www.gnu.org/software/wget/
 Priority: important
 Section: web
 Filename: pool/main/w/wget/wget_1.16-1~bpo70+1_amd64.deb
-Size: 753136
-SHA256: e67e9575100d25c684eaefe46a97213b3f302c29c4d0116658711e9a8ab5d30a
-SHA1: 3d6bc78ab91dbb53053b3f37fc67931e6899c6ab
-MD5sum: facf30b39aa046425e52498156ad4ed2
+Size: 753716
+SHA256: a35506decebca8de15a61369f7d6f5d578954ced0051ddf6cb1ab3dbf1e88d1c
+SHA1: 80df96a95b7f29b156e7d7addaa25f494ddff01e
+MD5sum: 0c1ee71778b79e1bf890d80ed3853036
 Description: retrieves files from the web
  Wget is a network utility to retrieve files from the web
  using HTTP(S) and FTP, the two most widely used internet
