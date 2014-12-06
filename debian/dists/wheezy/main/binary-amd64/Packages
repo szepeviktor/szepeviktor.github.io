@@ -1235,16 +1235,16 @@ Package: snzip
 Version: 1.0.1-1
 Architecture: amd64
 Maintainer: Viktor Szépe <viktor@szepe.net>
-Installed-Size: 89
-Depends: libc6 (>= 2.6), libsnappy1
-Homepage: https://github.com/kubo/snzip/
+Installed-Size: 93
+Depends: libsnappy1
+Homepage: https://github.com/kubo/snzip
 Priority: extra
 Section: utils
 Filename: pool/main/s/snzip/snzip_1.0.1-1_amd64.deb
-Size: 39148
-SHA256: a170d7767fd13fe24bd24b06578625f24b9c7776fcc9a9683834cdfb07a0d835
-SHA1: b1dc40e70da00d5c464c366df1b511cfcd2e06d9
-MD5sum: 2a9b9a269af7b3fb3a34fa964e7e3092
+Size: 41438
+SHA256: 3823cd5823c391326b1ddb32f2a7cefee39dc4022ba166fa7bc7196ea5723ddd
+SHA1: bc402b0b301ec19b9e16ceb72c34b07ee33fbdf8
+MD5sum: 84e0c811b497dae870997d8e8a784e84
 Description: Snzip, a compression/decompression tool based on snappy
  Snzip is one of command line tools using snappy.
  This supports five types of file formats; framing-format,
