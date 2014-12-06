@@ -580,6 +580,63 @@ Description: Libraries necessary to run Ruby 2.1
  This package includes the 'libruby-2.1' library, necessary to run Ruby 2.1.
  (API version 2.1.0)
 
+Package: libsnappy-dev
+Source: snappy
+Version: 1.1.2-3~bpo70+1
+Architecture: amd64
+Maintainer: Steinar H. Gunderson <sesse@debian.org>
+Installed-Size: 118
+Depends: libsnappy1 (= 1.1.2-3~bpo70+1)
+Homepage: http://code.google.com/p/snappy/
+Priority: extra
+Section: libdevel
+Filename: pool/main/s/snappy/libsnappy-dev_1.1.2-3~bpo70+1_amd64.deb
+Size: 53216
+SHA256: 83b009f2cace0828b983a1fbd0f282287d8e0230502d39220959119cc4435756
+SHA1: 46204ed8b6d380401e677e9512edd387c22840e0
+MD5sum: 94349bbc9dc75220e963d0d711620d5b
+Description: fast compression/decompression library (development files)
+ Snappy is a compression/decompression library. It does not aim for
+ maximum compression, or compatibility with any other compression
+ library; instead, it aims for very high speeds and reasonable
+ compression.
+ .
+ For instance, compared to the fastest mode of zlib, Snappy
+ is an order of magnitude faster for most inputs, but the resulting
+ compressed files are anywhere from 20% to 100% bigger. On a single core
+ of a Core i7 processor in 64-bit mode, Snappy compresses at about 250
+ MB/sec or more and decompresses at about 500 MB/sec or more.
+ .
+ This package contains the development files required to build programs
+ against Snappy.
+
+Package: libsnappy1
+Source: snappy
+Version: 1.1.2-3~bpo70+1
+Architecture: amd64
+Maintainer: Steinar H. Gunderson <sesse@debian.org>
+Installed-Size: 86
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Homepage: http://code.google.com/p/snappy/
+Priority: extra
+Section: libs
+Filename: pool/main/s/snappy/libsnappy1_1.1.2-3~bpo70+1_amd64.deb
+Size: 44118
+SHA256: 8bc32cd0e85a5e09ab348ba018595b991c5891fb4565018d5bb3b5a258a3ba92
+SHA1: 9dbc9b6918543a96b38144399ea539815379f519
+MD5sum: ec490a623e52ef8ec1511e8d54234da9
+Description: fast compression/decompression library
+ Snappy is a compression/decompression library. It does not aim for
+ maximum compression, or compatibility with any other compression
+ library; instead, it aims for very high speeds and reasonable
+ compression.
+ .
+ For instance, compared to the fastest mode of zlib, Snappy
+ is an order of magnitude faster for most inputs, but the resulting
+ compressed files are anywhere from 20% to 100% bigger. On a single core
+ of a Core i7 processor in 64-bit mode, Snappy compresses at about 250
+ MB/sec or more and decompresses at about 500 MB/sec or more.
+
 Package: libtcltk-ruby
 Source: ruby-defaults
 Version: 1:2.0.0.2~bpo70+1
@@ -1173,6 +1230,26 @@ Description: very fast grep-like program, alternative to ack-grep
  .
  It searches pattern about 3–5x faster than ack-grep.
  It ignores file patterns from your .gitignore and .hgignore.
+
+Package: snzip
+Version: 1.0.1-1
+Architecture: amd64
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 89
+Depends: libc6 (>= 2.6), libsnappy1
+Homepage: https://github.com/kubo/snzip/
+Priority: extra
+Section: utils
+Filename: pool/main/s/snzip/snzip_1.0.1-1_amd64.deb
+Size: 39148
+SHA256: a170d7767fd13fe24bd24b06578625f24b9c7776fcc9a9683834cdfb07a0d835
+SHA1: b1dc40e70da00d5c464c366df1b511cfcd2e06d9
+MD5sum: 2a9b9a269af7b3fb3a34fa964e7e3092
+Description: Snzip, a compression/decompression tool based on snappy
+ Snzip is one of command line tools using snappy.
+ This supports five types of file formats; framing-format,
+ old framing-format, SNZ format, snappy-java format and
+ snappy-in-java format. The default format is framing-format.
 
 Package: spamassassin
 Version: 3.4.0-1~bpo70+1
