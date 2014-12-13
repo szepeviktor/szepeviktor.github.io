@@ -1,22 +1,22 @@
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: wheezy
-Date: Sat, 06 Dec 2014 23:03:18 UTC
+Date: Sat, 13 Dec 2014 00:17:30 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- 1d8f86842578843ce6ab76857ad420b2 56328 main/binary-amd64/Packages
- 826552c0c983ee6b738d8fb5338337e5 17265 main/binary-amd64/Packages.gz
- 90aa2febfeb0cb3ac89aff5f672a638c 15995 main/binary-amd64/Packages.bz2
+ ecf6c2e9187c9892e4bb2fa8e07cd409 56385 main/binary-amd64/Packages
+ 6a5897fbe841f5db89a59905af083bdb 17273 main/binary-amd64/Packages.gz
+ 812a967e25183e803219382a5f66e523 16013 main/binary-amd64/Packages.bz2
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
- 53b8a6160599f4366b24dfb8ef06765d13e22cc8 56328 main/binary-amd64/Packages
- fca892d2524e87f2dc7423493979051d336bc0da 17265 main/binary-amd64/Packages.gz
- a2fe5b4c5659cdbd699eb43729008f84288fe88c 15995 main/binary-amd64/Packages.bz2
+ bf04a443fc6d153235cabe25e21e5506dd4ceb00 56385 main/binary-amd64/Packages
+ e9bbc9f92b12c495fda5f7bfa0eee68890787e1f 17273 main/binary-amd64/Packages.gz
+ d319d7e25a5789ab1598103869ed6ba601892211 16013 main/binary-amd64/Packages.bz2
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
- bc05b593e022eb4c382099fed3d1376b5f9620761615590bfad8d18905f607a5 56328 main/binary-amd64/Packages
- 716178d042d9f2d806fa83ad56d32bd1e685f0affb9e3401ed5f14da318e6afe 17265 main/binary-amd64/Packages.gz
- 798041c81625ab677631b224db4a825fe76bc2df67218cfae7bd68098e57a872 15995 main/binary-amd64/Packages.bz2
+ b65478998e0f3ac7c6f220b3cae8367731506f4224cebedae32cd44cfebc4a08 56385 main/binary-amd64/Packages
+ c9ef5a031c6580ad394985b07e3ec292e5622d356e2fffe186c90bb4f38391ab 17273 main/binary-amd64/Packages.gz
+ 0b343557e5c04ddcb23e66c0a7e77019db1634aab6928156099617a484af3a65 16013 main/binary-amd64/Packages.bz2
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release

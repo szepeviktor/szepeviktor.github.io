@@ -146,20 +146,20 @@ Description: chroot jail utilities
  The jailkit website is at http://olivier.sessink.nl/jailkit/
 
 Package: lftp
-Version: 4.5.1-1~bpo70+1
+Version: 4.6.0-1~bpo70+1
 Architecture: amd64
 Maintainer: Noël Köthe <noel@debian.org>
-Installed-Size: 1815
-Depends: libc6 (>= 2.4), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.1.1), libgnutls28 (>= 3.2.10-0), libreadline6 (>= 6.0), libtinfo5, zlib1g (>= 1:1.1.4), netbase
+Installed-Size: 1881
+Depends: libc6 (>= 2.4), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.1.1), libgnutls-deb0-28 (>= 3.3.0), libidn11 (>= 1.13), libreadline6 (>= 6.0), libstdc++6 (>= 4.1.1), libtinfo5, zlib1g (>= 1:1.1.4), netbase
 Homepage: http://lftp.yar.ru/
 Priority: optional
 Section: net
-Filename: pool/main/l/lftp/lftp_4.5.1-1~bpo70+1_amd64.deb
-Size: 770898
-SHA256: 2c72de85e07cf1fa997d176354149a3bb02652c1a663b7e61cfc0c0d17d34fcc
-SHA1: 520a5f8436d3bf783f11325e5ea90896f7f6b9a4
-MD5sum: 2fb861adb865ddcad661e922650ef823
-Description: Sophisticated command-line FTP/HTTP client programs
+Filename: pool/main/l/lftp/lftp_4.6.0-1~bpo70+1_amd64.deb
+Size: 785960
+SHA256: 76a6e5d6818b5106d0b580bdcbeb406a10602dd528f0d6ae3c83b909eac3c719
+SHA1: f333ceb35aec90b1b4b50d5b5bf177495b3a382a
+MD5sum: 3fdeb8c75115ec97c5b542f38dd41c10
+Description: Sophisticated command-line FTP/HTTP/BitTorrent client programs
  Lftp is a file retrieving tool that supports FTP, HTTP, FISH, SFTP, HTTPS,
  FTPS and BitTorrent protocols under both IPv4 and IPv6. Lftp has an amazing
  set of features, while preserving its interface as simple and easy as possible.
