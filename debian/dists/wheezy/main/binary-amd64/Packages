@@ -837,6 +837,21 @@ Description: accurate, machine-readable list of domain name suffixes
  the list useful for grouping cookies, deciding same-origin policies,
  collating spam, and other activities.
 
+Package: qzip
+Version: 1.5.0-1
+Architecture: amd64
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 40
+Homepage: http://www.quicklz.com/
+Priority: extra
+Section: utils
+Filename: pool/main/q/qzip/qzip_1.5.0-1_amd64.deb
+Size: 7562
+SHA256: 56baf631e4d52a948599594990133ceac916eed38d9a4c7ed7f6e4e7cbb8204d
+SHA1: c635c8f95bcf730f2f8a03aad5109ef1bb53e96a
+MD5sum: d2121ffac589c7e790637ddd009907d1
+Description: QuickLZ is the world's fastest compression library.
+
 Package: ri
 Source: ruby-defaults
 Version: 1:2.0.0.2~bpo70+1
