@@ -26,3 +26,6 @@ sed -i 's|<body>|<head><title>Modern webserver solutions</title></head><body><h1
 popd
 
 echo "Index generated."
+
+git status
+echo "git add * --all"

@@ -854,6 +854,24 @@ Description: QuickLZ is the world's fastest compression library.
   QLZ_COMPRESSION_LEVEL = 1
   QLZ_STREAMING_BUFFER = 100000
 
+Package: rbldnsd
+Version: 0.997a-1~bpo70+1
+Architecture: amd64
+Maintainer: Michael Tokarev <mjt@corpit.ru>
+Installed-Size: 209
+Depends: libc6 (>= 2.2.5), zlib1g (>= 1:1.1.4), adduser
+Priority: optional
+Section: net
+Filename: pool/main/r/rbldnsd/rbldnsd_0.997a-1~bpo70+1_amd64.deb
+Size: 110810
+SHA256: ffb6d8a22b15f8abe7c70ef1e88594ea3c1644c74d1cba40e19493d6e1290a9e
+SHA1: 6190e15c9f6fa2b6d2c01ffbfb2d4ec3dec30362
+MD5sum: af14b7e676a3ce9408edaa2bf6a13374
+Description: small nameserver daemon designed for DNSBLs
+ Rbldnsd is a small authoritate-only DNS nameserver
+ designed to serve DNS-based blocklists (DNSBLs).
+ It may handle IP-based and name-based blocklists.
+
 Package: ri
 Source: ruby-defaults
 Version: 1:2.0.0.2~bpo70+1
