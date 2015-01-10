@@ -91,6 +91,43 @@ Description: ban hosts that cause multiple authentication errors
  actions are given in the config files, thus fail2ban can be adopted
  to be used with a variety of files and firewalls.
 
+Package: goaccess
+Version: 1:0.8.3-1~bpo70+1
+Architecture: amd64
+Maintainer: Chris Taylor <ctaylor@debian.org>
+Installed-Size: 206
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.12.0), libncurses5 (>= 5.5-5~), libtinfo5
+Homepage: http://goaccess.prosoftcorp.com/
+Priority: extra
+Section: utils
+Filename: pool/main/g/goaccess/goaccess_0.8.3-1~bpo70+1_amd64.deb
+Size: 82058
+SHA256: 499178b639cfc751117c370d1aaa2e7cac08dbd8cf873970b25c64661f055cfd
+SHA1: 3ce5ec28dc70df33359276aae864af4f638bfcf6
+MD5sum: c7b1071f1af5957467ede049085aa94d
+Description: log analyzer and interactive viewer for the Apache Webserver
+ Displays fast and valuable HTTP statistics for system administrators that
+ require a visual report on the fly.
+ .
+ The collected information will be displayed to the user (sysadmin) in a
+ visual/interactive window. Collected information includes:
+ .
+  -General Statistics, Bandwidth etc.
+  -Top Visitors
+  -Requested files
+  -Requested static files, images, swf, js, etc.
+  -Referrers URLs
+  -404 or Not Found
+  -Operating Systems
+  -Browsers and Spiders
+  -Hosts, Reverse DNS, IP Location
+  -HTTP Status Codes
+  -Referring Sites
+  -Unlimited log file size
+ .
+ GoAccess can parse both of Apaches' log formats, the Common Log Format and
+ the Combined Log Format
+
 Package: imgmin
 Version: 1.0-1
 Architecture: amd64
