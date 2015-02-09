@@ -218,45 +218,6 @@ Description: Sophisticated command-line FTP/HTTP/BitTorrent client programs
  This package also includes lftpget - A simple non-interactive
  tool for downloading files.
 
-Package: libgnutls-deb0-28
-Source: gnutls28
-Version: 3.3.8-4~bpo70+1
-Architecture: amd64
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Installed-Size: 1813
-Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.8), libgmp10, libhogweed2 (>= 2.7), libnettle4 (>= 2.7), libp11-kit0 (>= 0.20.7), libtasn1-6 (>= 4.1-0), zlib1g (>= 1:1.1.4)
-Suggests: gnutls-bin
-Conflicts: gnutls0, gnutls0.4
-Replaces: gnutls0, gnutls0.4, gnutls3
-Multi-Arch: same
-Homepage: http://www.gnutls.org/
-Priority: standard
-Section: libs
-Filename: pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-4~bpo70+1_amd64.deb
-Size: 823832
-SHA256: 57fb84270babc3e156773eab475e531a21845e3cc8b3bc5d9615a9d9053a9b29
-SHA1: 90188e8a6fa06eca64e976b1823930e01bb3a539
-MD5sum: 0a9aaa20190efbf6a0324d9f095cef1f
-Description: GNU TLS library - main runtime library
- GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
- Transport Layer Security (DTLS 1.0, 1.2) protocols.
- .
- GnuTLS features support for:
-  - TLS extensions: server name indication, max record size, opaque PRF
-    input, etc.
-  - authentication using the SRP protocol.
-  - authentication using both X.509 certificates and OpenPGP keys.
-  - TLS Pre-Shared-Keys (PSK) extension.
-  - Inner Application (TLS/IA) extension.
-  - X.509 and OpenPGP certificate handling.
-  - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512 and
-    Camellia (RFC 4132)).
- .
- This package contains the main runtime library.
-
 Package: libhashkit-dev
 Source: libmemcached
 Version: 1.0.18-3
