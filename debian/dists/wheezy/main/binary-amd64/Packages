@@ -32,6 +32,22 @@ Description: Tool for generating GNU Standards-compliant Makefiles
  1.4, 1.6, 1.7, 1.8, 1.9 and 1.10 did, so has been renamed so that the
  previous version can continue to be made available.
 
+Package: couriersrs
+Version: 1.2-1
+Architecture: amd64
+Maintainer: Viktor Szepe <viktor@szepe.net>
+Installed-Size: 47
+Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libpopt0 (>= 1.14), libsrs2-0 (>= 1.0.18), libstdc++6 (>= 4.4.0)
+Homepage: https://couriersrs.com/
+Priority: extra
+Section: mail
+Filename: pool/main/c/couriersrs/couriersrs_1.2-1_amd64.deb
+Size: 9726
+SHA256: b8c622e1bcaecff8c50c7b690a5e8f325ac9c7c57e732108dc04a9ae0ef8dc25
+SHA1: cb5ba2a3ab94a71e5f9f4d72eb877edd5c1d2c55
+MD5sum: 77d010c623c35dcf431f7d791c9c7e01
+Description: forwarding messages in courier using SRS
+
 Package: drush
 Version: 6.2.0
 Architecture: all
@@ -634,6 +650,51 @@ Description: fast compression/decompression library
  compressed files are anywhere from 20% to 100% bigger. On a single core
  of a Core i7 processor in 64-bit mode, Snappy compresses at about 250
  MB/sec or more and decompresses at about 500 MB/sec or more.
+
+Package: libsrs2-0
+Source: libsrs2
+Version: 1.0.18-4
+Architecture: amd64
+Maintainer: Pierre Habouzit <madcoder@debian.org>
+Installed-Size: 57
+Depends: libc6 (>= 2.4)
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsrs2/libsrs2-0_1.0.18-4_amd64.deb
+Size: 14306
+SHA256: e8245f314ec1bf6892f3452fdefd798b54938eca86c074b4e78c925baa1764c2
+SHA1: defe60709250a299dd389a1eddba64ab5f602030
+MD5sum: 82e0655876735765e3d627933c22df5d
+Description: SRS email address rewriting engine
+ libsrs2 is the next generation SRS library. SPF verifies that the
+ Sender address of a mail matches (according to some policy) the
+ client IP address which submits the mail. When a mail is forwarded,
+ the sender address must be rewritten to comply with SPF policy. The
+ Sender Rewriting Scheme, or SRS, provides a standard for this
+ rewriting which is not vulnerable to attacks by spammers.
+
+Package: libsrs2-dev
+Source: libsrs2
+Version: 1.0.18-4
+Architecture: amd64
+Maintainer: Pierre Habouzit <madcoder@debian.org>
+Installed-Size: 66
+Depends: libsrs2-0 (= 1.0.18-4)
+Provides: libsrs-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libs/libsrs2/libsrs2-dev_1.0.18-4_amd64.deb
+Size: 15186
+SHA256: ee4963fd89bcd4ac88b5c7375a37b3b687be646076573b09c33303ee42a3d17d
+SHA1: f556d10442e1aa852cd13bee0235a0776514aeb1
+MD5sum: e52aa062721ffb2fc546d764e0e5c76c
+Description: Development tools for the libsrs2
+ libsrs2 is the next generation SRS library. SPF verifies that the
+ Sender address of a mail matches (according to some policy) the
+ client IP address which submits the mail. When a mail is forwarded,
+ the sender address must be rewritten to comply with SPF policy. The
+ Sender Rewriting Scheme, or SRS, provides a standard for this
+ rewriting which is not vulnerable to attacks by spammers.
 
 Package: libtcltk-ruby
 Source: ruby-defaults
