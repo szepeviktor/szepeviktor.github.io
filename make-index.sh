@@ -28,4 +28,5 @@ popd
 echo "Index generated."
 
 git status
-echo "git add * --all"
+echo
+echo "git add --all"

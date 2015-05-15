@@ -198,6 +198,21 @@ Description: chroot jail utilities
  to run a jail. See 'man jailkit' for further information.
  The jailkit website is at http://olivier.sessink.nl/jailkit/
 
+Package: jpeg-archive
+Installed-Size: 1656
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Architecture: amd64
+Version: 2.1.1-1
+Provides: jpeg-archive
+Priority: extra
+Section: graphics
+Filename: pool/main/j/jpeg-archive/jpeg-archive_2.1.1-1_amd64.deb
+Size: 525454
+SHA256: 157ad04600511fa08017e7c4a0d5af5335172bd1fb51d9ab753a8ff93ef08328
+SHA1: ea4994e9a086202764c315645f0784b15efd9873
+MD5sum: a3ca68d94b31b1569ea2fc7b901c002d
+Description: Utilities for archiving JPEGs for long term storage.
+
 Package: lftp
 Version: 4.6.0-1~bpo70+1
 Architecture: amd64
