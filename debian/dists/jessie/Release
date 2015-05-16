@@ -1,0 +1,22 @@
+Origin: mirror.szepe.net
+Label: mirror.szepe.net
+Codename: jessie
+Date: Sat, 16 May 2015 20:33:54 UTC
+Architectures: amd64
+Components: main
+Description: Modern webserver solutions
+MD5Sum:
+ e8cd7cfde3e86e1bc1d939c5d491f2a2 3520 main/binary-amd64/Packages
+ cd6cf0de4903714f01a08b5588ac4374 1618 main/binary-amd64/Packages.gz
+ 6baae76ff2e9a5f13aa149ab6df0fd52 1692 main/binary-amd64/Packages.bz2
+ 29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
+SHA1:
+ 954b277b9038cb87f06f7ef9ea152dd06362c354 3520 main/binary-amd64/Packages
+ 4bf0a1e164ce0343edbab2f7c76327cc014e5dfb 1618 main/binary-amd64/Packages.gz
+ bbb31ecb3562c25394b2f1876ccfe617fa81944d 1692 main/binary-amd64/Packages.bz2
+ 8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
+SHA256:
+ 53632b841f34273c48ffae70971fd00da04eaf0d7a801ee431fccdea09cbfdfa 3520 main/binary-amd64/Packages
+ f0adb5dcd0cc9e5aa0b69ee735fd7d1018eec51e31e39282256fe08133f8d980 1618 main/binary-amd64/Packages.gz
+ c54af63b24c452e8c41d090b66d8f39e2f5e234fb5ca993b9faff7fdb8e2e90f 1692 main/binary-amd64/Packages.bz2
+ a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release

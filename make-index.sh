@@ -3,8 +3,8 @@
 # my GPG key
 echo "dpkg-sig -k 451A4FBA --sign builder *.deb"
 echo "cd debian/"
-echo "REMOVE:  reprepro remove wheezy <PKG>"
-echo "reprepro includedeb wheezy *.deb"
+echo "REMOVE:  reprepro remove jessie <PKG>"
+echo "reprepro includedeb jessie *.deb"
 
 
 # apt-get install dpkg-sig

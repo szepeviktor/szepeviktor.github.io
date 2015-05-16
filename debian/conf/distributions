@@ -9,3 +9,15 @@ DebOverride: override.wheezy
 DscOverride: override.wheezy
 DscIndices: Sources Release . .gz .bz2
 DebIndices: Packages Release . .gz .bz2
+
+Origin: mirror.szepe.net
+Label: mirror.szepe.net
+Codename: jessie
+Architectures: amd64
+Components: main
+Description: Modern webserver solutions
+SignWith: 451A4FBA
+DebOverride: override.jessie
+DscOverride: override.jessie
+DscIndices: Sources Release . .gz .bz2
+DebIndices: Packages Release . .gz .bz2
