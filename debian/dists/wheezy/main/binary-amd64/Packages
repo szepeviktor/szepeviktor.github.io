@@ -42,10 +42,10 @@ Homepage: https://couriersrs.com/
 Priority: extra
 Section: mail
 Filename: pool/main/c/couriersrs/couriersrs_1.2-1_amd64.deb
-Size: 9726
-SHA256: b8c622e1bcaecff8c50c7b690a5e8f325ac9c7c57e732108dc04a9ae0ef8dc25
-SHA1: cb5ba2a3ab94a71e5f9f4d72eb877edd5c1d2c55
-MD5sum: 77d010c623c35dcf431f7d791c9c7e01
+Size: 10706
+SHA256: a5e3f20028888743c20e3a6dd85eaa676a9f04d340aa00c90f69337fb5557990
+SHA1: 2305122f54f08d20286829f3b5463204562849f0
+MD5sum: 0296ff210886c4559e7f53550cc80480
 Description: forwarding messages in courier using SRS
 
 Package: drush
@@ -207,10 +207,10 @@ Provides: jpeg-archive
 Priority: extra
 Section: graphics
 Filename: pool/main/j/jpeg-archive/jpeg-archive_2.1.1-1_amd64.deb
-Size: 525454
-SHA256: 157ad04600511fa08017e7c4a0d5af5335172bd1fb51d9ab753a8ff93ef08328
-SHA1: ea4994e9a086202764c315645f0784b15efd9873
-MD5sum: a3ca68d94b31b1569ea2fc7b901c002d
+Size: 526436
+SHA256: b981a80603d335367277b56f86165682681438aae42bf0a388d4720dd2b461f8
+SHA1: 01e56159873a19f3c379d7478559343d940b3486
+MD5sum: 17cb8eabfdfe1ab2a0265f605c95957a
 Description: Utilities for archiving JPEGs for long term storage.
 
 Package: lftp
@@ -521,10 +521,10 @@ Homepage: https://github.com/rockdaboot/libpsl
 Priority: optional
 Section: libs
 Filename: pool/main/libp/libpsl/libpsl0_0.5.1-1~bpo70+1_amd64.deb
-Size: 57074
-SHA256: f5f0bb3e3ce3f34bf46494db695f6b31acbbc42f8f99e0b29e75e097d95ec499
-SHA1: 4dbedea1c7ad5ed569f27ae4c6ea45fa24d23faa
-MD5sum: 7263b24e1bb43d67b8194bfa2195e953
+Size: 58056
+SHA256: 95d756a3fd8df81701adb5a036ba41649a5894664f0b65e465e49e7ab831e27f
+SHA1: 6487284974406bee3dcfb854dcfbabe3538216ea
+MD5sum: b471de2d19107fd3dbb749025e048029
 Description: Library for Public Suffix List (shared libraries)
  Libpsl allows checking domains against the Public Suffix List,
  It can be used to avoid privacy-leaking 'super-cookies',
@@ -676,10 +676,10 @@ Depends: libc6 (>= 2.4)
 Priority: optional
 Section: libs
 Filename: pool/main/libs/libsrs2/libsrs2-0_1.0.18-4_amd64.deb
-Size: 14306
-SHA256: e8245f314ec1bf6892f3452fdefd798b54938eca86c074b4e78c925baa1764c2
-SHA1: defe60709250a299dd389a1eddba64ab5f602030
-MD5sum: 82e0655876735765e3d627933c22df5d
+Size: 15288
+SHA256: 02ee7546e57d0f9bdad7bc7a604ed8ac5bdbac8abc564d6ac103ccc08e59ace8
+SHA1: e89db272f2399bbea24310953c578316cf7b3b6c
+MD5sum: 2a20d795c91cb4ac18e9c32d37a661f6
 Description: SRS email address rewriting engine
  libsrs2 is the next generation SRS library. SPF verifies that the
  Sender address of a mail matches (according to some policy) the
@@ -699,10 +699,10 @@ Provides: libsrs-dev
 Priority: optional
 Section: libdevel
 Filename: pool/main/libs/libsrs2/libsrs2-dev_1.0.18-4_amd64.deb
-Size: 15186
-SHA256: ee4963fd89bcd4ac88b5c7375a37b3b687be646076573b09c33303ee42a3d17d
-SHA1: f556d10442e1aa852cd13bee0235a0776514aeb1
-MD5sum: e52aa062721ffb2fc546d764e0e5c76c
+Size: 16168
+SHA256: 7f52af6325178b0c033d32ff8182424cf62bd8be04fa6fdfc74b9c50fbd75245
+SHA1: 816e070f2a4b45116c840d644cc014ed032919b3
+MD5sum: 4a207d1fbe5b8e9b38b8d738ad3cd76a
 Description: Development tools for the libsrs2
  libsrs2 is the next generation SRS library. SPF verifies that the
  Sender address of a mail matches (according to some policy) the
@@ -1431,10 +1431,10 @@ Homepage: http://busybox.net/~vda/unscd/
 Priority: extra
 Section: admin
 Filename: pool/main/u/unscd/unscd_0.51-1~bpo70+1_amd64.deb
-Size: 22174
-SHA256: 563b3f5baeb4f50f87acdd3a8aaa86a2614711a2d98431ab5f1215e6b9f4429d
-SHA1: 62151c12279914c99a3bb6d1f387e23d80165a44
-MD5sum: 8f546c1cdf65e7299cf27114062a7014
+Size: 23156
+SHA256: 03cecad9149ab9cf3c49d514b79bdc949466796652aee90bd4de9017b0c8f519
+SHA1: dc0fe5399d2fe784cbffa98378c4e36a3bbe6bd7
+MD5sum: de6b8292e49285f15aceee173a06b053
 Description: Micro Name Service Caching Daemon
  A daemon which handles passwd, group and host lookups for running
  programs and caches the results for the next query. You only need

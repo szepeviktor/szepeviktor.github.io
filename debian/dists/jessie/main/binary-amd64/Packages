@@ -1,3 +1,45 @@
+Package: jpeg-archive
+Installed-Size: 1600
+Maintainer: viktor@szepe.net
+Architecture: amd64
+Version: 2.1.1-2
+Depends: libc6 (>= 2.14)
+Provides: jpeg-archive
+Priority: extra
+Section: graphics
+Filename: pool/main/j/jpeg-archive/jpeg-archive_2.1.1-2_amd64.deb
+Size: 169894
+SHA256: cea9ae35b02c5ceff15abeb8e1308ac2db7e5c7ab508080fc4a264beaa0450db
+SHA1: 70ab83aa7e5b230dfafa77daf789c3e8d010e57f
+MD5sum: 671b602db42f09f742943e14a70d6a91
+Description: Utilities for archiving JPEGs for long term storage.
+
+Package: php5-suhosin-extension
+Maintainer: Ben Fuhrmannek <ben@sektioneins.de>
+Homepage: http://www.suhosin.org/
+Conflicts: php5-suhosin
+Priority: extra
+Section: php
+Filename: pool/main/p/php5-suhosin-extension/php5-suhosin-extension_0.9.38-1~dev_amd64.deb
+Size: 185252
+SHA256: c49b952a9a824b43ad344bf405e1af96ee5e50ab13ebfee44a8d485442c2beda
+SHA1: 9066045e5674497bad2a55fdcd5a27c288660ffd
+MD5sum: afbfc7f546ff8ee842f2630decfe3a4d
+Description: advanced protection system for PHP5
+ This package provides a PHP hardening module.
+ .
+ Suhosin is an advanced protection system for PHP installations. It was
+ designed to protect servers and users from known and unknown flaws in PHP
+ applications and the PHP core. Suhosin comes in two independent parts, that
+ can be used separately or in combination. The first part is a small patch
+ against the PHP core, that implements a few low-level protections against
+ bufferoverflows or format string vulnerabilities and the second part is a
+ powerful PHP extension that implements all the other protections.
+ .
+ This Package provides the suhosin extension only.
+Architecture: amd64
+Version: 0.9.38-1~dev
+
 Package: sa-compile
 Source: spamassassin
 Version: 3.4.1-1

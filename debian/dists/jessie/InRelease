@@ -4,33 +4,33 @@ Hash: SHA256
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: jessie
-Date: Sat, 16 May 2015 20:33:54 UTC
+Date: Mon, 18 May 2015 19:48:26 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- e8cd7cfde3e86e1bc1d939c5d491f2a2 3520 main/binary-amd64/Packages
- cd6cf0de4903714f01a08b5588ac4374 1618 main/binary-amd64/Packages.gz
- 6baae76ff2e9a5f13aa149ab6df0fd52 1692 main/binary-amd64/Packages.bz2
+ b9937c7f82b945c29a13f7f06278fb29 5162 main/binary-amd64/Packages
+ e183d976c59e89d60dd3787bec268884 2303 main/binary-amd64/Packages.gz
+ 7ceadf5414042dce0778f0fb68e0d906 2361 main/binary-amd64/Packages.bz2
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
- 954b277b9038cb87f06f7ef9ea152dd06362c354 3520 main/binary-amd64/Packages
- 4bf0a1e164ce0343edbab2f7c76327cc014e5dfb 1618 main/binary-amd64/Packages.gz
- bbb31ecb3562c25394b2f1876ccfe617fa81944d 1692 main/binary-amd64/Packages.bz2
+ fe77a64cc8e07f7cf222006569d13c2279886ddb 5162 main/binary-amd64/Packages
+ 9073933cc2d576c292c7d875cfcdb21c151d9ce7 2303 main/binary-amd64/Packages.gz
+ ef4529e06878eb0d0b0db9afbd502c93fadbcaaa 2361 main/binary-amd64/Packages.bz2
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
- 53632b841f34273c48ffae70971fd00da04eaf0d7a801ee431fccdea09cbfdfa 3520 main/binary-amd64/Packages
- f0adb5dcd0cc9e5aa0b69ee735fd7d1018eec51e31e39282256fe08133f8d980 1618 main/binary-amd64/Packages.gz
- c54af63b24c452e8c41d090b66d8f39e2f5e234fb5ca993b9faff7fdb8e2e90f 1692 main/binary-amd64/Packages.bz2
+ b88c2d9e108171ccf7afe3a35bdc8a5354766793a3a8234fc72903873521a9ae 5162 main/binary-amd64/Packages
+ a8d258cc4c7bb8ad5847a261463422f0f55e05f356838ed4e1bf87361b7151d6 2303 main/binary-amd64/Packages.gz
+ de4be89f44f9d918e5000269c55cf9a80e285b4740a8c8da770a4773844cff49 2361 main/binary-amd64/Packages.bz2
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJVV6m0AAoJEGqgRTxFGk+6nsEH/2fGsZ4SACySkhQpKDo4aCZZ
-P8TmtVQUjdoa2v9PjZDlF7WF9U3xl97ikNnRX3R0p06hQ9VxRmZYwAkMlxDm4PJf
-ma+ppVgje8nX2BTQpTKByj7iY9vD7u0xQPa1Ydg3D9V2LrarQk4DTA4rpLs2aFjR
-L34M1yWjD2DOqsIUSttoDiOHTZXmMivwmefXe9v9+ZThLI0AX3qITGv9gf58YLbs
-sZpM+vNBSZnfv66FWvEJ0P67gF9e3c67i2DsOWOX+mAPHjxuUGyZpntDGWHcMRFd
-1aTto/qDZzE9bOozt46nvybN0oliPAZOfgJ2I4b9U5HWc/kidzfiPnFrKGuBQRc=
-=ickl
+iQEcBAEBCAAGBQJVWkINAAoJEGqgRTxFGk+6gWoH/Ast2qGG1HXvLi9zhAA7CRb+
+KQemdnxkauDoINrKz7cHKTUl3TwCfHWegILqmF+s/yXGNDy3Fbg69XktDeImk1PM
+YToWGGRNOsacim1OfwhBPke9txSeZ0DrzKqm9r165Y9k986Ou+TMAYOVVGtl7Nu/
+sfErpDPod+4I3tsolSxx9AIdijQVaflXhUtty+Kh/iujzW9vhnhBEyDGRDys9Kqk
+2PTDcmO3xbWqiGrnmKzgOdh0Bq2qD1NogNqy2NYBKVL3G51rfp7k7bHO2Nb0nVgh
+VXIxvaB5B/pTUUkMhHnrbvs0z0vBVGfa9V0cnhNSm7hKIvIJ4DfcmWz9sZIJTuM=
+=UXgh
 -----END PGP SIGNATURE-----
