@@ -30,8 +30,7 @@ done <<< "$DEBS"
 
 # Generate index
 index_gen.py > index.html
-sed -i 's|<body>|<head><title>Modern webserver solutions</title></head><body>
-    <h1>Modern webserver solutions</h1><h2>Freshly packaged and backported Debian Linux packages</h2>|' \
+sed -i 's|<body>|<head><title>Modern webserver solutions</title></head><body><h1>Modern webserver solutions</h1><h2>Freshly packaged and backported Debian Linux packages</h2>|' \
     index.html
 
 popd
