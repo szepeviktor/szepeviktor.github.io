@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: jessie
-Date: Mon, 18 May 2015 19:48:26 UTC
+Date: Mon, 18 May 2015 20:28:01 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
@@ -12,25 +12,28 @@ MD5Sum:
  b9937c7f82b945c29a13f7f06278fb29 5162 main/binary-amd64/Packages
  e183d976c59e89d60dd3787bec268884 2303 main/binary-amd64/Packages.gz
  7ceadf5414042dce0778f0fb68e0d906 2361 main/binary-amd64/Packages.bz2
+ dbb0a8b9b4411fb216c0862a1fb5a27a 2360 main/binary-amd64/Packages.xz
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
  fe77a64cc8e07f7cf222006569d13c2279886ddb 5162 main/binary-amd64/Packages
  9073933cc2d576c292c7d875cfcdb21c151d9ce7 2303 main/binary-amd64/Packages.gz
  ef4529e06878eb0d0b0db9afbd502c93fadbcaaa 2361 main/binary-amd64/Packages.bz2
+ 3b02faa808bf2072a1a446ac3b418f47a9b8f16e 2360 main/binary-amd64/Packages.xz
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
  b88c2d9e108171ccf7afe3a35bdc8a5354766793a3a8234fc72903873521a9ae 5162 main/binary-amd64/Packages
  a8d258cc4c7bb8ad5847a261463422f0f55e05f356838ed4e1bf87361b7151d6 2303 main/binary-amd64/Packages.gz
  de4be89f44f9d918e5000269c55cf9a80e285b4740a8c8da770a4773844cff49 2361 main/binary-amd64/Packages.bz2
+ f92e39fc88109ccf38985ecb6d172b800638c81492c454664ae2b93e6a3fe96a 2360 main/binary-amd64/Packages.xz
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJVWkINAAoJEGqgRTxFGk+6gWoH/Ast2qGG1HXvLi9zhAA7CRb+
-KQemdnxkauDoINrKz7cHKTUl3TwCfHWegILqmF+s/yXGNDy3Fbg69XktDeImk1PM
-YToWGGRNOsacim1OfwhBPke9txSeZ0DrzKqm9r165Y9k986Ou+TMAYOVVGtl7Nu/
-sfErpDPod+4I3tsolSxx9AIdijQVaflXhUtty+Kh/iujzW9vhnhBEyDGRDys9Kqk
-2PTDcmO3xbWqiGrnmKzgOdh0Bq2qD1NogNqy2NYBKVL3G51rfp7k7bHO2Nb0nVgh
-VXIxvaB5B/pTUUkMhHnrbvs0z0vBVGfa9V0cnhNSm7hKIvIJ4DfcmWz9sZIJTuM=
-=UXgh
+iQEcBAEBCAAGBQJVWktWAAoJEGqgRTxFGk+6DgkH/2Z0EGXiPjXz/K5cbPCCumjT
+XxrFFbKFt5ELIslVMc0JZiYzUrHyfzvTXQAmHiASvjn9qFjrBKTjyXB4OoS5z/IH
+ZViTkLWl73I7gKwpjwEC2JSW0cOVyvCaOUf369gOc2n8DkVeh6Y8cGKe38BydoHs
+R2VBh/opLNw/GY2WyNBDyUY0FRx3UcXdtATGYmVm3eznsPsYHo7T67Q4VTl+j7Vb
+24LKhKg0KoXUntmM9EJn2JvgrPJfhqv8c6fwzeBQjw9aPyxr0MKzgacuVd1n2/KD
+oxtZfWOSOkzym7r30ik7XA2IoJJ41m8Amay31LPuK9NQwpf0+cPXH3MRGkwFB1s=
+=3JiH
 -----END PGP SIGNATURE-----

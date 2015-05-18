@@ -7,8 +7,8 @@ Description: Modern webserver solutions
 SignWith: 451A4FBA
 DebOverride: override.wheezy
 DscOverride: override.wheezy
-DscIndices: Sources Release . .gz .bz2
-DebIndices: Packages Release . .gz .bz2
+DscIndices: Sources Release . .gz .bz2 .xz
+DebIndices: Packages Release . .gz .bz2 .xz
 
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
@@ -19,5 +19,5 @@ Description: Modern webserver solutions
 SignWith: 451A4FBA
 DebOverride: override.jessie
 DscOverride: override.jessie
-DscIndices: Sources Release . .gz .bz2
-DebIndices: Packages Release . .gz .bz2
+DscIndices: Sources Release . .gz .bz2 .xz
+DebIndices: Packages Release . .gz .bz2 .xz

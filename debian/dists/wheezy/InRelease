@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: wheezy
-Date: Mon, 18 May 2015 20:13:31 UTC
+Date: Mon, 18 May 2015 20:28:31 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
@@ -12,25 +12,28 @@ MD5Sum:
  81d27ab4d486828a2088c15b69356107 60115 main/binary-amd64/Packages
  d82a432cb5f2c3da697e1d982dcdd583 18573 main/binary-amd64/Packages.gz
  327cfeb82ee9f4c6d6055f295805ba56 17152 main/binary-amd64/Packages.bz2
+ 0c1d086be1ee61040b90e231e645ec34 16912 main/binary-amd64/Packages.xz
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
  e83a6008a0dd862d28535825c3496e52e0ed391e 60115 main/binary-amd64/Packages
  134f7329ffc082177f7e999818921453df43512c 18573 main/binary-amd64/Packages.gz
  580da699d0a383556e1e6111ba5895ff7af01f05 17152 main/binary-amd64/Packages.bz2
+ f3679099d36faa8cce24daa48f89e1042179b9c1 16912 main/binary-amd64/Packages.xz
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
  15c3f25e8b1e2ce495ffaff39f549c2ff30378c60365ee007108c0c5974ac345 60115 main/binary-amd64/Packages
  6af816c931cdcdfa26ef7c996eaedbc0957557dd4d00da0f537a93fa817f1f6d 18573 main/binary-amd64/Packages.gz
  0c88d461510bfeb479409401dd67d9075740b84169d80b30e984877acaa57c83 17152 main/binary-amd64/Packages.bz2
+ 54cad539e0ef794a02e8704a5b0e57307a76b548630236c58958b734f4541b24 16912 main/binary-amd64/Packages.xz
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJVWkftAAoJEGqgRTxFGk+690EH/AhUhzpWpCLGtRI7TA5YwRKB
-lNtE+9LGFSYM/LJGq7kwDJPcR6nTGQtm4SlF7b5YM42bDpBdfL+GUJlzjwKDLagj
-Nu2oawRWuZSoOQ/qa0SlnbsmsQy6oF2/qf8RGa0GYqxPHusJLLVli2pegAN13P2j
-6unHOz7nTRmbQ34UK9+HFPChzxPA3i3ceXuL0xW9tqOflgFF5JmKvbBDzCVzoU2Z
-xq//QDVN81aVlPQTyzOcw9tE5my04NDObyKgoZ+Vu1dhOaYkiMIP/KJTNmPd3iwT
-33mehPv1hMOfA4YveH/mcRnlsHIMSO6hChD2QIz7S22TM6PG7Udu/ruWHtjzY1I=
-=3kWL
+iQEcBAEBCAAGBQJVWkt0AAoJEGqgRTxFGk+64/4H/R/e+f0tRHe7spR+3FYh8ZHo
+Ufgkx57W5WjS+qZRjyYlPYiEm/gJXSgFXe6wq7qBKNsmN4Q2AJQkOIz2el2IHPK+
+b4FCnSEW4U7zqYCfyn+5ZCseCTUWC1HeLTIfjf2sMceeSRMD/MQJhxOHFCs7ZwXr
+l6jLURGw67Um2GJDcExidH2PJXbqTw0faZlsM1ZJ4ajQUODvUD1T2z4e42Xy+Xrr
+HPl9Zp3Rr5yVNcKxIYBxSFXBhh2ujE+ZM+n1EmebAVXzgH8+LNT7N75nj9YXBcQd
+r71qLiTMqiEgVMrXSJPCfHjZWb6s8HS9ZNHrlCnfwO+FNHlLEEbZ6jnUgztOCgs=
+=GR+b
 -----END PGP SIGNATURE-----
