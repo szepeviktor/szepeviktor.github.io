@@ -14,6 +14,21 @@ SHA1: 70ab83aa7e5b230dfafa77daf789c3e8d010e57f
 MD5sum: 671b602db42f09f742943e14a70d6a91
 Description: Utilities for archiving JPEGs for long term storage.
 
+Package: libytnef0
+Installed-Size: 432
+Maintainer: viktor@szepe.net
+Architecture: amd64
+Version: 1.7-1
+Provides: libytnef0
+Priority: extra
+Section: checkinstall
+Filename: pool/main/liby/libytnef0/libytnef0_1.7-1_amd64.deb
+Size: 65272
+SHA256: 7b8667fad17493dab687087116b0fa06071651d4316da8ac769d0503671596f1
+SHA1: c78484118fc9d28d67469d39311b77f258a3d4b5
+MD5sum: 25202393dc8c166fa472401c894291fb
+Description: Yeraze's TNEF Stream Reader library
+
 Package: megatools
 Version: 1.9.95-2
 Architecture: amd64
