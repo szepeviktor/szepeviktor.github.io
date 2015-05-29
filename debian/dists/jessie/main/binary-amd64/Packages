@@ -148,3 +148,20 @@ Description: Client for SpamAssassin spam filtering daemon
  This package is useless unless you have spamassassin installed,
  either on this machine or another local machine (i.e. a mail server).
 
+Package: ytnef
+Installed-Size: 116
+Maintainer: viktor@szepe.net
+Architecture: amd64
+Version: 2.8-1
+Depends: libytnef0 (>= 1.5)
+Provides: ytnef
+Priority: extra
+Section: Applications/Productivity
+Filename: pool/main/y/ytnef/ytnef_2.8-1_amd64.deb
+Size: 27540
+SHA256: 18849028c346451cdec318b763a5b585a7a079e6022262f0248f7ab701396599
+SHA1: 3d43fe14daf7fe583a10e1fa38c13b4451334368
+MD5sum: 294bb3a5db28c88783160910c367cff0
+Description: Yerase's TNEF Stream Reader
+ Yeraze's TNEF Stream Reader
+

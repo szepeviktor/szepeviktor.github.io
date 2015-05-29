@@ -1,25 +1,25 @@
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: jessie
-Date: Thu, 28 May 2015 21:19:10 UTC
+Date: Fri, 29 May 2015 22:32:20 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- 9fddb21af1b085bce1111efb9a65a874 6314 main/binary-amd64/Packages
- 1a557ea46ddfe1b8ecc2c733a86e3596 2807 main/binary-amd64/Packages.gz
- 9f55488518c0d4371af020a934ff9d9a 2825 main/binary-amd64/Packages.bz2
- f64064b31e8482b3fce0883aa8ee54fd 2844 main/binary-amd64/Packages.xz
+ d3838350038f35bdd814a60f28bb582f 6802 main/binary-amd64/Packages
+ b8d8e2966b9f2abe6b51d741fbd22fad 2995 main/binary-amd64/Packages.gz
+ 1171c0574f15cc5a122a3f2bb74daa82 3014 main/binary-amd64/Packages.bz2
+ c62acc3357dc5c75efe1f8aa358490e4 3012 main/binary-amd64/Packages.xz
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
- ec55fa78f7780ea4381be74be889866f396b8ee3 6314 main/binary-amd64/Packages
- 777b0eb39768a782f5a9983836a4ebe5fbfc843d 2807 main/binary-amd64/Packages.gz
- 8e89f8ca8365dc12ea7448a8ab5cd3e200eead88 2825 main/binary-amd64/Packages.bz2
- 5b34ff75904a63f617aad13c683554a4cfecbc5f 2844 main/binary-amd64/Packages.xz
+ 441b34e9f38fdaf0b7842ca2fcef5439a4a5d2e2 6802 main/binary-amd64/Packages
+ 8a63adaa493b792dd03f4913e73ea1d388ef6f3c 2995 main/binary-amd64/Packages.gz
+ 515a09a41092ec6f6ade0cd3713398633364a1cf 3014 main/binary-amd64/Packages.bz2
+ d3fcc7a306ae2e636caa7cadf3080b0b8da70bf9 3012 main/binary-amd64/Packages.xz
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
- 269f66c20fd3f23cb4fcdf2d0895be4316d98ac20980e2a42c0022ec9dba9df5 6314 main/binary-amd64/Packages
- 33cdec3a39d607ff42a26251cf9729b920753f25b2f2a8d585381a569eafb8e7 2807 main/binary-amd64/Packages.gz
- 32859d4410295d521016b5ca4b01542fdffd9d29fda045dfca9949b94084e32c 2825 main/binary-amd64/Packages.bz2
- 5c5b798664545ec197994736ea7fab17f8d1862f464382e9f7e77752ba72941a 2844 main/binary-amd64/Packages.xz
+ 983877cd6c2eaa9422e5fae2efc23bbae54679ca2895d6593b76f983291b8de6 6802 main/binary-amd64/Packages
+ 7514f7425e668079b0cb8c46d3ca02e0539caeb29be103838af665f000376c5f 2995 main/binary-amd64/Packages.gz
+ fdc840041e8fec4758b6e50bbfced52ced0b219196a845c0ab2cd4d94176b500 3014 main/binary-amd64/Packages.bz2
+ 27d1e4e3801f0ac4fee6f7ec0190027ed456cdf18efc30e8b16a31e72d74bb62 3012 main/binary-amd64/Packages.xz
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release
