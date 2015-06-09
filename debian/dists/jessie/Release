@@ -1,25 +1,25 @@
 Origin: mirror.szepe.net
 Label: mirror.szepe.net
 Codename: jessie
-Date: Fri, 29 May 2015 22:42:35 UTC
+Date: Tue, 09 Jun 2015 23:19:44 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- 452a43e17fae38bc0507e7b9fc0c3975 7247 main/binary-amd64/Packages
- 9a32b1efaff0560a17121cf83b64be05 3160 main/binary-amd64/Packages.gz
- 8bffe54d96990a06693d7407ca430e7a 3140 main/binary-amd64/Packages.bz2
- 25761e4b3c2e79ee52c17fa51ccc66b3 3160 main/binary-amd64/Packages.xz
+ b448291418568272e6db2081dea40f72 8517 main/binary-amd64/Packages
+ 33dadcb0082cb6adcfb6d8790c5e6646 3749 main/binary-amd64/Packages.gz
+ ed5c26db6a40c435124a5a5fbc252629 3697 main/binary-amd64/Packages.bz2
+ 53dd3f6235c293418b50ecb3f92530d9 3708 main/binary-amd64/Packages.xz
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
- 597e2e54f63b715e7d8b1853df88f462626f92e5 7247 main/binary-amd64/Packages
- fe1a1cd0670d2c0874c228e6c0f8998f245b4ed9 3160 main/binary-amd64/Packages.gz
- 268f08fb31dc4eecc67b08cd553e2fe84dbfa72b 3140 main/binary-amd64/Packages.bz2
- 5c8ed77d8ec36205327a8ebe2d5e76304dfa4385 3160 main/binary-amd64/Packages.xz
+ f7c5de2ca417be9ed8e5527af85d4b839d647ede 8517 main/binary-amd64/Packages
+ b0245df369027c777b1e7b1c56036016392ed65b 3749 main/binary-amd64/Packages.gz
+ 5b8ab78f630bb73775675b013c248168be7e74ae 3697 main/binary-amd64/Packages.bz2
+ a4df9de4e90be7b40e819498b1376946cbfdd476 3708 main/binary-amd64/Packages.xz
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
- 7627fe16ed4038c50269151df9543da4dc8d6be60cb76815a443b1cf621116a6 7247 main/binary-amd64/Packages
- 28c5d5ea436a4619fc69f02eb5186cddaa94947923cb1b3a0d9d47bcdad9b2ef 3160 main/binary-amd64/Packages.gz
- afd51dbe51d03ff4d0ad8955e2ce9dfa1772a09bb5661010b7adb6c6e49ee26a 3140 main/binary-amd64/Packages.bz2
- 0c0663801c54d9b71be05ea48e0dd5d291100bf350b246f786e06126939c9a64 3160 main/binary-amd64/Packages.xz
+ fca30130f0b7873eee6e57aadd3554cf5e67581f9710b13a5a08ce562c6fea07 8517 main/binary-amd64/Packages
+ 3e0427b142a2540b8a7cd0d859f11bde9b842725fbba81efd7fd76de31a577ea 3749 main/binary-amd64/Packages.gz
+ b03b1172a0b05e395f8546d335f943ad1ba3620852b589c7ceb7c5c3ba76b7d7 3697 main/binary-amd64/Packages.bz2
+ a20327f606db52e744d2f54997a56f3d43435505ecb067a98fde7c1c778f9ff9 3708 main/binary-amd64/Packages.xz
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release

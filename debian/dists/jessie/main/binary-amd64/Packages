@@ -1,3 +1,40 @@
+Package: goaccess
+Version: 1:0.9.1-1
+Architecture: amd64
+Maintainer: Chris Taylor <ctaylor@debian.org>
+Installed-Size: 243
+Depends: libc6 (>= 2.14), libgeoip1, libglib2.0-0 (>= 2.12.0), libncursesw5 (>= 5.6+20070908), libtinfo5
+Homepage: http://goaccess.prosoftcorp.com/
+Priority: extra
+Section: utils
+Filename: pool/main/g/goaccess/goaccess_0.9.1-1_amd64.deb
+Size: 88024
+SHA256: 10b279ed92d24abae6b5142b28a0f1a2a89afa3c8353d80efa03258e33b6c493
+SHA1: 8abba0b1dd80268dd1aefec6e6bd2a5ab3f5a2a1
+MD5sum: 44272d99fbcb07cea6e280dd65261e32
+Description: log analyzer and interactive viewer for the Apache Webserver
+ Displays fast and valuable HTTP statistics for system administrators that
+ require a visual report on the fly.
+ .
+ The collected information will be displayed to the user (sysadmin) in a
+ visual/interactive window. Collected information includes:
+ .
+  -General Statistics, Bandwidth etc.
+  -Top Visitors
+  -Requested files
+  -Requested static files, images, swf, js, etc.
+  -Referrers URLs
+  -404 or Not Found
+  -Operating Systems
+  -Browsers and Spiders
+  -Hosts, Reverse DNS, IP Location
+  -HTTP Status Codes
+  -Referring Sites
+  -Unlimited log file size
+ .
+ GoAccess can parse both of Apaches' log formats, the Common Log Format and
+ the Combined Log Format
+
 Package: jpeg-archive
 Installed-Size: 1600
 Maintainer: viktor@szepe.net
