@@ -19,13 +19,13 @@ echo "reprepro includedeb jessie /var/cache/pbuilder/result/*.deb"
 
 which dpkg-sig index_gen.py &> /dev/null || exit 99
 
-pushd debian/
+pushd debian/ || exit 1
 
 # Verify all packages
 DEBS="$(find -type f -name "*.deb")"
 while read PKG; do
     echo -n "${PKG} ... "
-    dpkg-sig --verify "$PKG" | grep "^GOODSIG" || exit 1
+    dpkg-sig --verify "$PKG" | grep "^GOODSIG" || exit 2
 done <<< "$DEBS"
 
 # Generate index
