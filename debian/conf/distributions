@@ -1,5 +1,5 @@
-Origin: mirror.szepe.net
-Label: mirror.szepe.net
+Origin: szepeviktor.github.io
+Label: szepeviktor.github.io
 Codename: wheezy
 Architectures: amd64
 Components: main
@@ -10,8 +10,8 @@ DscOverride: override.wheezy
 DscIndices: Sources Release . .gz .bz2 .xz
 DebIndices: Packages Release . .gz .bz2 .xz
 
-Origin: mirror.szepe.net
-Label: mirror.szepe.net
+Origin: szepeviktor.github.io
+Label: szepeviktor.github.io
 Codename: jessie
 Architectures: amd64
 Components: main
