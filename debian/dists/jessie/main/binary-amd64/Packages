@@ -66,6 +66,27 @@ SHA1: 70ab83aa7e5b230dfafa77daf789c3e8d010e57f
 MD5sum: 671b602db42f09f742943e14a70d6a91
 Description: Utilities for archiving JPEGs for long term storage.
 
+Package: libnghttp2-5
+Source: nghttp2
+Version: 1.0.4-1
+Architecture: amd64
+Maintainer: Dave Beckett <dajobe@debian.org>
+Installed-Size: 233
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14)
+Multi-Arch: same
+Homepage: http://tatsuhiro-t.github.io/nghttp2/
+Priority: optional
+Section: libs
+Filename: pool/main/n/nghttp2/libnghttp2-5_1.0.4-1_amd64.deb
+Size: 77094
+SHA256: 23dad364dce8514154621fa3ee77cb0856af7878a5f0514faaa5133a5a8fb07f
+SHA1: f9d8d882eba207d70ef14c20adf0e9716bc24480
+MD5sum: 473503ebcc08ec99ac6eaea3e022080c
+Description: nghttp HTTP 2.0 library
+ Provides a library that provides an experimental implementation of
+ Hypertext Transfer Protocol version 2.0.
+
 Package: libytnef0
 Installed-Size: 432
 Maintainer: viktor@szepe.net
@@ -155,6 +176,26 @@ Description: utility for monitoring and managing daemons or similar programs
     LDAPv2 and LDAPv3
   * An http interface with optional SSL support to make monit
     accessible from a webbrowser
+
+Package: nghttp2
+Version: 1.0.4-1
+Architecture: amd64
+Maintainer: Dave Beckett <dajobe@debian.org>
+Installed-Size: 987
+Depends: libnghttp2-5 (= 1.0.4-1), libc6 (>= 2.14), libev4 (>= 1:4.04), libgcc1 (>= 1:4.1.1), libjansson4 (>= 2.0.1), libjemalloc1 (>= 2.1.1), libssl1.0.0 (>= 1.0.1), libstdc++6 (>= 4.9), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), lsb-base (>= 3.2-14)
+Multi-Arch: foreign
+Homepage: http://tatsuhiro-t.github.io/nghttp2/
+Priority: optional
+Section: httpd
+Filename: pool/main/n/nghttp2/nghttp2_1.0.4-1_amd64.deb
+Size: 277438
+SHA256: 24f3b9ce98eb5c74cf32f832113efc15e59e44800acbbd1bf9c28cba2d5ad733
+SHA1: 8db37e89d64e705270f5a3e9111a0180f43028c4
+MD5sum: 232a4bbc41ee237273e16d574f9df773
+Description: nghttp HTTP 2.0 servers
+ Provides experimental implementation of Hypertext Transfer Protocol
+ version 2.0 including a server (nghttpd), client (nghttp) and
+ reverse proxy (nghttpx) for fronting other HTTP servers.
 
 Package: php5-suhosin-extension
 Maintainer: Ben Fuhrmannek <ben@sektioneins.de>
