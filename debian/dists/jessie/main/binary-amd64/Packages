@@ -177,6 +177,60 @@ Description: utility for monitoring and managing daemons or similar programs
   * An http interface with optional SSL support to make monit
     accessible from a webbrowser
 
+Package: msmtp
+Version: 1.6.2-1
+Architecture: amd64
+Maintainer: Emmanuel Bouthenot <kolter@debian.org>
+Installed-Size: 310
+Depends: libc6 (>= 2.15), libgnutls-deb0-28 (>= 3.3.0), libgsasl7 (>= 1.1), libidn11 (>= 1.13), debconf (>= 0.5) | debconf-2.0, ucf
+Recommends: ca-certificates
+Suggests: msmtp-mta
+Homepage: http://msmtp.sourceforge.net/
+Priority: extra
+Section: mail
+Filename: pool/main/m/msmtp/msmtp_1.6.2-1_amd64.deb
+Size: 118282
+SHA256: bfe1728cb1ac3507c6f7b52a748ceb1f6fd253bf6c345a00c0002a180cd1d29c
+SHA1: c44998cac9bb02cece19afc27673f97e7b7e75b7
+MD5sum: f155f243a46e6d82d281830a8f2f13f6
+Description: light SMTP client with support for server profiles
+ msmtp is an SMTP client that can be used to send mails from Mutt and probably
+ other MUAs (mail user agents). It forwards mails to an SMTP server (for
+ example at a free mail provider), which takes care of the final delivery.
+ Using profiles, it can be easily configured to use different SMTP servers
+ with different configurations, which makes it ideal for mobile clients.
+ .
+ This package is compiled with GSASL and TLS/SSL support.
+
+Package: msmtp-mta
+Source: msmtp
+Version: 1.6.2-1
+Architecture: all
+Maintainer: Emmanuel Bouthenot <kolter@debian.org>
+Installed-Size: 69
+Depends: msmtp
+Conflicts: mail-transport-agent
+Replaces: mail-transport-agent
+Provides: mail-transport-agent
+Homepage: http://msmtp.sourceforge.net/
+Priority: extra
+Section: mail
+Filename: pool/main/m/msmtp/msmtp-mta_1.6.2-1_all.deb
+Size: 14066
+SHA256: 334ebf5ebe2d34b9d348f65d2cca27e7e2bc886c00bcea8facbc078bf2f25336
+SHA1: 42d7610c42382d6e0fa66366f2a9c730ed2f6848
+MD5sum: be82a69a92a60036ad49f29964f3cba3
+Description: light SMTP client with support for server profiles - the regular MTA
+ msmtp is an SMTP client that can be used to send mails from Mutt and probably
+ other MUAs (mail user agents). It forwards mails to an SMTP server (for
+ example at a free mail provider), which takes care of the final delivery.
+ Using profiles, it can be easily configured to use different SMTP servers
+ with different configurations, which makes it ideal for mobile clients.
+ .
+ This package is compiled with GSASL and TLS/SSL support.
+ .
+ This package provides the regular MTA program.
+
 Package: nghttp2
 Version: 1.0.4-1
 Architecture: amd64
