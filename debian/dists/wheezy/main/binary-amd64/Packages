@@ -78,34 +78,43 @@ Description: command line shell and Unix scripting interface for Drupal
  cache.
 
 Package: fail2ban
-Version: 0.9.1-1
+Version: 0.9.3-2
 Architecture: all
 Maintainer: Yaroslav Halchenko <debian@onerussian.com>
-Installed-Size: 1094
-Depends: python3 (>= 3.2.3-3~), init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
-Recommends: iptables, whois, python3-pyinotify
-Suggests: mailx, system-log-daemon, python3-systemd
+Installed-Size: 1176
+Depends: python3, init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
+Recommends: python, iptables, whois, python3-pyinotify, python3-systemd
+Suggests: mailx, system-log-daemon, monit
 Homepage: http://www.fail2ban.org
 Priority: optional
 Section: net
-Filename: pool/main/f/fail2ban/fail2ban_0.9.1-1_all.deb
-Size: 294480
-SHA256: f7b379b66b61a5d654c1537bbf92662769b7b744840df837c07b89a4a8b512ba
-SHA1: 2dee420ba03f75fabfc9e76f4f50c3cc5d750862
-MD5sum: 85422c24f85ec786a5cf1d68c4746799
+Filename: pool/main/f/fail2ban/fail2ban_0.9.3-2_all.deb
+Size: 265260
+SHA256: 3e97d07c8965553382cbb8ade98ca44b3900e53b06d2ce952ea9a5f588e25a70
+SHA1: a962d7529e6c6d2c2bec7a04ed95dd86defecd57
+MD5sum: 74113c45bec569bce8bd9295e1fb78ae
 Description: ban hosts that cause multiple authentication errors
  Fail2ban monitors log files (e.g. /var/log/auth.log,
  /var/log/apache/access.log) and temporarily or persistently bans
- failure-prone addresses by updating existing firewall rules.  Fail2ban allows
- easy specification of different actions to be taken such as to ban an
- IP using iptables or hostsdeny rules, or simply to send a
- notification email.
+ failure-prone addresses by updating existing firewall rules.  Fail2ban
+ allows easy specification of different actions to be taken such as to ban
+ an IP using iptables or hostsdeny rules, or simply to send a notification
+ email.
  .
  By default, it comes with filter expressions for various services
  (sshd, apache, qmail, proftpd, sasl etc.) but configuration can be
  easily extended for monitoring any other text file.  All filters and
  actions are given in the config files, thus fail2ban can be adopted
- to be used with a variety of files and firewalls.
+ to be used with a variety of files and firewalls.  Following recommends
+ are listed:
+ .
+  - iptables -- default installation uses iptables for banning. You most
+    probably need it
+  - whois -- used by a number of *mail-whois* actions to send notification
+    emails with whois information about attacker hosts. Unless you will use
+    those you don't need whois
+  - python3-pyinotify -- unless you monitor services logs via systemd, you
+    need pyinotify for efficient monitoring for log files changes
 
 Package: goaccess
 Version: 1:0.8.3-1~bpo70+1

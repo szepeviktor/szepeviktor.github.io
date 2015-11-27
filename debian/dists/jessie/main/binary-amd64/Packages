@@ -1,3 +1,42 @@
+Package: fail2ban
+Version: 0.9.3-1
+Architecture: all
+Maintainer: Yaroslav Halchenko <debian@onerussian.com>
+Installed-Size: 1176
+Depends: python3, python3:any (>= 3.3.2-2~), init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
+Recommends: python, iptables, whois, python3-pyinotify, python3-systemd
+Suggests: mailx, system-log-daemon, monit
+Homepage: http://www.fail2ban.org
+Priority: optional
+Section: net
+Filename: pool/main/f/fail2ban/fail2ban_0.9.3-1_all.deb
+Size: 265202
+SHA256: c48b20e0d49f1aeb6497b78090f96c673614b35424aed6c6be6c4dfda477352b
+SHA1: 23a620f10d36dfdee0d7ce996b9c0561252ed4e6
+MD5sum: 04b529c841caf1b1f3b157311373b926
+Description: ban hosts that cause multiple authentication errors
+ Fail2ban monitors log files (e.g. /var/log/auth.log,
+ /var/log/apache/access.log) and temporarily or persistently bans
+ failure-prone addresses by updating existing firewall rules.  Fail2ban
+ allows easy specification of different actions to be taken such as to ban
+ an IP using iptables or hostsdeny rules, or simply to send a notification
+ email.
+ .
+ By default, it comes with filter expressions for various services
+ (sshd, apache, qmail, proftpd, sasl etc.) but configuration can be
+ easily extended for monitoring any other text file.  All filters and
+ actions are given in the config files, thus fail2ban can be adopted
+ to be used with a variety of files and firewalls.  Following recommends
+ are listed:
+ .
+  - iptables -- default installation uses iptables for banning. You most
+    probably need it
+  - whois -- used by a number of *mail-whois* actions to send notification
+    emails with whois information about attacker hosts. Unless you will use
+    those you don't need whois
+  - python3-pyinotify -- unless you monitor services logs via systemd, you
+    need pyinotify for efficient monitoring for log files changes
+
 Package: goaccess
 Version: 1:0.9.1-1
 Architecture: amd64
