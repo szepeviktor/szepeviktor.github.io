@@ -32,21 +32,21 @@ Description: Versatile implementation of the Network Time Protocol
  the daemon, add or delete servers etc whilst the daemon is running.
 
 Package: fail2ban
-Version: 0.9.3-1
+Version: 0.9.4-1
 Architecture: all
 Maintainer: Yaroslav Halchenko <debian@onerussian.com>
-Installed-Size: 1176
+Installed-Size: 1216
 Depends: python3, python3:any (>= 3.3.2-2~), init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
 Recommends: python, iptables, whois, python3-pyinotify, python3-systemd
 Suggests: mailx, system-log-daemon, monit
 Homepage: http://www.fail2ban.org
 Priority: optional
 Section: net
-Filename: pool/main/f/fail2ban/fail2ban_0.9.3-1_all.deb
-Size: 265202
-SHA256: c48b20e0d49f1aeb6497b78090f96c673614b35424aed6c6be6c4dfda477352b
-SHA1: 23a620f10d36dfdee0d7ce996b9c0561252ed4e6
-MD5sum: 04b529c841caf1b1f3b157311373b926
+Filename: pool/main/f/fail2ban/fail2ban_0.9.4-1_all.deb
+Size: 277200
+SHA256: 70e680d47fae61a291b4ad2c60b7812df009ef617071c6d268acc6f95108e570
+SHA1: b247a07805568fcee3ef8ac094276322b5ccbcc0
+MD5sum: 0d32e4eb731601a818dc81bfec62f4f7
 Description: ban hosts that cause multiple authentication errors
  Fail2ban monitors log files (e.g. /var/log/auth.log,
  /var/log/apache/access.log) and temporarily or persistently bans
