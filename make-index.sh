@@ -12,10 +12,10 @@
 # DEPENDS       :https://github.com/szepeviktor/debian-server-tools/blob/master/package/index_gen.py
 
 # my GPG key
-echo "dpkg-sig -k 451A4FBA --sign builder *.deb"
+echo "dpkg-sig -k 451A4FBA --sign builder /opt/results/*.deb"
 echo "cd debian/"
 echo "REMOVE:  reprepro remove jessie <PKG>"
-echo "reprepro includedeb jessie /var/cache/pbuilder/result/*.deb"
+echo "reprepro includedeb jessie /opt/results/*.deb"
 
 which dpkg-sig index_gen.py &> /dev/null || exit 99
 
