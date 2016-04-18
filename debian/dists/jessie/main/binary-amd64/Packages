@@ -107,6 +107,29 @@ Description: log analyzer and interactive viewer for the Apache Webserver
  GoAccess can parse both of Apaches' log formats, the Common Log Format and
  the Combined Log Format
 
+Package: htop
+Version: 2.0.1-1~bpo8+1
+Architecture: amd64
+Maintainer: Daniel Lange <dl.ml1@usrlocal.de>
+Installed-Size: 250
+Depends: libc6 (>= 2.15), libncursesw5 (>= 5.6+20070908), libtinfo5
+Suggests: lsof, strace
+Homepage: http://hisham.hm/htop/
+Priority: optional
+Section: utils
+Filename: pool/main/h/htop/htop_2.0.1-1~bpo8+1_amd64.deb
+Size: 88858
+SHA256: 3f33530355994202ccf1bd3210051dae067194b9d94eadf6608afa726611e31b
+SHA1: 11d498e49b94ab785ff48015311214e423b8c880
+MD5sum: 8e80706dc87fc70717d62ef0368b81a2
+Description: interactive processes viewer
+ Htop is an ncursed-based process viewer similar to top, but it
+ allows one to scroll the list vertically and horizontally to see
+ all processes and their full command lines.
+ .
+ Tasks related to processes (killing, renicing) can be done without
+ entering their PIDs.
+
 Package: imgmin
 Installed-Size: 68
 Maintainer: viktor@szepe.net
