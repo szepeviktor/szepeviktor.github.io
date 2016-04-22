@@ -626,17 +626,18 @@ Description: Yerase's TNEF Stream Reader
  Yeraze's TNEF Stream Reader
 
 Package: zdkimfilter
-Installed-Size: 644
+Installed-Size: 528
 Maintainer: viktor@szepe.net
 Architecture: amd64
-Version: 1.5-1
+Version: 1.5-3
+Depends: libc6 (>= 2.15), libunistring0, libidn2-0, libnettle4, libopendbx1, libopendkim9, courier-mta
 Provides: zdkimfilter
 Priority: extra
 Section: mail
-Filename: pool/main/z/zdkimfilter/zdkimfilter_1.5-1_amd64.deb
-Size: 197658
-SHA256: 90ba598095bfaa6865a8a0135005f912f72ff3d87c5a3d04d8692dddd80e23ce
-SHA1: 24bc8cc800d72415d8b2a1d6371a576878271b7d
-MD5sum: a2779744243c70f422b10ee4c74e9290
-Description: "z" DKIM filter for Courier-MTA
+Filename: pool/main/z/zdkimfilter/zdkimfilter_1.5-3_amd64.deb
+Size: 170478
+SHA256: 775a4ba2cc1b955d50942f269b3de30f5a3f2df9ab09146ffbaf36a8cbae9860
+SHA1: 17af0048a3ed7b233fded0d8bc326c571be06295
+MD5sum: d50cef9610a6304ab9e1f255d2956010
+Description: Package created with checkinstall 1.6.2
 
