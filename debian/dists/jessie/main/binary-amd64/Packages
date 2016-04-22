@@ -31,6 +31,22 @@ Description: Versatile implementation of the Network Time Protocol
  An administrator can use this to fine-tune various parameters within
  the daemon, add or delete servers etc whilst the daemon is running.
 
+Package: couriersrs
+Installed-Size: 164
+Maintainer: Viktor Szepe <viktor@szepe.net>
+Architecture: amd64
+Version: 1.2-2
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.9), courier-mta
+Provides: couriersrs
+Priority: extra
+Section: mail
+Filename: pool/main/c/couriersrs/couriersrs_1.2-2_amd64.deb
+Size: 30100
+SHA256: 33bd187ff89110af8e2964b3f321d6648ae6d9f60611c0db063e59a9ed9b1e30
+SHA1: 44c8bde25a065c399ac218bca841091b1fb8139c
+MD5sum: d53a0048cd7372d930d821fe8c1926ca
+Description: Forwarding messages in courier using SRS
+
 Package: fail2ban
 Version: 0.9.4-1
 Architecture: all
@@ -200,6 +216,51 @@ MD5sum: 473503ebcc08ec99ac6eaea3e022080c
 Description: nghttp HTTP 2.0 library
  Provides a library that provides an experimental implementation of
  Hypertext Transfer Protocol version 2.0.
+
+Package: libsrs2-0
+Source: libsrs2
+Version: 1.0.18-4~bpo8+1
+Architecture: amd64
+Maintainer: Pierre Habouzit <madcoder@debian.org>
+Installed-Size: 57
+Depends: libc6 (>= 2.14)
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsrs2/libsrs2-0_1.0.18-4~bpo8+1_amd64.deb
+Size: 14518
+SHA256: f4367175990a8a8186e9e7f6ad3ba7eac985ce3f0e46938bea5b016ac395b471
+SHA1: 5a3288c82fd4aa70ab562b11d857645a1df1d8c8
+MD5sum: 1f0cc5156a580fa43ca1eb4237ccf95c
+Description: SRS email address rewriting engine
+ libsrs2 is the next generation SRS library. SPF verifies that the
+ Sender address of a mail matches (according to some policy) the
+ client IP address which submits the mail. When a mail is forwarded,
+ the sender address must be rewritten to comply with SPF policy. The
+ Sender Rewriting Scheme, or SRS, provides a standard for this
+ rewriting which is not vulnerable to attacks by spammers.
+
+Package: libsrs2-dev
+Source: libsrs2
+Version: 1.0.18-4~bpo8+1
+Architecture: amd64
+Maintainer: Pierre Habouzit <madcoder@debian.org>
+Installed-Size: 67
+Depends: libsrs2-0 (= 1.0.18-4~bpo8+1)
+Provides: libsrs-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libs/libsrs2/libsrs2-dev_1.0.18-4~bpo8+1_amd64.deb
+Size: 15380
+SHA256: 00c236e82731b994e1ae2dab104f18fc1e9a76b440610f42e1f38930f2711cb7
+SHA1: d955e7281e976ee09785b31a5f6cd8fe41fd5e52
+MD5sum: 636c3655a7accb65c5ba4e9eb2436d8b
+Description: Development tools for the libsrs2
+ libsrs2 is the next generation SRS library. SPF verifies that the
+ Sender address of a mail matches (according to some policy) the
+ client IP address which submits the mail. When a mail is forwarded,
+ the sender address must be rewritten to comply with SPF policy. The
+ Sender Rewriting Scheme, or SRS, provides a standard for this
+ rewriting which is not vulnerable to attacks by spammers.
 
 Package: libytnef0
 Installed-Size: 432
