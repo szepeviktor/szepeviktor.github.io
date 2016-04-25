@@ -162,20 +162,20 @@ MD5sum: 36be3a67c51e3d6dfdd19312604ab2a2
 Description: Lossy image optimization
 
 Package: ipset-persistent
-Version: 1.0.1
+Version: 1.0.2
 Architecture: all
 Maintainer: Grigoriy Bilichenko <g.bilichenko@ya.ru>
-Installed-Size: 36
+Installed-Size: 37
 Depends: ipset, iptables-persistent
 Conflicts: lightwrapper
 Homepage: https://sourceforge.net/projects/ipset-persistent/
 Priority: optional
 Section: net
-Filename: pool/main/i/ipset-persistent/ipset-persistent_1.0.1_all.deb
-Size: 3960
-SHA256: d747d07b3cf13268b02f30f9866705d2796dd4b6fa296a1564819526207c4f9a
-SHA1: 96b330e11525f840ee3d80682ed2a6dda0e567d1
-MD5sum: f6fb0e09d74f862ffe6e6d8be730cf46
+Filename: pool/main/i/ipset-persistent/ipset-persistent_1.0.2_all.deb
+Size: 4074
+SHA256: 666bfbd5549d55ec3bbab9acd90842c004f355f0b10e3a1ba7693f91f8f626bc
+SHA1: d7caed64b8555a9d6051bb0f27874c63f83d552b
+MD5sum: 33f846b23f576c1ca4e8bf81b63bb4ce
 Description: Boot-time loader for ipset rules
  This package provides a system startup script that restores ipset rules from
  a configuration file.

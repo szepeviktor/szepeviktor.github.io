@@ -24,7 +24,7 @@ which dpkg-sig index_gen.py &> /dev/null || exit 99
 pushd debian/ || exit 1
 
 # Verify all packages
-DEBS="$(find -type f -name "*.deb")"
+DEBS="$(find -type f -mtime -30 -name "*.deb")"
 while read PKG; do
     echo -n "${PKG} ... "
     dpkg-sig --verify "$PKG" | grep --color "^GOODSIG" || exit 2
