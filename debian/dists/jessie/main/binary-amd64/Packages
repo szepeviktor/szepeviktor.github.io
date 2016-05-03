@@ -492,6 +492,24 @@ Description: HTTP 1.1 client module for Python
  in latin1. Request and response body must be bytes-like objects or binary
  streams.
 
+Package: rbldnsd
+Version: 0.998-1
+Architecture: amd64
+Maintainer: Michael Tokarev <mjt@corpit.ru>
+Installed-Size: 98
+Depends: adduser
+Priority: optional
+Section: net
+Filename: pool/main/r/rbldnsd/rbldnsd_0.998-1_amd64.deb
+Size: 52560
+SHA256: 59a439a5e23ddc72d02752d4d40e8eb80014d962ae1c5c6a680f775c2d8c6dbb
+SHA1: c1e1cb21dd1f1ae34e7851276580d8d206744ea8
+MD5sum: 75786a0512430516727e34c8526e49d0
+Description: small nameserver daemon designed for DNSBLs
+ Rbldnsd is a small authoritate-only DNS nameserver
+ designed to serve DNS-based blocklists (DNSBLs).
+ It may handle IP-based and name-based blocklists.
+
 Package: s3ql
 Version: 2.15+dfsg-1
 Architecture: amd64
