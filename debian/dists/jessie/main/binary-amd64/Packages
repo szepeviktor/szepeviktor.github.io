@@ -172,10 +172,10 @@ Homepage: https://sourceforge.net/projects/ipset-persistent/
 Priority: optional
 Section: net
 Filename: pool/main/i/ipset-persistent/ipset-persistent_1.0.2_all.deb
-Size: 4074
-SHA256: 666bfbd5549d55ec3bbab9acd90842c004f355f0b10e3a1ba7693f91f8f626bc
-SHA1: d7caed64b8555a9d6051bb0f27874c63f83d552b
-MD5sum: 33f846b23f576c1ca4e8bf81b63bb4ce
+Size: 4076
+SHA256: 3ba9bacc6aeb0580967f5ca48caf1db5fe245c9fc24e517488505d910618879b
+SHA1: df38c4762cacd9544d9b55d5e1067113fa449495
+MD5sum: 398117852b27161c3145a3841f11eb2e
 Description: Boot-time loader for ipset rules
  This package provides a system startup script that restores ipset rules from
  a configuration file.
