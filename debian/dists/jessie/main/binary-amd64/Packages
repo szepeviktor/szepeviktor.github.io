@@ -277,6 +277,32 @@ SHA1: c78484118fc9d28d67469d39311b77f258a3d4b5
 MD5sum: 25202393dc8c166fa472401c894291fb
 Description: Yeraze's TNEF Stream Reader library
 
+Package: maldetect
+Version: 1.5.1-pre2-1~1.gbpd99372
+Architecture: all
+Maintainer: Jan Wagner <waja@cyconet.org>
+Installed-Size: 235
+Depends: bsd-mailx | mailx, ed, gawk | mawk, wget, perl
+Recommends: clamav, inotify-tools
+Homepage: http://www.rfxn.com/projects/linux-malware-detect/
+Priority: optional
+Section: utils
+Filename: pool/main/m/maldetect/maldetect_1.5.1-pre2-1~1.gbpd99372_all.deb
+Size: 52978
+SHA256: 90ca5fb66416698885e6779d37dc4e650dd09c6af7c17910a6f858595a928eca
+SHA1: 8db491bbb6a32330d25ac4deb24660e801511ac8
+MD5sum: 5f5fd0c6822ceef644a7ab5566ce8a8e
+Description: Linux malware detector
+ Linux Malware Detect (LMD) is a malware scanner for Linux released under the
+ GNU GPLv2 license, that is designed around the threats faced in shared hosted
+ environments. It uses threat data from network edge intrusion detection systems
+ to extract malware that is actively being used in attacks and generates
+ signatures for detection. In addition, threat data is also derived from user
+ submissions with the LMD checkout feature and from malware community
+ resources. The signatures that LMD uses are MD5 file hashes and HEX pattern
+ matches, they are also easily exported to any number of detection tools such as
+ ClamAV.
+
 Package: megatools
 Version: 1.9.95-2
 Architecture: amd64
