@@ -180,6 +180,25 @@ Description: Boot-time loader for ipset rules
  This package provides a system startup script that restores ipset rules from
  a configuration file.
 
+Package: iptables-persistent
+Version: 1.0.4~bpo8+1
+Architecture: all
+Maintainer: Jonathan Wiltshire <jmw@debian.org>
+Installed-Size: 66
+Depends: netfilter-persistent (= 1.0.4~bpo8+1), iptables, debconf (>= 0.5) | debconf-2.0
+Priority: optional
+Section: admin
+Filename: pool/main/i/iptables-persistent/iptables-persistent_1.0.4~bpo8+1_all.deb
+Size: 12136
+SHA256: 2f9dd12c3bd6be1f93c5bdbf398656139da2416cf3cb8e0b27e20536d3863b57
+SHA1: 96c903c4d2817f81df5843581a23ab35475323ad
+MD5sum: ff63dbffef6845c44d766cfe65b63fb2
+Description: boot-time loader for netfilter rules, iptables plugin
+ netfilter-persistent is a loader for netfilter configuration using a
+ plugin-based architecture.
+ .
+ This package contains the iptables and ip6tables plugins.
+
 Package: jpeg-archive
 Installed-Size: 1600
 Maintainer: viktor@szepe.net
@@ -431,6 +450,29 @@ Description: light SMTP client with support for server profiles - the regular MT
  This package is compiled with GSASL and TLS/SSL support.
  .
  This package provides the regular MTA program.
+
+Package: netfilter-persistent
+Source: iptables-persistent
+Version: 1.0.4~bpo8+1
+Architecture: all
+Maintainer: Jonathan Wiltshire <jmw@debian.org>
+Installed-Size: 80
+Depends: lsb-base, init-system-helpers (>= 1.18~)
+Suggests: iptables-persistent
+Breaks: iptables-persistent (<< 1~)
+Replaces: iptables-persistent (<< 1~)
+Priority: optional
+Section: admin
+Filename: pool/main/i/iptables-persistent/netfilter-persistent_1.0.4~bpo8+1_all.deb
+Size: 9628
+SHA256: 58b73cd0f3ac4c490b18ac28b1144caf4acb42dbf192f10b43cdaa395d30104a
+SHA1: a2ecb3b1ee01917ad1faebe80c73b9c265e0b9af
+MD5sum: 502e0fbd74f892c499cef147421fc25d
+Description: boot-time loader for netfilter configuration
+ This package provides a loader for netfilter configuration using a
+ plugin-based architecture. It can load, flush and save a running
+ configuration. Extending netfilter-persistent with plugins is trvial and can
+ be done in any language.
 
 Package: nghttp2
 Version: 1.0.4-1
