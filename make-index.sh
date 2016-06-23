@@ -2,14 +2,14 @@
 #
 # Verify package signatures and generate index.
 #
-# VERSION       :0.2.1
+# VERSION       :0.2.2
 # DATE          :2015-05-18
 # AUTHOR        :Viktor Szépe <viktor@szepe.net>
 # LICENSE       :The MIT License (MIT)
 # URL           :https://github.com/szepeviktor/debian-server-tools
 # BASH-VERSION  :4.2+
 # DEPENDS       :apt-get install dpkg-sig
-# DEPENDS       :https://github.com/szepeviktor/debian-server-tools/blob/master/package/index_gen.py
+# DEPENDS       :/usr/local/bin/index_gen.py
 
 cat <<EOF
 # My GPG key
@@ -19,7 +19,7 @@ cd debian/
 reprepro includedeb jessie /opt/results/*.deb
 EOF
 
-which dpkg-sig index_gen.py &> /dev/null || exit 99
+which index_gen.py &> /dev/null || exit 99
 
 pushd debian/ || exit 1
 
