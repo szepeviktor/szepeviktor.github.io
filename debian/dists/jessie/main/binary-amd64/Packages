@@ -48,21 +48,21 @@ MD5sum: 848bf6aa22453c331180b6f63924ae69
 Description: Forwarding messages in courier using SRS
 
 Package: fail2ban
-Version: 0.9.4-1
+Version: 0.9.5-1
 Architecture: all
 Maintainer: Yaroslav Halchenko <debian@onerussian.com>
-Installed-Size: 1216
-Depends: python3, python3:any (>= 3.3.2-2~), init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
+Installed-Size: 1253
+Depends: python3:any (>= 3.3.2-2~), init-system-helpers (>= 1.18~), lsb-base (>= 2.0-7)
 Recommends: python, iptables, whois, python3-pyinotify, python3-systemd
 Suggests: mailx, system-log-daemon, monit
 Homepage: http://www.fail2ban.org
 Priority: optional
 Section: net
-Filename: pool/main/f/fail2ban/fail2ban_0.9.4-1_all.deb
-Size: 277200
-SHA256: 70e680d47fae61a291b4ad2c60b7812df009ef617071c6d268acc6f95108e570
-SHA1: b247a07805568fcee3ef8ac094276322b5ccbcc0
-MD5sum: 0d32e4eb731601a818dc81bfec62f4f7
+Filename: pool/main/f/fail2ban/fail2ban_0.9.5-1_all.deb
+Size: 280912
+SHA256: dd1567bcfbc61f2777da46bbd0f348ff684570b064ef0f4c691a65b5464494f5
+SHA1: 9db57842351b3f7ca5a83ec1615d96b8491f7391
+MD5sum: a8dd0ae60cec74b89a9adc10251ce2e5
 Description: ban hosts that cause multiple authentication errors
  Fail2ban monitors log files (e.g. /var/log/auth.log,
  /var/log/apache/access.log) and temporarily or persistently bans
