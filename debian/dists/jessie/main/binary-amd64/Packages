@@ -351,20 +351,20 @@ Description: Command-line client for the Mega cloud storage service
  at minimum.
 
 Package: monit
-Version: 1:5.17.1-2~bpo8+1
+Version: 1:5.18-1~bpo8+1
 Architecture: amd64
 Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
-Installed-Size: 878
+Installed-Size: 883
 Depends: libc6 (>= 2.14), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.1), lsb-base (>= 3.2-13)
 Suggests: exim4 | postfix | mail-transport-agent, sysvinit-core
 Homepage: http://mmonit.com/monit/
 Priority: optional
 Section: admin
-Filename: pool/main/m/monit/monit_5.17.1-2~bpo8+1_amd64.deb
-Size: 285746
-SHA256: 8c575456ff33f8ee0a0288a132337950ce1583a2763dfc07b9f3ceb6046fd5e3
-SHA1: c8ab94ad4f04fd5b6aac94f1dfe582f15c90f5f2
-MD5sum: 0a575ee788e503c97673acf437e476b1
+Filename: pool/main/m/monit/monit_5.18-1~bpo8+1_amd64.deb
+Size: 289104
+SHA256: 11d3021c117dcd3cb192386a2a6289c73eee838387cbce75bcf4db834ef53c97
+SHA1: ce94f682975cd3fb1a017dc56acbf48b39c07f9a
+MD5sum: 436a3e0a5d0ff93a88cd920a7ee144e1
 Description: utility for monitoring and managing daemons or similar programs
  monit is a utility for monitoring and managing daemons or similar
  programs running on a Unix system. It will start specified programs
