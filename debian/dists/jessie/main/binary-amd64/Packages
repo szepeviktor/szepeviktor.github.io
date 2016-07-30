@@ -522,20 +522,20 @@ Version: 0.9.38-1~dev
 
 Package: python3-dugong
 Source: python-dugong
-Version: 3.5+dfsg-1
+Version: 3.7+dfsg-2~bpo8+1
 Architecture: all
 Maintainer: Nikolaus Rath <Nikolaus@rath.org>
-Installed-Size: 109
+Installed-Size: 114
 Depends: python3:any (>= 3.4~)
 Suggests: python-dugong-doc
 Homepage: https://bitbucket.org/nikratio/python-dugong
 Priority: optional
 Section: python
-Filename: pool/main/p/python-dugong/python3-dugong_3.5+dfsg-1_all.deb
-Size: 20302
-SHA256: f457dedc79de65ff35138bb5d67dd4836993322a4d86a5bca61ea32a5423ee80
-SHA1: 92c4e7f196c4749aae6a3d23e509d43dfa530ef9
-MD5sum: d8abab9e08f4e97e7326f2276a8782b9
+Filename: pool/main/p/python-dugong/python3-dugong_3.7+dfsg-2~bpo8+1_all.deb
+Size: 21764
+SHA256: 96b9a1ec8a82e4dc3c00b4dd83f528eff51dcb4cfa52b14e9899612675b216d0
+SHA1: d7344b2aa285ca15752288879c1402a8bc8d3a09
+MD5sum: 27fd5900d35cd88c529dfb2a9a4ed5ce
 Description: HTTP 1.1 client module for Python
  The Python Dugong module provides an API for communicating with HTTP 1.1
  servers. It is an alternative to the standard library's http.client (formerly
@@ -560,6 +560,59 @@ Description: HTTP 1.1 client module for Python
  in latin1. Request and response body must be bytes-like objects or binary
  streams.
 
+Package: python3-llfuse
+Source: python-llfuse
+Version: 1.0+dfsg-2~bpo8+1
+Architecture: amd64
+Maintainer: Nikolaus Rath <Nikolaus@rath.org>
+Installed-Size: 588
+Depends: python3 (<< 3.5), python3 (>= 3.4~), libc6 (>= 2.4), libfuse2 (>= 2.9.0)
+Suggests: python-llfuse-doc
+Breaks: borgbackup (<= 1.0.0~rc1-3)
+Provides: python3.4-llfuse
+Homepage: https://bitbucket.org/nikratio/python-llfuse/
+Priority: optional
+Section: python
+Filename: pool/main/p/python-llfuse/python3-llfuse_1.0+dfsg-2~bpo8+1_amd64.deb
+Size: 150718
+SHA256: 2311a354ee9d50154b715f65d3fbdf51ad22b4cd782c27a893e7f62d436d2398
+SHA1: 2c6c8620c8798719badb3623a3cc8d35cabc80d1
+MD5sum: b3c4deeda31fba004d9adf14a74a5e0d
+Description: Python 3 bindings for the low-level FUSE API
+ Python-llfuse is a set of Python bindings for the low level FUSE API.
+ This package provides the extension for the Python 3 interpreter. The
+ documentation is contained in the python-llfuse-doc package.
+ .
+ FUSE (Filesystem in USErspace) is a simple interface for userspace
+ programs to export a virtual filesystem to the Linux kernel. FUSE
+ also aims to provide a secure method for non privileged users to
+ create and mount their own filesystem implementations.
+
+Package: python3-pytest-catchlog
+Source: pytest-catchlog
+Version: 1.2.2-1~bpo8+1
+Architecture: all
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 64
+Depends: python3-pytest, python3-py, python3:any (>= 3.3.2-2~)
+Homepage: https://github.com/eisensheng/pytest-catchlog
+Priority: optional
+Section: python
+Filename: pool/main/p/pytest-catchlog/python3-pytest-catchlog_1.2.2-1~bpo8+1_all.deb
+Size: 11504
+SHA256: 5fda567958304241d14456eda749ff44248b845f803f70cb2d1cc9b838e3e558
+SHA1: 273ccaa293a85e12619643ba1a64c524fe45d40a
+MD5sum: 2f44962c72324dad7867df14cdd79afc
+Description: py.test plugin to capture test log messages (Python3)
+ By default each captured log message shows the module, line number, log level
+ and message. Showing the exact module and line number is useful for testing
+ and debugging. If desired the log format and date format can be specified to
+ anything that the logging module supports.
+ .
+ This is a fork of pytest-capturelog by Meme Dough.
+ .
+ The package contains the plugin for Python 3 code.
+
 Package: rbldnsd
 Version: 0.998-2
 Architecture: amd64
@@ -579,19 +632,20 @@ Description: small nameserver daemon designed for DNSBLs
  It may handle IP-based and name-based blocklists.
 
 Package: s3ql
-Version: 2.15+dfsg-1
+Version: 2.18+dfsg-1~bpo8+1
 Architecture: amd64
 Maintainer: Nikolaus Rath <Nikolaus@rath.org>
-Installed-Size: 1601
-Depends: python3 (<< 3.5), python3 (>= 3.4~), python3-apsw (>= 3.7.0), python3-crypto, python3-defusedxml, python3-dugong (>= 3.4), python3-llfuse (>= 0.39), python3-requests, libc6 (>= 2.4), libsqlite3-0 (>= 3.6.23), libjs-sphinxdoc (>= 1.0), fuse, psmisc, python3-pkg-resources
+Installed-Size: 1614
+Depends: python3 (<< 3.5), python3 (>= 3.4~), python3-apsw (>= 3.7.0), python3-crypto, python3-defusedxml, python3-dugong (>= 3.4), python3-llfuse (>= 1.0), python3-requests, libc6 (>= 2.4), libsqlite3-0 (>= 3.6.23), libjs-sphinxdoc (>= 1.0), fuse, psmisc, python3-pkg-resources
+Recommends: python3-systemd
 Homepage: https://bitbucket.org/nikratio/s3ql/
 Priority: optional
 Section: misc
-Filename: pool/main/s/s3ql/s3ql_2.15+dfsg-1_amd64.deb
-Size: 525704
-SHA256: a058630a06144d4890918916686dec111e725733adccf3878652195ccdc5fd25
-SHA1: ebeda9d5746a78cc041ce04814296b3246c77af2
-MD5sum: 4aea38fdf266f0892987e5161d192470
+Filename: pool/main/s/s3ql/s3ql_2.18+dfsg-1~bpo8+1_amd64.deb
+Size: 529672
+SHA256: 37012ce8bb454dec1d3af1b4202fb2682b44207dc22dbabf22af7d7fa9449645
+SHA1: 754994e8a01b43e9b962f7de671c5f234b317a63
+MD5sum: 68ffe85f3a57c7883d44da6982e91c10
 Description: Full-featured file system for online data storage
  S3QL is a file system that stores all its data online using storage
  services like Google Storage, Amazon S3 or OpenStack. S3QL
