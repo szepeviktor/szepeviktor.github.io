@@ -588,31 +588,6 @@ Description: Python 3 bindings for the low-level FUSE API
  also aims to provide a secure method for non privileged users to
  create and mount their own filesystem implementations.
 
-Package: python3-pytest-catchlog
-Source: pytest-catchlog
-Version: 1.2.2-1~bpo8+1
-Architecture: all
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Installed-Size: 64
-Depends: python3-pytest, python3-py, python3:any (>= 3.3.2-2~)
-Homepage: https://github.com/eisensheng/pytest-catchlog
-Priority: optional
-Section: python
-Filename: pool/main/p/pytest-catchlog/python3-pytest-catchlog_1.2.2-1~bpo8+1_all.deb
-Size: 11504
-SHA256: 5fda567958304241d14456eda749ff44248b845f803f70cb2d1cc9b838e3e558
-SHA1: 273ccaa293a85e12619643ba1a64c524fe45d40a
-MD5sum: 2f44962c72324dad7867df14cdd79afc
-Description: py.test plugin to capture test log messages (Python3)
- By default each captured log message shows the module, line number, log level
- and message. Showing the exact module and line number is useful for testing
- and debugging. If desired the log format and date format can be specified to
- anything that the logging module supports.
- .
- This is a fork of pytest-capturelog by Meme Dough.
- .
- The package contains the plugin for Python 3 code.
-
 Package: rbldnsd
 Version: 0.998-2
 Architecture: amd64
