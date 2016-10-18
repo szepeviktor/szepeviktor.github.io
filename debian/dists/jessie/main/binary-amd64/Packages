@@ -161,6 +161,24 @@ SHA1: c85b9e8a848fe98ac509844309e822da8ae1c9bb
 MD5sum: 36be3a67c51e3d6dfdd19312604ab2a2
 Description: Lossy image optimization
 
+Package: init-alert
+Version: 0.3.0
+Architecture: all
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 49
+Depends: bsd-mailx | mailx, psmisc, courier-mta
+Homepage: https://github.com/szepeviktor/debian-server-tools
+Priority: optional
+Section: misc
+Filename: pool/main/i/init-alert/init-alert_0.3.0_all.deb
+Size: 4196
+SHA256: da1103dd6cfa9bf213219c1f5a5534a48bdc113a8ad0504596645e82c6b7b794
+SHA1: 5cb2a3659ad59903111c91fd9e1f27db3c942341
+MD5sum: 9c396196e815747fbaf1a1e7b4903c28
+Description: Send alert mail on boot and on shutdown,
+ on boot send pstree to know what services are started,
+ on halt send a list of who is logged on
+
 Package: ipset-persistent
 Version: 1.1.0
 Architecture: all
