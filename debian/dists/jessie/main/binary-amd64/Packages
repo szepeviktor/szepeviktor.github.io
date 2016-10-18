@@ -171,10 +171,10 @@ Homepage: https://github.com/szepeviktor/debian-server-tools
 Priority: optional
 Section: misc
 Filename: pool/main/i/init-alert/init-alert_0.3.0_all.deb
-Size: 4196
-SHA256: da1103dd6cfa9bf213219c1f5a5534a48bdc113a8ad0504596645e82c6b7b794
-SHA1: 5cb2a3659ad59903111c91fd9e1f27db3c942341
-MD5sum: 9c396196e815747fbaf1a1e7b4903c28
+Size: 4164
+SHA256: 53493273e70cd426a697e7474ad655a805dafc2f0740486a39d6cc88afb059d9
+SHA1: 56f6e227cc98cb2f393349c0d041c05661570cb0
+MD5sum: abf489e77c97443512a631f3a59f1cb1
 Description: Send alert mail on boot and on shutdown,
  on boot send pstree to know what services are started,
  on halt send a list of who is logged on
