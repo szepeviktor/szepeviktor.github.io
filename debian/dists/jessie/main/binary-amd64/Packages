@@ -369,20 +369,20 @@ Description: Command-line client for the Mega cloud storage service
  at minimum.
 
 Package: monit
-Version: 1:5.18-1~bpo8+1
+Version: 1:5.20.0-1~bpo8+1
 Architecture: amd64
 Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
-Installed-Size: 883
-Depends: libc6 (>= 2.14), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.1), lsb-base (>= 3.2-13)
+Installed-Size: 932
+Depends: libc6 (>= 2.16), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.2.0), lsb-base (>= 3.2-13)
 Suggests: exim4 | postfix | mail-transport-agent, sysvinit-core
 Homepage: http://mmonit.com/monit/
 Priority: optional
 Section: admin
-Filename: pool/main/m/monit/monit_5.18-1~bpo8+1_amd64.deb
-Size: 289104
-SHA256: 11d3021c117dcd3cb192386a2a6289c73eee838387cbce75bcf4db834ef53c97
-SHA1: ce94f682975cd3fb1a017dc56acbf48b39c07f9a
-MD5sum: 436a3e0a5d0ff93a88cd920a7ee144e1
+Filename: pool/main/m/monit/monit_5.20.0-1~bpo8+1_amd64.deb
+Size: 302452
+SHA256: 3fc4711e1653ef7460d564cb7cd9b2ceb4dea733e550862dafd7c1f601b2d5fc
+SHA1: bcf43fefc43ecb03d534b683bdb16ec6fe7384e0
+MD5sum: 532bf1b8acea78a9f08488dc9cd85625
 Description: utility for monitoring and managing daemons or similar programs
  monit is a utility for monitoring and managing daemons or similar
  programs running on a Unix system. It will start specified programs
@@ -511,6 +511,31 @@ Description: nghttp HTTP 2.0 servers
  Provides experimental implementation of Hypertext Transfer Protocol
  version 2.0 including a server (nghttpd), client (nghttp) and
  reverse proxy (nghttpx) for fronting other HTTP servers.
+
+Package: php5-realpath-turbo
+Source: php-realpath-turbo
+Version: 2.0.0-1
+Architecture: amd64
+Maintainer: Viktor Szepe <viktor@szepe.net>
+Installed-Size: 46
+Depends: libc6 (>= 2.2.5), phpapi-20131226
+Priority: optional
+Section: web
+Filename: pool/main/p/php-realpath-turbo/php5-realpath-turbo_2.0.0-1_amd64.deb
+Size: 6666
+SHA256: d63eee5827022d0a12b5a43e49354e22410bc548633267e2ff6fc61601ee8d94
+SHA1: 55bcd9da213e6cf84f621310662a65ea2fd1c7fa
+MD5sum: d41a35f0a955cdd2ea7ed6c8663c04d8
+Description: realpath-turbo module for PHP 5
+ Use realpath cache despite open_basedir restriction
+ .
+ When PHP's open_basedir restriction is set, PHP disables the realpath
+ cache for
+         security reasons. This may hurt your application
+         performance. The realpath_turbo PHP extension re-enables
+         the realpath cache. Warning: This could be a security
+         problem in your environment! Please read the README for
+         further information.
 
 Package: php5-suhosin-extension
 Maintainer: Ben Fuhrmannek <ben@sektioneins.de>
