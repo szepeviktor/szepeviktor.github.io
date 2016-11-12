@@ -47,6 +47,23 @@ SHA1: 787d4545c1a1f7fdf692efa4fe0e142d8f33512f
 MD5sum: 848bf6aa22453c331180b6f63924ae69
 Description: Forwarding messages in courier using SRS
 
+Package: dh-make-php
+Version: 0.6.1
+Architecture: all
+Maintainer: Uwe Steinmann <steinm@debian.org>
+Installed-Size: 176
+Depends: make | build-essential | dpkg-dev, php5-cli | php-cli, php-pear, cdbs
+Priority: optional
+Section: web
+Filename: pool/main/d/dh-make-php/dh-make-php_0.6.1_all.deb
+Size: 31702
+SHA256: b9f1055018bb0fe7d89b47aa4fc40bcee168af5b78428ac8a1bbc6c76d1a679c
+SHA1: 9f534a1b7e7c36b00c45698457250ad039043bef
+MD5sum: 6859de6585bd1942a557fd6a7e39561b
+Description: Creates Debian source packages for PHP PEAR and PECL extensions
+ Contains dh-make-pear and dh-make-pecl, which create Debian source packages
+ from PHP PEAR and PECL packages respectively.
+
 Package: fail2ban
 Version: 0.9.5-1
 Architecture: all
