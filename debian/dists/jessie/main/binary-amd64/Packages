@@ -31,6 +31,22 @@ Description: Versatile implementation of the Network Time Protocol
  An administrator can use this to fine-tune various parameters within
  the daemon, add or delete servers etc whilst the daemon is running.
 
+Package: courier-analog
+Installed-Size: 72
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Architecture: amd64
+Version: 0.17-1
+Depends: libc6 (>= 2.19), libcourier-unicode1
+Provides: courier-analog
+Priority: extra
+Section: mail
+Filename: pool/main/c/courier-analog/courier-analog_0.17-1_amd64.deb
+Size: 14578
+SHA256: 6d3d32abc2335e2563c56952e24c7bf5848149800ab5bf4217e088c0ee044cfb
+SHA1: 7c5dfba5fe2924da978fac50eebf4c244159897c
+MD5sum: 83581859c7e871e8aa0f5520cd0615a8
+Description: Generate log summaries for the Courier mail server.
+
 Package: couriersrs
 Installed-Size: 32
 Maintainer: Viktor Szépe <viktor@szepe.net>
