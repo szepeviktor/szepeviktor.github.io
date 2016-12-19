@@ -1,3 +1,20 @@
+Package: aruba-serclient
+Source: aruba-serclient
+Version: 0.01-2
+Architecture: all
+Maintainer: Aruba S.p.A. <info@aruba.it>
+Installed-Size: 672
+Depends: lsb-base (>= 3.2-14), python:any (>= 2.7)
+Homepage: https://github.com/pmcloud/ExtraControl
+Priority: extra
+Section: admin
+Filename: pool/main/a/aruba-serclient/aruba-serclient_0.01-2_all.deb
+Size: 115662
+SHA256: d66aab075f3171642169e3671e51e0bd710e37feaafa684506d1f7babbbf5132
+SHA1: 5810d0675f79b9758e0ef6e53b55d0d4eb7a17b0
+MD5sum: 340ab67df9e8739a08d93db6819ac5d7
+Description: Automate common system administration tasks
+
 Package: chrony
 Version: 2.2.1-1~bpo8+1
 Architecture: amd64
