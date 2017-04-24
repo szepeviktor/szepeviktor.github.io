@@ -137,41 +137,22 @@ Description: ban hosts that cause multiple authentication errors
     need pyinotify for efficient monitoring for log files changes
 
 Package: goaccess
-Version: 1:0.9.1-1
+Version: 1.2-1~bpo8+1
 Architecture: amd64
 Maintainer: Chris Taylor <ctaylor@debian.org>
-Installed-Size: 243
-Depends: libc6 (>= 2.14), libgeoip1, libglib2.0-0 (>= 2.12.0), libncursesw5 (>= 5.6+20070908), libtinfo5
-Homepage: http://goaccess.prosoftcorp.com/
+Installed-Size: 1034
+Depends: libc6 (>= 2.15), libgeoip1, libncursesw5 (>= 5.6+20070908), libtinfo5
+Homepage: https://goaccess.io/
 Priority: extra
 Section: utils
-Filename: pool/main/g/goaccess/goaccess_0.9.1-1_amd64.deb
-Size: 88024
-SHA256: 10b279ed92d24abae6b5142b28a0f1a2a89afa3c8353d80efa03258e33b6c493
-SHA1: 8abba0b1dd80268dd1aefec6e6bd2a5ab3f5a2a1
-MD5sum: 44272d99fbcb07cea6e280dd65261e32
-Description: log analyzer and interactive viewer for the Apache Webserver
+Filename: pool/main/g/goaccess/goaccess_1.2-1~bpo8+1_amd64.deb
+Size: 221832
+SHA256: e778ebd5ab8f554b8a6cef99e44983a2c1ab0a4d96fdff72e0f3720464670978
+SHA1: 876acfc3c8f1268f357ec3eb4a606986e8caaa46
+MD5sum: a30ad94bdef9a5e4ee35771b2e118835
+Description: Real-time web log analyzer and interactive viewer
  Displays fast and valuable HTTP statistics for system administrators that
  require a visual report on the fly.
- .
- The collected information will be displayed to the user (sysadmin) in a
- visual/interactive window. Collected information includes:
- .
-  -General Statistics, Bandwidth etc.
-  -Top Visitors
-  -Requested files
-  -Requested static files, images, swf, js, etc.
-  -Referrers URLs
-  -404 or Not Found
-  -Operating Systems
-  -Browsers and Spiders
-  -Hosts, Reverse DNS, IP Location
-  -HTTP Status Codes
-  -Referring Sites
-  -Unlimited log file size
- .
- GoAccess can parse both of Apaches' log formats, the Common Log Format and
- the Combined Log Format
 
 Package: htop
 Version: 2.0.1-1~bpo8+1
