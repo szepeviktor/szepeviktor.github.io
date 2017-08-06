@@ -141,16 +141,16 @@ Version: 1:1.2-3~bpo8+1
 Architecture: amd64
 Maintainer: Chris Taylor <ctaylor@debian.org>
 Installed-Size: 926
-Depends: libbz2-1.0, libc6 (>= 2.15), libgeoip1, libncurses5 (>= 5.5-5~), libtinfo5, libtokyocabinet9 (>= 1.4.47), zlib1g (>= 1:1.1.4)
+Depends: libbz2-1.0, libc6 (>= 2.15), libgeoip1, libncursesw5 (>= 5.6+20070908), libtinfo5, libtokyocabinet9 (>= 1.4.47), zlib1g (>= 1:1.1.4)
 Built-Using: d3 (= 3.4.11-2), fonts-font-awesome (= 4.2.0~dfsg-1), python-xstatic-hogan (= 2.0.0.2-1~bpo8+1), twitter-bootstrap3 (= 3.2.0+dfsg-1)
 Homepage: http://goaccess.prosoftcorp.com/
 Priority: extra
 Section: utils
 Filename: pool/main/g/goaccess/goaccess_1.2-3~bpo8+1_amd64.deb
-Size: 296206
-SHA256: 6a40941453f04dc840dcb1a9c888048bea0caab60b80fbb043cf3ab0a45c9e0b
-SHA1: a08a3a210498bb5b036bb5ab78ce67e4ce8b2546
-MD5sum: c52a705a15688786b94f84d9d92113ec
+Size: 296086
+SHA256: 378e6cf14ad44d795accdb123cc52f11141037b4d74f37f5d88f52a9b4112c0b
+SHA1: 46b7114f1bc5f45c3abc35bb8efbc52074ca7ec6
+MD5sum: 1a9a28494e38fdc84bc2acdcc86867dd
 Description: log analyzer and interactive viewer for the Apache Webserver
  Displays fast and valuable HTTP statistics for system administrators that
  require a visual report on the fly.
