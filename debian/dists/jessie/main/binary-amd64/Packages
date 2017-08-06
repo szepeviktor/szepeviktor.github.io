@@ -137,22 +137,42 @@ Description: ban hosts that cause multiple authentication errors
     need pyinotify for efficient monitoring for log files changes
 
 Package: goaccess
-Version: 1.2-1~bpo8+1
+Version: 1:1.2-3~bpo8+1
 Architecture: amd64
 Maintainer: Chris Taylor <ctaylor@debian.org>
-Installed-Size: 1034
-Depends: libc6 (>= 2.15), libgeoip1, libncursesw5 (>= 5.6+20070908), libtinfo5
-Homepage: https://goaccess.io/
+Installed-Size: 926
+Depends: libbz2-1.0, libc6 (>= 2.15), libgeoip1, libncurses5 (>= 5.5-5~), libtinfo5, libtokyocabinet9 (>= 1.4.47), zlib1g (>= 1:1.1.4)
+Built-Using: d3 (= 3.4.11-2), fonts-font-awesome (= 4.2.0~dfsg-1), python-xstatic-hogan (= 2.0.0.2-1~bpo8+1), twitter-bootstrap3 (= 3.2.0+dfsg-1)
+Homepage: http://goaccess.prosoftcorp.com/
 Priority: extra
 Section: utils
-Filename: pool/main/g/goaccess/goaccess_1.2-1~bpo8+1_amd64.deb
-Size: 221832
-SHA256: e778ebd5ab8f554b8a6cef99e44983a2c1ab0a4d96fdff72e0f3720464670978
-SHA1: 876acfc3c8f1268f357ec3eb4a606986e8caaa46
-MD5sum: a30ad94bdef9a5e4ee35771b2e118835
-Description: Real-time web log analyzer and interactive viewer
+Filename: pool/main/g/goaccess/goaccess_1.2-3~bpo8+1_amd64.deb
+Size: 296206
+SHA256: 6a40941453f04dc840dcb1a9c888048bea0caab60b80fbb043cf3ab0a45c9e0b
+SHA1: a08a3a210498bb5b036bb5ab78ce67e4ce8b2546
+MD5sum: c52a705a15688786b94f84d9d92113ec
+Description: log analyzer and interactive viewer for the Apache Webserver
  Displays fast and valuable HTTP statistics for system administrators that
  require a visual report on the fly.
+ .
+ The collected information will be displayed to the user (sysadmin) in a
+ visual/interactive window. Collected information includes:
+ .
+  -General Statistics, Bandwidth etc.
+  -Top Visitors
+  -Requested files
+  -Requested static files, images, swf, js, etc.
+  -Referrers URLs
+  -404 or Not Found
+  -Operating Systems
+  -Browsers and Spiders
+  -Hosts, Reverse DNS, IP Location
+  -HTTP Status Codes
+  -Referring Sites
+  -Unlimited log file size
+ .
+ GoAccess can parse both of Apaches' log formats, the Common Log Format and
+ the Combined Log Format
 
 Package: htop
 Version: 2.0.1-1~bpo8+1
