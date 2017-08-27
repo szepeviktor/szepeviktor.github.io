@@ -64,6 +64,315 @@ SHA1: 7c5dfba5fe2924da978fac50eebf4c244159897c
 MD5sum: 83581859c7e871e8aa0f5520cd0615a8
 Description: Generate log summaries for the Courier mail server.
 
+Package: courier-authdaemon
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 82
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), lsb-base (>= 3.0-10), sysvinit-utils (>= 2.88dsf-50) | init-d-script
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authdaemon_0.68.0-3~bpo8+1_amd64.deb
+Size: 19282
+SHA256: 7936b5e162ea4d8f736494f1f30e68301389a1c9ae17541a226c6e25a649efdd
+SHA1: 8d0fd4713ccf5a2f95fcbae547c0d1a5e4e49d38
+MD5sum: 955576d4182ee6e0e7e8b8c5b0806ea9
+Description: Courier authentication daemon
+ This package contains the authentication daemon for the Courier
+ applications.
+
+Package: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 334
+Depends: adduser, libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libgdbm3 (>= 1.8.3), libltdl7 (>= 2.4.2), libpam0g (>= 0.99.7.1), libstdc++6 (>= 4.4.0)
+Recommends: expect
+Breaks: courier-base (<< 0.75.0-15), maildrop (<< 2.7.1-4)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib_0.68.0-3~bpo8+1_amd64.deb
+Size: 90724
+SHA256: c5bf6d8310a10e324b240128631c6c0ba31299c84f4780a67380dfffba1e5747
+SHA1: 5d847767767d21f5ee50c524699d97647b2ec9fc
+MD5sum: 8f45f5ba45af5aaed7c6bfd96184ec2e
+Description: Courier authentication library
+ The Courier authentication library provides authentication services
+ for other Courier applications.
+
+Package: courier-authlib-dev
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 878
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.4)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-dev_0.68.0-3~bpo8+1_amd64.deb
+Size: 172750
+SHA256: 9ad64befe7238b764926956699b77fe568aefcff3a3acdcf0c4fedc0bb9be4b5
+SHA1: efc4dab926b5b1173df41bca6a2577930a3cdf3b
+MD5sum: 8ae8edad259c5072f7c8d37e0e2187e9
+Description: Development libraries for the Courier authentication library
+ This package contains the development libraries and files needed to
+ compile Courier packages that use the Courier authentication library.
+
+Package: courier-authlib-ldap
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 161
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libldap-2.4-2 (>= 2.4.7), libstdc++6 (>= 4.2.1)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-ldap_0.68.0-3~bpo8+1_amd64.deb
+Size: 52886
+SHA256: 53d15d687f3724e801baf08b40f7f7e3da90bd3499062232c92ae123298607f7
+SHA1: 38e287c553e81fc31495858a9ec4a060f1250236
+MD5sum: cb2799a47c53c997f71b949662c3b20d
+Description: LDAP support for the Courier authentication library
+ This package contains the LDAP support for the Courier authentication
+ library.
+
+Package: courier-authlib-mysql
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 145
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libmysqlclient18 (>= 5.5.24+dfsg-1), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.1.4)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-mysql_0.68.0-3~bpo8+1_amd64.deb
+Size: 44462
+SHA256: bbfb7c75485d6adcdd56e0613d22b06993b21650ffcc484051f08e30646f8942
+SHA1: 4952cedc1d36223ab10361b94e50df0a2ca77dc1
+MD5sum: ab6adcbb460e5958a377ab36d17cee18
+Description: MySQL support for the Courier authentication library
+ This package contains the MySQL support for the Courier
+ authentication library.
+
+Package: courier-authlib-pipe
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 61
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.15)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-pipe_0.68.0-3~bpo8+1_amd64.deb
+Size: 20032
+SHA256: 4b502821721955a055188b8385d313a4f6fc9774a84e90fadbcb6efdab509af1
+SHA1: 074d0df82b82db9f5b9c82e519447944a3046368
+MD5sum: 32c78c4273f1c6f5b208d39930e9c489
+Description: External authentication support for the Courier authentication library
+ This package contains external authentication support via pipes for
+ the Courier authentication library. The authpipe module is a generic
+ plugin that enables authentication requests to be serviced by an
+ external program, then communicates through messages on stdin and
+ stdout.
+
+Package: courier-authlib-postgresql
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 137
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libpq5, libstdc++6 (>= 4.2.1)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-postgresql_0.68.0-3~bpo8+1_amd64.deb
+Size: 41258
+SHA256: 5b8e1ad136425aeae8f21f235a32f9bb0a77ef27fd6fa076cc44e2df9a8b5abe
+SHA1: 52a6db8209aa6a467356b6474d40541da1b76eee
+MD5sum: 00633be94adfe4514a71a981a423703c
+Description: PostgreSQL support for the Courier authentication library
+ This package contains the PostgreSQL support for the Courier
+ authentication library.
+
+Package: courier-authlib-sqlite
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 136
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 4.2.1)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-sqlite_0.68.0-3~bpo8+1_amd64.deb
+Size: 37868
+SHA256: c9d96575d9268d1b390c9a132651608719ce632aa275e0a6282ece6bc3f49845
+SHA1: ead06bb7e1acfb297c412d26c46d035af5dfe99f
+MD5sum: ee4131271338d4645f276554d566fed9
+Description: SQLite 3 support for the Courier authentication library
+ This package contains the SQLite 3 support for the Courier
+ authentication library.
+
+Package: courier-authlib-userdb
+Source: courier-authlib
+Version: 0.68.0-3~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 123
+Depends: courier-authlib (>= 0.68.0-3~bpo8+1), libc6 (>= 2.14), libgdbm3 (>= 1.8.3)
+Homepage: https://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier-authlib/courier-authlib-userdb_0.68.0-3~bpo8+1_amd64.deb
+Size: 44182
+SHA256: 7ffe264e8b3ba0b70972dd97106e2a14d98024eca4a8fb0b028e95e66d6b43f4
+SHA1: a6c5c2d56f114aa03af8e5d3e589fcb0bc7e983f
+MD5sum: 11987cb1dc2b6ef0c9ba30824dddbf17
+Description: userdb support for the Courier authentication library
+ This package contains the userdb support for the Courier
+ authentication library. Userdb is a simple way to manage virtual mail
+ accounts using a GDBM-based database file.
+
+Package: courier-base
+Source: courier
+Version: 0.76.3-5~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 670
+Depends: adduser, courier-authdaemon, courier-authlib (>= 0.66.1), courier-authlib-userdb, debconf (>= 0.5) | debconf-2.0, gnutls-bin, lsb-base, sysvinit-utils (>= 2.88dsf-50) | init-d-script, perl, libc6 (>= 2.15), libcourier-unicode1, libfam0, libgdbm3 (>= 1.8.3), libgnutls-deb0-28 (>= 3.3.0)
+Breaks: courier-authdaemon (<< 0.66.4-4~), courier-ssl (<< 0.75.0-1)
+Replaces: courier-ssl (<< 0.75.0-1)
+Homepage: http://www.courier-mta.org/
+Priority: optional
+Section: mail
+Filename: pool/main/c/courier/courier-base_0.76.3-5~bpo8+1_amd64.deb
+Size: 271118
+SHA256: 6946299fa5ea47909e2f54a525b7b176bce44a5b85e5830bc680bdafa54c2f7d
+SHA1: 1b91b6c91c602348ae3fddd0be38aa45a2f288e3
+MD5sum: 8a279711e75acdc0a0aa10b7bbdce1e5
+Description: Courier mail server - base system
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3,
+ LDAP, TLS, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and
+ mailing list services within a single, consistent, framework.
+ .
+ This package provides the functionality needed by all courier
+ packages such as some configuration files, helper programs and the
+ Courier TCP server daemon.
+ .
+ Courier uses the a TLS wrapper application named couriertls
+ instead of embedding TLS support in the different applications.
+ Additionally, this package contains a default set of trusted X.509
+ root CA certs.
+
+Package: courier-imap
+Source: courier (0.76.3-5~bpo8+1)
+Version: 4.17.2+0.76.3-5~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 601
+Depends: courier-base (= 0.76.3-5~bpo8+1), debconf | debconf-2.0, default-mta | mail-transport-agent, sysvinit-utils (>= 2.88dsf-50) | init-d-script, init-system-helpers (>= 1.18~), courier-authlib, libc6 (>= 2.15), libcourier-unicode1, libfam0, libgdbm3 (>= 1.8.3), libidn11 (>= 1.13)
+Suggests: courier-doc, imap-client
+Conflicts: imap-server
+Breaks: courier-imap-ssl (<< 4.16.2+0.75.0-1~)
+Replaces: courier-imap-ssl (<< 4.16.2+0.75.0-1~), imap-server
+Provides: imap-server
+Homepage: http://www.courier-mta.org/
+Priority: extra
+Section: mail
+Filename: pool/main/c/courier/courier-imap_4.17.2+0.76.3-5~bpo8+1_amd64.deb
+Size: 242982
+SHA256: 75a1de992c8c25a22506ea9a032b6c7405013c6684464e8bf63ff74a4b76007a
+SHA1: b2199172cd8072866cbffb7ea92e3ae3d2579cca
+MD5sum: d4999604ace9beec3010e97012e76018
+Description: Courier mail server - IMAP server
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+ TLS, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list
+ services within a single, consistent, framework.
+ .
+ This package provides an IMAP server that accesses email stored in Maildirs
+ format mailboxes. This server has an extremely small footprint and provides
+ shared and virtual shared folders.
+ .
+ IMAP over TLS is handled by the regular IMAP daemon in conjunction
+ with the TLS wrapper.
+
+Package: courier-mta
+Source: courier
+Version: 0.76.3-5~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 2040
+Depends: courier-base (= 0.76.3-5~bpo8+1), debconf (>= 0.5) | debconf-2.0, libnet-cidr-perl, sysvinit-utils (>= 2.88dsf-50) | init-d-script, init-system-helpers (>= 1.18~), courier-authlib, libc6 (>= 2.15), libcourier-unicode1, libgcc1 (>= 1:4.1.1), libgdbm3 (>= 1.8.3), libidn11 (>= 1.13), libperl5.20 (>= 5.20.2), libstdc++6 (>= 4.9)
+Suggests: courier-doc, courier-filter-perl, couriergrey, mail-reader
+Conflicts: mail-transport-agent
+Breaks: courier-mta-ssl (<< 0.75.0-1~)
+Replaces: courier-mta-ssl (<< 0.75.0-1~), mail-transport-agent
+Provides: mail-transport-agent
+Homepage: http://www.courier-mta.org/
+Priority: extra
+Section: mail
+Filename: pool/main/c/courier/courier-mta_0.76.3-5~bpo8+1_amd64.deb
+Size: 570336
+SHA256: 626d83615be4f037c873bec8e3349a12dd94acecaa60865a152674d93e70b26a
+SHA1: afaa914177affd9551e8c1d2699d9b2a7b39be4a
+MD5sum: 32cce954ad976921f45d97b32d1bfab8
+Description: Courier mail server - ESMTP daemon
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3,
+ LDAP, TLS, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and
+ mailing list services within a single, consistent, framework.
+ .
+ This package provides an ESMTP daemon which uses the Maildir format
+ as native storage format, supports IPv6, implements SMTP extensions
+ for mailing list management and features integrated mail filtering.
+ It can function as an intermediate mail relay, relaying mail between
+ an internal LAN and the Internet, or perform final delivery to
+ mailboxes.
+ .
+ ESMTP over TLS is handled by the regular ESMTP daemon in conjunction
+ with the TLS wrapper.
+
+Package: courier-pop
+Source: courier
+Version: 0.76.3-5~bpo8+1
+Architecture: amd64
+Maintainer: Markus Wanner <markus@bluegap.ch>
+Installed-Size: 297
+Depends: courier-base (= 0.76.3-5~bpo8+1), debconf | debconf-2.0, default-mta | mail-transport-agent, sysvinit-utils (>= 2.88dsf-50) | init-d-script, init-system-helpers (>= 1.18~), courier-authlib, libc6 (>= 2.15)
+Suggests: courier-doc, mail-reader
+Conflicts: pop3-server
+Breaks: courier-pop-ssl (<< 0.75.0-1~)
+Replaces: courier-pop-ssl (<< 0.75.0-1~), pop3-server
+Provides: pop3-server
+Homepage: http://www.courier-mta.org/
+Priority: extra
+Section: mail
+Filename: pool/main/c/courier/courier-pop_0.76.3-5~bpo8+1_amd64.deb
+Size: 132838
+SHA256: 1ce0f594d8a604076104358ebff7988c463292c3d8a54972732be58904bb2545
+SHA1: ddc779491a8acf23c080d7d0cb776ae03cefe168
+MD5sum: c2b5f81689bdfc00ae7e9b41415f78ba
+Description: Courier mail server - POP3 server
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+ TLS, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list
+ services within a single, consistent, framework.
+ .
+ This package provide the POP3 daemon for Courier. It only supports email
+ stored in the Maildir format.
+ .
+ POP3 over TLS is handled by the regular POP3 daemon from in
+ conjunction with the TLS wrapper.
+
 Package: couriersrs
 Installed-Size: 32
 Maintainer: Viktor Szépe <viktor@szepe.net>
@@ -283,6 +592,67 @@ SHA256: cea9ae35b02c5ceff15abeb8e1308ac2db7e5c7ab508080fc4a264beaa0450db
 SHA1: 70ab83aa7e5b230dfafa77daf789c3e8d010e57f
 MD5sum: 671b602db42f09f742943e14a70d6a91
 Description: Utilities for archiving JPEGs for long term storage.
+
+Package: libcourier-unicode-dev
+Source: courier-unicode
+Version: 1.4-3~bpo8+1
+Architecture: amd64
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 486
+Depends: libcourier-unicode1 (= 1.4-3~bpo8+1)
+Multi-Arch: same
+Homepage: http://www.courier-mta.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/c/courier-unicode/libcourier-unicode-dev_1.4-3~bpo8+1_amd64.deb
+Size: 82088
+SHA256: 95c15dace7babf366971819e064d17e0f8576e6feaca80cacad8e501ae16ba02
+SHA1: ca285ddb5ce4d6d8069b3c02bb1711f1e7c27018
+MD5sum: 0c0769792cd75fd6b93fa509d96d222b
+Description: Courier Unicode library (development files and headers)
+ This library implements several algorithms related to the Unicode
+ Standard:
+  - Look up uppercase, lowercase, and titlecase equivalents
+    of a unicode character.
+  - Implementation of grapheme and work breaking rules.
+  - Implementation of line breaking rules.
+  - Several ancillary functions, like looking up the unicode character
+    that corresponds to some HTML 4.0 entity (such as “&amp;”, for
+    example), and determining the normal width or a double-width status
+    of a unicode character. Also, an adaptation of the iconv(3) API for
+    this unicode library.
+  - Look up Unicode script property.
+
+Package: libcourier-unicode1
+Source: courier-unicode
+Version: 1.4-3~bpo8+1
+Architecture: amd64
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 318
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)
+Built-Using: unicode-data (= 7.0-2), w3c-sgml-lib (= 1.3-1)
+Multi-Arch: same
+Homepage: http://www.courier-mta.org/
+Priority: optional
+Section: libs
+Filename: pool/main/c/courier-unicode/libcourier-unicode1_1.4-3~bpo8+1_amd64.deb
+Size: 43058
+SHA256: b8eb4c326400bd7826feff8240fe04643393b5901aca7e59edb1d396d8a825df
+SHA1: 753f2d69d87f6952202cef4b9d6433b68ff8b86f
+MD5sum: f29a317bf10957cee86f8606e6bdafcf
+Description: Courier Unicode library (shared runtime library)
+ This library implements several algorithms related to the Unicode
+ Standard:
+  - Look up uppercase, lowercase, and titlecase equivalents
+    of a unicode character.
+  - Implementation of grapheme and work breaking rules.
+  - Implementation of line breaking rules.
+  - Several ancillary functions, like looking up the unicode character
+    that corresponds to some HTML 4.0 entity (such as “&amp;”, for
+    example), and determining the normal width or a double-width status
+    of a unicode character. Also, an adaptation of the iconv(3) API for
+    this unicode library.
+  - Look up Unicode script property.
 
 Package: libnghttp2-5
 Source: nghttp2
