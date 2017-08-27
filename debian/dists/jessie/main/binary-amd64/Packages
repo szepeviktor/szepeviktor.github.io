@@ -724,7 +724,7 @@ Version: 0.9.38-1~dev
 
 Package: python3-dugong
 Source: python-dugong
-Version: 3.7+dfsg-3~bpo8+1
+Version: 3.7.1+dfsg-1~bpo8+1
 Architecture: all
 Maintainer: Nikolaus Rath <Nikolaus@rath.org>
 Installed-Size: 114
@@ -733,11 +733,11 @@ Suggests: python-dugong-doc
 Homepage: https://bitbucket.org/nikratio/python-dugong
 Priority: optional
 Section: python
-Filename: pool/main/p/python-dugong/python3-dugong_3.7+dfsg-3~bpo8+1_all.deb
-Size: 21832
-SHA256: dcc5cc7c7be81ae4e753fb51a01d90244531ec4447cf1300363648f4a5926f20
-SHA1: cb7a494eacc1131a0202a12f2b19e58f9728a441
-MD5sum: e56e96fbed2f410980d30a2f17d85a66
+Filename: pool/main/p/python-dugong/python3-dugong_3.7.1+dfsg-1~bpo8+1_all.deb
+Size: 21900
+SHA256: 6a1bc113e0cb9f4124410b94ac31a9381008b5f0b32efd6d5ed93d41e7b765bb
+SHA1: f0ae06b98f36b940c8b1e0f550e96c6fd9d06198
+MD5sum: 73c2bbaa809c0137b4849ee40198f949
 Description: HTTP 1.1 client module for Python
  The Python Dugong module provides an API for communicating with HTTP 1.1
  servers. It is an alternative to the standard library's http.client (formerly
@@ -764,10 +764,10 @@ Description: HTTP 1.1 client module for Python
 
 Package: python3-llfuse
 Source: python-llfuse
-Version: 1.1.1+dfsg-4~bpo8+1
+Version: 1.2+dfsg-1~bpo8+1
 Architecture: amd64
 Maintainer: Nikolaus Rath <Nikolaus@rath.org>
-Installed-Size: 588
+Installed-Size: 675
 Depends: python3 (<< 3.5), python3 (>= 3.4~), libc6 (>= 2.4), libfuse2 (>= 2.9.0)
 Suggests: python-llfuse-doc
 Breaks: borgbackup (<= 1.0.0~rc1-3)
@@ -775,11 +775,11 @@ Provides: python3.4-llfuse
 Homepage: https://bitbucket.org/nikratio/python-llfuse/
 Priority: optional
 Section: python
-Filename: pool/main/p/python-llfuse/python3-llfuse_1.1.1+dfsg-4~bpo8+1_amd64.deb
-Size: 150664
-SHA256: dbaf79aadf1ae6ff278cbd99b2c26d11ab969fd150b87b053103c8af5946ae02
-SHA1: 42d48e0d3ee2b721d63f2499374dcd1275c4802c
-MD5sum: 026e6b64335f9c4ef4ac80ddc0fdf372
+Filename: pool/main/p/python-llfuse/python3-llfuse_1.2+dfsg-1~bpo8+1_amd64.deb
+Size: 186800
+SHA256: 3e0c533eb94334c695b11aabecb9d14750ceffc8e61d7a98530c359ff4d89d95
+SHA1: c3c6eb2f59eebe0a38605d1c6950ad271fd03aa4
+MD5sum: 8e6e71aeb2307840f2edec2288321a84
 Description: Python 3 bindings for the low-level FUSE API
  Python-llfuse is a set of Python bindings for the low level FUSE API.
  This package provides the extension for the Python 3 interpreter. The
@@ -809,20 +809,20 @@ Description: small nameserver daemon designed for DNSBLs
  It may handle IP-based and name-based blocklists.
 
 Package: s3ql
-Version: 2.20+dfsg-1~bpo8+1
+Version: 2.23+dfsg-1~bpo8+1
 Architecture: amd64
 Maintainer: Nikolaus Rath <Nikolaus@rath.org>
-Installed-Size: 1613
+Installed-Size: 1629
 Depends: python3 (<< 3.5), python3 (>= 3.4~), python3-apsw (>= 3.7.0), python3-crypto, python3-defusedxml, python3-dugong (>= 3.4), python3-llfuse (>= 1.0), python3-requests, libc6 (>= 2.4), libsqlite3-0 (>= 3.6.23), libjs-sphinxdoc (>= 1.0), fuse, psmisc, python3-pkg-resources
 Recommends: python3-systemd
 Homepage: https://bitbucket.org/nikratio/s3ql/
 Priority: optional
 Section: misc
-Filename: pool/main/s/s3ql/s3ql_2.20+dfsg-1~bpo8+1_amd64.deb
-Size: 529020
-SHA256: e3d550b1a9dabdf98efeeed2d53d6e9db5515383a4bef178cce4a6d1131f0c81
-SHA1: 55d703bd597cc0316b8ddbd2d6664da08cc5522a
-MD5sum: b52aabccd183e444ae129209ed89c068
+Filename: pool/main/s/s3ql/s3ql_2.23+dfsg-1~bpo8+1_amd64.deb
+Size: 540208
+SHA256: a0c78a2bd390b62a67a658886cd0b5a0bfe8efaa3af3d5088fe7a21b6afb7b38
+SHA1: efef7fca0709461297d727ae77424ef0983d98f5
+MD5sum: 73057be55f6d63b94267518bac5624b7
 Description: Full-featured file system for online data storage
  S3QL is a file system that stores all its data online using storage
  services like Google Storage, Amazon S3 or OpenStack. S3QL
