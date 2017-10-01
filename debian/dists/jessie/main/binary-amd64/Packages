@@ -540,23 +540,20 @@ Description: Send alert mail on boot and on shutdown,
  on halt send a list of who is logged on
 
 Package: ipset-persistent
-Version: 1.1.0
+Version: 2.0.0
 Architecture: all
 Maintainer: Viktor Szépe <viktor@szepe.net>
-Installed-Size: 37
-Depends: ipset, iptables-persistent
-Conflicts: lightwrapper
-Homepage: https://sourceforge.net/projects/ipset-persistent/
+Installed-Size: 35
+Depends: ipset, netfilter-persistent
 Priority: optional
 Section: net
-Filename: pool/main/i/ipset-persistent/ipset-persistent_1.1.0_all.deb
-Size: 4134
-SHA256: 913e1e815d712a9312107cae72144b9826223fcdf0c2e86d9c82ca0ecde4c896
-SHA1: c614ba215acc1fea67901612795329c17ba80f86
-MD5sum: 1d14a0223c17627ba156b97d0467063a
-Description: Boot-time loader for ipset rules
- This package provides a system startup script that restores ipset rules from
- a configuration file.
+Filename: pool/main/i/ipset-persistent/ipset-persistent_2.0.0_all.deb
+Size: 3334
+SHA256: f52e394293647fdd3222d84e4038ef207869f8c4ff594fdf3e423acde68c27ec
+SHA1: 6660257fd9633042a3723fd7e53541a3ca039a23
+MD5sum: bb101315423c57edb2f234ce93510a3d
+Description: IP set plugin for netfilter-persistent
+ Originally by @jordanrinke
 
 Package: iptables-persistent
 Version: 1.0.4~bpo8+1
