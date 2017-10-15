@@ -16,3 +16,19 @@ Description: Send alert mail on boot and on shutdown,
  on boot send pstree to know what services are started,
  on halt send a list of who is logged on
 
+Package: ipset-persistent
+Version: 2.0.0
+Architecture: all
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 35
+Depends: ipset, netfilter-persistent
+Priority: optional
+Section: net
+Filename: pool/main/i/ipset-persistent/ipset-persistent_2.0.0_all.deb
+Size: 3334
+SHA256: f52e394293647fdd3222d84e4038ef207869f8c4ff594fdf3e423acde68c27ec
+SHA1: 6660257fd9633042a3723fd7e53541a3ca039a23
+MD5sum: bb101315423c57edb2f234ce93510a3d
+Description: IP set plugin for netfilter-persistent
+ Originally by @jordanrinke
+
