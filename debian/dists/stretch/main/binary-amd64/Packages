@@ -1,0 +1,18 @@
+Package: init-alert
+Version: 0.3.2
+Architecture: all
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 49
+Depends: lsb-base (>= 4.1), s-nail | mailx, psmisc
+Homepage: https://github.com/szepeviktor/debian-server-tools
+Priority: optional
+Section: misc
+Filename: pool/main/i/init-alert/init-alert_0.3.2_all.deb
+Size: 4290
+SHA256: 331890b3ffe3442e00ad1a38bb15ca23b390d31cf4d35623510f4625028e443f
+SHA1: e423b0fd27bc3a2005b26083bdbeba535410125e
+MD5sum: 13f56a5fe2992160d7e762fb18942afe
+Description: Send alert mail on boot and on shutdown,
+ on boot send pstree to know what services are started,
+ on halt send a list of who is logged on
+

@@ -2,8 +2,8 @@
 #
 # Verify package signatures and generate index.
 #
-# VERSION       :0.2.3
-# DATE          :2015-05-18
+# VERSION       :0.3.0
+# DATE          :2017-10-15
 # AUTHOR        :Viktor Szépe <viktor@szepe.net>
 # LICENSE       :The MIT License (MIT)
 # URL           :https://github.com/szepeviktor/debian-server-tools
@@ -18,8 +18,8 @@ cat <<"EOF"
 # Sign it with my GPG key
 dpkg-sig --sign "builder" -k "451A4FBA" /opt/results/*.deb
 cd debian/
-# REMOVE:  reprepro remove jessie <PKG>
-reprepro includedeb jessie /opt/results/*.deb
+# REMOVE:  reprepro remove stretch <PKG>
+reprepro includedeb stretch /opt/results/*.deb
 EOF
 
 (
