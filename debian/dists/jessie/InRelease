@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: szepeviktor.github.io
 Label: szepeviktor.github.io
 Codename: jessie
-Date: Sat, 02 Dec 2017 17:32:43 UTC
+Date: Sat, 02 Dec 2017 17:39:29 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
@@ -29,11 +29,11 @@ SHA256:
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJaIuO/AAoJEGqgRTxFGk+6FM8IAKT1pLKAjrYnyfFhVB+nvUGw
-0NpJQsj4k2ZCG3Z+1Uiwi79W6uhBDY8n7e9F/ThH/7ivOvnSWDeKWGBjxOpIc9gS
-LGijgaYOQKYfb5FpAvYQ5Qti4xzg9VdNQ2QqhESkxXkJGviRPo7AK47hpEpyK1HK
-ybRbOjE0/AhtbJxJTjFM57PG1pvVS0qFCssDyD4b+aXKtVqf23ZFRaFvsqgBIY/C
-7ER6+LAqTIdBiQqQcRR4uGsrPRaNELFktqC71PB8AIORaX0Pps0brVAXToz8bNg8
-8mqfjJeYPyhuQ/cJH15rAM/SeAQjyj9SgZ0Rf+vmRwQyxsjv+/CvWLPSy20/o7M=
-=jy9O
+iQEcBAEBCAAGBQJaIuVVAAoJEGqgRTxFGk+6gqsH/j6hoLE6xJ4EqDSABXpEqjZi
+jdCsB5fqbqIpzDBk2CKr9t3KxzMvPAK7YrtT15ZXUcWwpaVl2GWZNNZUuXenXmpT
+LEM+LodCFRQJ/cKJq/aqnvmWOLjT7Pq3ZRfnHzCZWAC4XfY/SSFZIfqKgUvc00ue
+yd90aYedHhxFHtngwA9tq/6KmNWjYCbcKm332Vvew7jVhZtHDUcLmgAtPyrx1wMB
+XWTSr4QZh/qm5xlnf8RtrowenJ7bax+1VJswXSBoJ/nlqsY8XSr6diAqbQQQLzPG
+dW9oUj2s8N/0TSkPPj99ucnvRKvlA7H8EM+owM/vY48eyjOf7/wGMbOup0YlWEA=
+=HuyV
 -----END PGP SIGNATURE-----
