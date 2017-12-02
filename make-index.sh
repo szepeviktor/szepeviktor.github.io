@@ -44,8 +44,7 @@ git status -s
 # Commit to git and parent repo
 cat <<"EOF"
 
-git add --all
-git commit
+git add --all; git commit
 git push
 cd ../; git add repo
 EOF

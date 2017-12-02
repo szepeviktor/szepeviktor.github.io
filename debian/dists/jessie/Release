@@ -1,25 +1,25 @@
 Origin: szepeviktor.github.io
 Label: szepeviktor.github.io
 Codename: jessie
-Date: Sun, 01 Oct 2017 19:56:00 UTC
+Date: Sat, 02 Dec 2017 17:32:43 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- 224a2ac0ade81e0f695b8beb4ade0e53 55356 main/binary-amd64/Packages
- 5a15a001980dd8a45a6bf30457fc4fca 18201 main/binary-amd64/Packages.gz
- e04bafe3bf1f2206a7423aad129cc6a5 16712 main/binary-amd64/Packages.bz2
- 66a5cba3346e8b09bfd836bd89a9ed43 16796 main/binary-amd64/Packages.xz
+ d9665162f36d48def6194b65b56ace7b 55372 main/binary-amd64/Packages
+ 18cd8892351072c6dd91750ef4f0e9c1 18200 main/binary-amd64/Packages.gz
+ 1b31085f172c7a2de7362d9cd983e329 16692 main/binary-amd64/Packages.bz2
+ 71147914d661aee1476ec6ada9f0acf4 16788 main/binary-amd64/Packages.xz
  29c747648d1e6a3e6a62e296bbbc295d 125 main/binary-amd64/Release
 SHA1:
- 0c5082396c7a3515ca1b8f2189fd7c649ee3d22f 55356 main/binary-amd64/Packages
- 02772b3d2b3af8c39e621a344be5017e04df1132 18201 main/binary-amd64/Packages.gz
- 6ce3ba6b50c96bbdaa132ad366980a5d833c10d4 16712 main/binary-amd64/Packages.bz2
- 49b151ad500368d2071908db09d8eff83f0ffc29 16796 main/binary-amd64/Packages.xz
+ 98d181269ad1e0d67fe2384fd115160f1bd9efc1 55372 main/binary-amd64/Packages
+ 417ded3500bcb81076626e500f9450842eb1946a 18200 main/binary-amd64/Packages.gz
+ e987c33f90be4ad0dad98cc1c110bc04d2da6e25 16692 main/binary-amd64/Packages.bz2
+ 90937ad37ed5cb57c22aef12b133e1dd2f9f74af 16788 main/binary-amd64/Packages.xz
  8b17ca42a65026f8c82f7c3256c697bfaa52a610 125 main/binary-amd64/Release
 SHA256:
- 8137b714b20d0fae344e21d3b109178f3a305a9021ed919aa685a955b3ae1300 55356 main/binary-amd64/Packages
- b0403a32571b966a8f0b0953e9f38aec15d137710bd4bd92b0cd94d8506a202f 18201 main/binary-amd64/Packages.gz
- 1e6fb279887708c720dae5f9813ba24bb0e9145e53b917231bd0f1a0928e363b 16712 main/binary-amd64/Packages.bz2
- 24c29eea6d5fa08b6fd1ab0918fc98e16e5102802069dc08fc199447a3156f24 16796 main/binary-amd64/Packages.xz
+ 09cb12a89f207607538393af5b808d091d185ed487185d1fc721e4fce20bab27 55372 main/binary-amd64/Packages
+ 1b51c925101ab10715ff99868eb63f7a27d56b7ac7aab6e3edd8c03f731664aa 18200 main/binary-amd64/Packages.gz
+ 1c15e6f17aaf551d12a96c4269d277b1d236915b5e4edeb8dd0f96206c427f73 16692 main/binary-amd64/Packages.bz2
+ c9597a932cd0155f5b08b5cef939f790e6165fa29014e67eeb2e2e5e69353345 16788 main/binary-amd64/Packages.xz
  a3b1f3498f35d6cc44f3a603010d22749b7f56002ffcd1a4d66ed5ddad1f8f9a 125 main/binary-amd64/Release

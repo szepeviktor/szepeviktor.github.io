@@ -575,19 +575,19 @@ Description: boot-time loader for netfilter rules, iptables plugin
  This package contains the iptables and ip6tables plugins.
 
 Package: jpeg-archive
-Installed-Size: 1600
-Maintainer: viktor@szepe.net
+Installed-Size: 1832
+Maintainer: Viktor Szépe <viktor@szepe.net>
 Architecture: amd64
-Version: 2.1.1-2
+Version: 2.1.1-3
 Depends: libc6 (>= 2.14)
 Provides: jpeg-archive
 Priority: extra
 Section: graphics
-Filename: pool/main/j/jpeg-archive/jpeg-archive_2.1.1-2_amd64.deb
-Size: 169894
-SHA256: cea9ae35b02c5ceff15abeb8e1308ac2db7e5c7ab508080fc4a264beaa0450db
-SHA1: 70ab83aa7e5b230dfafa77daf789c3e8d010e57f
-MD5sum: 671b602db42f09f742943e14a70d6a91
+Filename: pool/main/j/jpeg-archive/jpeg-archive_2.1.1-3_amd64.deb
+Size: 177380
+SHA256: eed98a8edf79eb33ec27c95d4c1b81f84e8b2a8d5c94a7cbdcf9987e5c4e7c96
+SHA1: cca87650fcfaa08ef93460c975d3a29f4877f862
+MD5sum: 78ee048c7edbdbbc5cd9fa3a80bfb6cc
 Description: Utilities for archiving JPEGs for long term storage.
 
 Package: libcourier-unicode-dev
