@@ -4,36 +4,36 @@ Hash: SHA256
 Origin: szepeviktor.github.io
 Label: szepeviktor.github.io
 Codename: stretch
-Date: Sat, 02 Dec 2017 17:32:29 UTC
+Date: Fri, 29 Dec 2017 17:26:42 UTC
 Architectures: amd64
 Components: main
 Description: Modern webserver solutions
 MD5Sum:
- e5a0be199da6e5a4353b487998d148f0 1159 main/binary-amd64/Packages
- b5073922fd5bd3cd0a4456b33c9505ac 663 main/binary-amd64/Packages.gz
- 1ac726ecbdba49e16701079cbc381e8b 740 main/binary-amd64/Packages.bz2
- 71f9415fa9ad442b5a05e2d5243e3d4e 736 main/binary-amd64/Packages.xz
+ 01acf8e6c6d06ed9e69b2d1a12457bea 6199 main/binary-amd64/Packages
+ 4e1d2cf3ef88476b1cf1dbdab6bf0092 2842 main/binary-amd64/Packages.gz
+ 081370f3f0c1e4cec5610f2563bf3552 2919 main/binary-amd64/Packages.bz2
+ 47b39fc902a0ec46098c9c47be26b087 2848 main/binary-amd64/Packages.xz
  3f88735d22ffe5f5e0760f358308ffbd 135 main/binary-amd64/Release
 SHA1:
- ec81421b6048a85c80edb0ff1b21068d3f58edfe 1159 main/binary-amd64/Packages
- 250c6aad76910e682a76c33484a855cb745ca59b 663 main/binary-amd64/Packages.gz
- ca7de1a2b082c3eafefda4e78405a6da0fa85f62 740 main/binary-amd64/Packages.bz2
- bb12927cfdd8dac537068f9763c6c9726d161556 736 main/binary-amd64/Packages.xz
+ f4469efc503d533ce743b2cf825b2ccfadc7c79e 6199 main/binary-amd64/Packages
+ 66fb3e1636a2b36ae2bf589864bec4a7f1c694cf 2842 main/binary-amd64/Packages.gz
+ f37b36f834e7b15caf451b9371e70afe463cde81 2919 main/binary-amd64/Packages.bz2
+ 5f912808d4191dc5610d5db43af887ceeed43afe 2848 main/binary-amd64/Packages.xz
  b60d4b31c90245f9dddf29d797489e3aeefd918c 135 main/binary-amd64/Release
 SHA256:
- 8958c8f2b31f3ae2218ecf9e1c91bf2aecbca321151bff2c384ecfd8e6eba9b4 1159 main/binary-amd64/Packages
- 5c325f26497c20ac83faae7c42eb46b077d5eea0eab5b6485463ac6edde0afa2 663 main/binary-amd64/Packages.gz
- a152a18368ceaa39e931c8697039346ef4906e6db02d1057772b0037073068c2 740 main/binary-amd64/Packages.bz2
- 410b6181736e5597f292f21564eb6786f39f6bcab0356ca8201f5316dbeaa4c6 736 main/binary-amd64/Packages.xz
+ 15be183d0df4d20db9792bd1d0ff416d8897c6ba42a285ebe6572c3b546f4c46 6199 main/binary-amd64/Packages
+ ab1c8676c9bb3da536104e120175ebd0bcf6295e35692aed8e263743de857bf5 2842 main/binary-amd64/Packages.gz
+ 9cdc55d11aec5e6f4a1894520c07ceecbcb21adaa66c020cf5462ab4bf8bc46c 2919 main/binary-amd64/Packages.bz2
+ 5f0abb5044d58ea8ae85e83a37acbe867a000ad56f3195d1b0134c50d357dc73 2848 main/binary-amd64/Packages.xz
  bff489b6a21b51bb129c56794746bf7e497bf5b5f6ec8f23a048c8683e199abc 135 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJaIuOxAAoJEGqgRTxFGk+6TpkH/33y2UdL+FSU268vCsoHJySB
-jIwZksesPOiq1Ny7DgYYjpBVrJoet/jwR8EM+IV5KIMC/bsyktzOLFl555rWnfm6
-1ax3nQeLQILvdDL2gP6V2X1iq05y0a5TW2UAZZUtWx2Oa0iF1IS4NdNeGtKZo/L5
-3+KVWIQpI/XvqzipDsaKDVV0s4Esvwsidk3OcZyJSkonR3LR2hne30tRVrAbfvhY
-IxhqzUm7B6SSNyA0xLqi7xGTen2AhfR04dPGJifXhqNKoOYhmrblflzkpgYIaM0N
-SqiHAHgKiKStjR/ZE6d5fiWL42QwlW0HcHXSjvO4lF9X4k2lHK9DhfwgIMGNjik=
-=5NqM
+iQEcBAEBCAAGBQJaRnrYAAoJEGqgRTxFGk+6JJYH/iJaWBphkQpd8UEs8s+j8XDE
+V88APJVH9CH/+WpP9OmBcxt8dvEvo4XhosVA5k25hEJrorJMEvwqB9RZ1aRxNGLO
+CeuxyJuSm60hgQ2gA+RE0Moe4wpU44mMORDjAmsgrGV5d9aIS3jpk3GJsEFAFWW/
+vqxpAgV+nz/qbK9Qcv/t+Z9rAc9IKP6l5d1XSLpss9i/pFjeMlMrKansy0/EIXdw
+ZoC1F/d6pQJz7fVLQN5Bq9Qg5FL3quRNa8IWBcBoGZQvSq4OjeRwn5DA6KydJIsr
+lTbtRTdFUEyQOAovcKBnGWR6qEXqge3cgDlPj68Vc8PGx6EwG8QMbFM02LXz1Rs=
+=TvhC
 -----END PGP SIGNATURE-----

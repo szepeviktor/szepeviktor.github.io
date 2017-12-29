@@ -1,3 +1,3 @@
 verbose
 ask-passphrase
-basedir /usr/local/src/debian-server-tools/repo/debian
+#basedir ~/src/debian-server-tools/repo/debian
