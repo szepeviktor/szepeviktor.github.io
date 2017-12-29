@@ -32,6 +32,23 @@ MD5sum: bb101315423c57edb2f234ce93510a3d
 Description: IP set plugin for netfilter-persistent
  Originally by @jordanrinke
 
+Package: jpeg-archive
+Version: 2.1.1-4~bpo9+1
+Architecture: amd64
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 1928
+Depends: libc6 (>= 2.14)
+Suggests: parallel | ladon
+Homepage: https://github.com/danielgtaylor/jpeg-archive
+Priority: extra
+Section: graphics
+Filename: pool/main/j/jpeg-archive/jpeg-archive_2.1.1-4~bpo9+1_amd64.deb
+Size: 188200
+SHA256: c640d013fe988a2c92d72eb4d6258ed720a89f82519fd9a6eeafcd654a6caa4b
+SHA1: 893b5705a30be8ba6a7b60f63b72493c6149db90
+MD5sum: d5c471a77b1dffbb65d60e5d699b9433
+Description: Utilities for archiving JPEGs for long term storage
+
 Package: python3-dugong
 Source: python-dugong
 Version: 3.7.1+dfsg-2~bpo9+1
