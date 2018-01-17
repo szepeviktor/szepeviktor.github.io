@@ -37,19 +37,19 @@ Description: log analyzer and interactive viewer for the Apache Webserver
  the Combined Log Format
 
 Package: init-alert
-Version: 0.3.2
+Version: 0.3.3
 Architecture: all
 Maintainer: Viktor Szépe <viktor@szepe.net>
 Installed-Size: 49
-Depends: lsb-base (>= 4.1), s-nail | mailx, psmisc
+Depends: lsb-base (>= 4.1), s-nail, psmisc
 Homepage: https://github.com/szepeviktor/debian-server-tools
 Priority: optional
 Section: misc
-Filename: pool/main/i/init-alert/init-alert_0.3.2_all.deb
-Size: 4290
-SHA256: 331890b3ffe3442e00ad1a38bb15ca23b390d31cf4d35623510f4625028e443f
-SHA1: e423b0fd27bc3a2005b26083bdbeba535410125e
-MD5sum: 13f56a5fe2992160d7e762fb18942afe
+Filename: pool/main/i/init-alert/init-alert_0.3.3_all.deb
+Size: 4330
+SHA256: e5a0e30d1e0591b6b8c7754cdd52f3dccd5f89c83ca3ff1ae260a739c0d1616e
+SHA1: ecb67f29e621dee5fad4d8dec1b82014fa855712
+MD5sum: f2acac0317875f679d93b647a49dcc88
 Description: Send alert mail on boot and on shutdown,
  on boot send pstree to know what services are started,
  on halt send a list of who is logged on
