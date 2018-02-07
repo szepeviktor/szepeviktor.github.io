@@ -192,3 +192,26 @@ Description: Full-featured file system for online data storage
  handling have been included from the very first line, and S3QL comes
  with extensive automated test cases.
 
+Package: zdkimfilter
+Version: 1.6-1
+Architecture: amd64
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 481
+Depends: libc6 (>= 2.15), libidn2-0 (>= 0.6), libnettle6, libopendbx1 (>= 1.4.6), libopendkim11 (>= 2.11.0~alpha), libunistring0, libuuid1 (>= 2.16), zlib1g (>= 1:1.2.2), debconf (>= 0.5) | debconf-2.0, courier-mta, ucf (>= 0.28), publicsuffix, libopendbx1-mysql | dbconfig-no-thanks, dbconfig-mysql | dbconfig-no-thanks
+Homepage: https://github.com/szepeviktor/zdkimfilter
+Priority: optional
+Section: mail
+Filename: pool/main/z/zdkimfilter/zdkimfilter_1.6-1_amd64.deb
+Size: 165336
+SHA256: ea7e4327f62cb869227bc39816a9d13ed8844cb714c1ed6e2ab0db5bfff3df4c
+SHA1: f9a73f9ef67c0c742a4ebe183d5259b95cedeeba
+MD5sum: 13a72c72fec8397cafde0b64fd2dce01
+Description: DKIM filter for Courier-MTA
+ This filter uses the OpenDKIM Project's library to sign messages from
+ authenticated users, or verify relayed messages and add an
+ Authentication-Results: header field if configured to do so. The source package
+ contains example scripts for building a database to save message details to.
+ Database details allow one to configure sending DMARC aggregate reports.
+ SPF results are imported from Courier processing. DMARC rejection (as well
+ as historic ADSP) can be enabled or disabled on a per-domain basis.
+
