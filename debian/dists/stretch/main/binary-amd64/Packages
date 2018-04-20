@@ -1,3 +1,20 @@
+Package: dh-make-php
+Version: 0.6.2
+Architecture: all
+Maintainer: Uwe Steinmann <steinm@debian.org>
+Installed-Size: 176
+Depends: make | build-essential | dpkg-dev, php-cli | php5-cli, php-pear, cdbs
+Priority: optional
+Section: web
+Filename: pool/main/d/dh-make-php/dh-make-php_0.6.2_all.deb
+Size: 31772
+SHA256: e5872cc3c7e92df4c53906254864409404043ed4da2237451d02eb0986347697
+SHA1: 3d0f3805f0f3acf582f6d2a6f1575aada9fbf041
+MD5sum: 94260ca65db002b7624a1f7e1d59b697
+Description: Creates Debian source packages for PHP PEAR and PECL extensions
+ Contains dh-make-pear and dh-make-pecl, which create Debian source packages
+ from PHP PEAR and PECL packages respectively.
+
 Package: goaccess
 Version: 1:1.2-3~bpo9+1
 Architecture: amd64
