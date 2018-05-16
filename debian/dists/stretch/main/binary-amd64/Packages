@@ -104,6 +104,23 @@ SHA1: 893b5705a30be8ba6a7b60f63b72493c6149db90
 MD5sum: d5c471a77b1dffbb65d60e5d699b9433
 Description: Utilities for archiving JPEGs for long term storage
 
+Package: munin-plugin-mysql
+Version: 0.3.1-1
+Architecture: all
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 152
+Depends: libmodule-pluggable-perl, libdbd-mysql-perl, munin-node
+Homepage: http://oierud.net/bliki/ImprovedMuninGraphsForMySQL.html
+Priority: optional
+Section: perl
+Filename: pool/main/m/munin-plugin-mysql/munin-plugin-mysql_0.3.1-1_all.deb
+Size: 18962
+SHA256: cd46482ac7c08b1bb25956db00d2797795d9334eda65023af71ae5a900e3cf6a
+SHA1: 5b91260b64cb5d501f817e23b40446c464428f52
+MD5sum: 0abcb4a956fbd01351872706db4f7ca6
+Description: Improved MySQL Graphs for Munin
+ Munin plugin for showing graphs of MySQL resource usage.
+
 Package: python3-dugong
 Source: python-dugong
 Version: 3.7.1+dfsg-2~bpo9+1
