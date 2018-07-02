@@ -104,53 +104,6 @@ SHA1: 893b5705a30be8ba6a7b60f63b72493c6149db90
 MD5sum: d5c471a77b1dffbb65d60e5d699b9433
 Description: Utilities for archiving JPEGs for long term storage
 
-Package: maildrop
-Version: 2.8.4-2~bpo8+1
-Architecture: amd64
-Maintainer: Josip Rodin <joy-packages@debian.org>
-Installed-Size: 1118
-Depends: courier-authlib (>= 0.66.4-5~), libc6 (>= 2.15), libcourier-unicode1, libgcc1 (>= 1:4.1.1), libgdbm3 (>= 1.8.3), libpcre3 (>= 1:8.35), libstdc++6 (>= 4.4.0)
-Recommends: exim4 | mail-transport-agent
-Breaks: courier-maildrop (<< 2.8.3+0.75.0-15~)
-Replaces: courier-base (<= 0.58.0-1), courier-maildrop (<< 2.8.3+0.75.0-15~)
-Homepage: http://www.courier-mta.org/maildrop/
-Priority: optional
-Section: mail
-Filename: pool/main/m/maildrop/maildrop_2.8.4-2~bpo8+1_amd64.deb
-Size: 340788
-SHA256: 69a6810d143746db5c4d6d457cf1dd10140a983d4b4d0c81863f90cf852f1ca1
-SHA1: e13ea145a6b7f59ca7b3688976af49629e07e173
-MD5sum: e045a0f9f8347e931b067d40b4f262a5
-Description: mail delivery agent with filtering abilities
- maildrop is a mail delivery agent (MDA), a program which reads a mail
- message from standard input and then delivers the message to your mailbox.
- .
- maildrop can deliver mail both in mbox and maildir storing formats.
- It can read instructions from a file, directing it how to log deliveries,
- and how to filter incoming mail, for example to deliver mail to alternate
- mailboxes, or forward it somewhere else, or pipe it through external
- programs.
- .
- It performs all the same functions as procmail, but unlike procmail,
- maildrop uses a structured filtering language which is a bit easier
- on the eyes. Other differences from procmail include not skipping syntax
- errors in filter files (instead deferring the mails for later processing)
- and being more resource-efficient when processing mails (not loading
- large messages right into memory).
- .
- maildrop also comes with the following additional programs:
- .
-  * reformail, an e-mail reformatting tool, which can detect duplicate
-               messages, manipulate message headers, split mailboxes into
-               individual messages, and generate autoreply messages
-  * maildirmake, which creates maildirs, and maildir folders
-  * deliverquota, which delivers mail to maildirs while taking account
-                   software-imposed quotas
-  * reformime, a utility for reformatting MIME messages
-  * makemime, which creates MIME-formatted messages of arbitrary complexity
-  * lockmail, which creates dot-locks, file locks, and C-Client folder locks
-  * mailbot, a MIME-aware autoresponder utility
-
 Package: munin-plugin-mysql
 Version: 0.3.1-1
 Architecture: all
