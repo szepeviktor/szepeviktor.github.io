@@ -226,6 +226,38 @@ Description: Full-featured file system for online data storage
  handling have been included from the very first line, and S3QL comes
  with extensive automated test cases.
 
+Package: unscd
+Version: 0.53-1~bpo9+1
+Architecture: amd64
+Maintainer: Don Armstrong <don@debian.org>
+Installed-Size: 73
+Depends: libc6 (>> 2.24), libc6 (<< 2.25), init-system-helpers (>= 1.18~), lsb-base
+Conflicts: nscd
+Replaces: nscd
+Provides: nscd
+Homepage: http://busybox.net/~vda/unscd/
+Priority: optional
+Section: admin
+Filename: pool/main/u/unscd/unscd_0.53-1~bpo9+1_amd64.deb
+Size: 22398
+SHA256: 21f511e8b3d4a7803bf49c94a37284a1993c1cdcf28cf3f7014e5ffa725f058b
+SHA1: 87660975488e4af7fdb6aeb7207a4073c49edfaa
+MD5sum: 54f244620bac6ea9ff802f61fee0fb01
+Description: Micro Name Service Caching Daemon
+ A daemon which handles passwd, group and host lookups for running
+ programs and caches the results for the next query. You only need
+ this package if you are using slow Name Services like LDAP, NIS or
+ NIS+.
+ .
+ This particular NSCD is a complete rewrite of the GNU glibc nscd
+ which is a single threaded server process which offloads all NSS
+ lookups to worker children; cache hits are handled by the parent,
+ and only cache misses start worker children, making the parent immune
+ to resource leaks, hangs, and crashes in NSS libraries.
+ .
+ It should mostly be a drop-in replacement for existing installs using
+ nscd.
+
 Package: zdkimfilter
 Version: 1.6-1
 Architecture: amd64

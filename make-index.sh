@@ -15,7 +15,7 @@ set -e
 
 # Before this script
 cat <<"EOF"
-# Sign it with my GPG key
+# Sign it with the packaging GPG key
 dpkg-sig --sign "builder" -k "451A4FBA" /opt/results/*.deb
 cd debian/
 # REMOVE:  reprepro remove stretch <PKG>
