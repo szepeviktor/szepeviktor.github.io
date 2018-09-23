@@ -72,20 +72,43 @@ Description: Send alert mail on boot and on shutdown,
  on halt send a list of who is logged on
 
 Package: ipset-persistent
-Version: 2.0.0
+Source: iptables-persistent
+Version: 1.0.7~bpo9+1
 Architecture: all
-Maintainer: Viktor Szépe <viktor@szepe.net>
-Installed-Size: 35
-Depends: ipset, netfilter-persistent
+Maintainer: Jonathan Wiltshire <jmw@debian.org>
+Installed-Size: 26
+Depends: ipset, netfilter-persistent (= 1.0.7~bpo9+1), debconf (>= 0.5) | debconf-2.0
 Priority: optional
-Section: net
-Filename: pool/main/i/ipset-persistent/ipset-persistent_2.0.0_all.deb
-Size: 3334
-SHA256: f52e394293647fdd3222d84e4038ef207869f8c4ff594fdf3e423acde68c27ec
-SHA1: 6660257fd9633042a3723fd7e53541a3ca039a23
-MD5sum: bb101315423c57edb2f234ce93510a3d
-Description: IP set plugin for netfilter-persistent
- Originally by @jordanrinke
+Section: admin
+Filename: pool/main/i/iptables-persistent/ipset-persistent_1.0.7~bpo9+1_all.deb
+Size: 9994
+SHA256: 865a84b15bd4156c012308e7e64702af2430f2a592b63dfcfbe433237a9c0485
+SHA1: 1d19a18b54edf175855f29f0dbe72f1cfe8e7420
+MD5sum: 3997548472da9c1146b1099f0f615bf2
+Description: boot-time loader for netfilter rules, ipset plugin
+ netfilter-persistent is a loader for netfilter configuration using a
+ plugin-based architecture.
+ .
+ This package contains the ipset plugin.
+
+Package: iptables-persistent
+Version: 1.0.7~bpo9+1
+Architecture: all
+Maintainer: Jonathan Wiltshire <jmw@debian.org>
+Installed-Size: 43
+Depends: iptables, netfilter-persistent (= 1.0.7~bpo9+1), debconf (>= 0.5) | debconf-2.0
+Priority: optional
+Section: admin
+Filename: pool/main/i/iptables-persistent/iptables-persistent_1.0.7~bpo9+1_all.deb
+Size: 13430
+SHA256: 2c98830eea3a38ee09f1b82c54c214dc968dd6c78aba7a4f5f159bf7ef69acba
+SHA1: a713cf81bb94ba091812bc21af6957e705405ea1
+MD5sum: 93d23dfaf1e3e1efcccbdbbb03132e55
+Description: boot-time loader for netfilter rules, iptables plugin
+ netfilter-persistent is a loader for netfilter configuration using a
+ plugin-based architecture.
+ .
+ This package contains the iptables and ip6tables plugins.
 
 Package: jpeg-archive
 Version: 2.1.1-4~bpo9+1
@@ -120,6 +143,29 @@ SHA1: 5b91260b64cb5d501f817e23b40446c464428f52
 MD5sum: 0abcb4a956fbd01351872706db4f7ca6
 Description: Improved MySQL Graphs for Munin
  Munin plugin for showing graphs of MySQL resource usage.
+
+Package: netfilter-persistent
+Source: iptables-persistent
+Version: 1.0.7~bpo9+1
+Architecture: all
+Maintainer: Jonathan Wiltshire <jmw@debian.org>
+Installed-Size: 37
+Depends: lsb-base
+Suggests: iptables-persistent
+Breaks: iptables-persistent (<< 1~)
+Replaces: iptables-persistent (<< 1~)
+Priority: optional
+Section: admin
+Filename: pool/main/i/iptables-persistent/netfilter-persistent_1.0.7~bpo9+1_all.deb
+Size: 11530
+SHA256: a623beed6a08ccd84f7dc01555ab28368de23a90ff7fd2178c7500454e71459e
+SHA1: 72e20784db47fd727a9867a4602f61befa567007
+MD5sum: c8675cd6205368afe5aea2d486b26f2d
+Description: boot-time loader for netfilter configuration
+ This package provides a loader for netfilter configuration using a
+ plugin-based architecture. It can load, flush and save a running
+ configuration. Extending netfilter-persistent with plugins is trvial and can
+ be done in any language.
 
 Package: python3-dugong
 Source: python-dugong
