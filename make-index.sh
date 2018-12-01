@@ -18,7 +18,7 @@ cat <<"EOF"
 # Sign it with the packaging GPG key
 dpkg-sig --sign "builder" -k "451A4FBA" /opt/results/*.deb
 cd debian/
-# REMOVE:  reprepro remove stretch <PKG>
+# REMOVE:  reprepro remove stretch PACKAGE
 reprepro includedeb stretch /opt/results/*.deb
 EOF
 
@@ -26,16 +26,16 @@ EOF
     cd debian/
 
     # Verify packages updated in the last month
-    DEBS="$(find -type f -mtime -30 -name "*.deb")"
+    DEBS="$(find . -type f -mtime -30 -name "*.deb")"
     while read -r PKG; do
         echo -n "${PKG} ... "
         dpkg-sig --verify "$PKG" | grep --color "^GOODSIG"
-    done <<< "$DEBS"
+    done <<<"$DEBS"
 
     # Generate index
-    ../../package/index_gen.py > index.html
-    sed -i -e 's|<body>|<head><title>Modern webserver solutions</title></head><body><h1>Modern webserver solutions</h1><h2>Freshly packaged and backported Debian Linux packages</h2>|' \
-        index.html
+    ../../package/index_gen.py >index.html
+    sed -e 's|<body>|<head><title>Modern webserver solutions</title></head><body><h1>Modern webserver solutions</h1><h2>Freshly packaged and backported Debian Linux packages</h2>|' \
+        -i index.html
     echo "Index generated."
 )
 
