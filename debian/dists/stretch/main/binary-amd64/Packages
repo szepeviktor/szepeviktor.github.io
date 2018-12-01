@@ -1,3 +1,26 @@
+Package: dategrep
+Version: 2.05-1
+Architecture: all
+Maintainer: Mario Domgoergen <mario@domgoergen.com>
+Installed-Size: 74
+Depends: perl
+Homepage: http://search.cpan.org/dist/App-dategrep/
+Priority: optional
+Section: perl
+Filename: pool/main/d/dategrep/dategrep_2.05-1_all.deb
+Size: 22794
+SHA256: dc9c714099e7a51d3edf1c505a74e17ef0405b75576f59eaee1e36406d89b123
+SHA1: 4e11de5b3b368e2af3bf2a5ed682f06b63e13401
+MD5sum: c1b3e558d92b54d42c49a09dd46ad3e0
+Description: print lines matching a date range
+ dategrep searches the named input files for lines matching a date range
+ and prints them to stdout.
+ .
+ If dategrep works on a seekable file, it can do a binary search to find
+ the first and last line to print pretty efficiently. dategrep can also
+ read from stdin and compressed files, but it has to parse every single
+ line until the end of the range for those.
+
 Package: dh-make-php
 Version: 0.6.2
 Architecture: all
