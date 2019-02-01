@@ -1,17 +1,17 @@
 Package: dategrep
-Version: 2.05-1
+Version: 2.07
 Architecture: all
 Maintainer: Mario Domgoergen <mario@domgoergen.com>
-Installed-Size: 74
+Installed-Size: 72
 Depends: perl
 Homepage: http://search.cpan.org/dist/App-dategrep/
 Priority: optional
 Section: perl
-Filename: pool/main/d/dategrep/dategrep_2.05-1_all.deb
-Size: 22794
-SHA256: dc9c714099e7a51d3edf1c505a74e17ef0405b75576f59eaee1e36406d89b123
-SHA1: 4e11de5b3b368e2af3bf2a5ed682f06b63e13401
-MD5sum: c1b3e558d92b54d42c49a09dd46ad3e0
+Filename: pool/main/d/dategrep/dategrep_2.07_all.deb
+Size: 21056
+SHA256: 9f338cd3a497c3948741f4e2f6bb04cd84a6ed0d05ab143b03e7e42ca2f637a3
+SHA1: cab3d9d8ecc577325af22be5c1bbf8708cf6b5ed
+MD5sum: dbbc50babfe576aee65b9002b48c43a2
 Description: print lines matching a date range
  dategrep searches the named input files for lines matching a date range
  and prints them to stdout.
