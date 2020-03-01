@@ -295,6 +295,25 @@ Description: Full-featured file system for online data storage
  handling have been included from the very first line, and S3QL comes
  with extensive automated test cases.
 
+Package: systemd-tmpfiles
+Version: 244.3-1
+Architecture: amd64
+Maintainer: Viktor Szépe <viktor@szepe.net>
+Installed-Size: 11
+Depends: opentmpfiles
+Conflicts: systemd
+Provides: systemd
+Multi-Arch: foreign
+Homepage: https://packages.debian.org/bullseye/opentmpfiles
+Priority: important
+Section: admin
+Filename: pool/main/s/systemd-tmpfiles/systemd-tmpfiles_244.3-1_amd64.deb
+Size: 3174
+SHA256: 8c2008c54b450fb3390cae53413d65b018fb3c54f5a7eb482fbf0ef81b2dbe69
+SHA1: 88deef3bb0925717c0a943343e34f47bbb3bf325
+MD5sum: 1cccc1e55cb784cc9faf86c0b4b2b9dd
+Description: Provides systemd-tmpfiles command symlinked to opentmpfiles-tmpfiles
+
 Package: unscd
 Version: 0.53-1~bpo9+1
 Architecture: amd64
