@@ -21,3 +21,15 @@ DebOverride: override.stretch
 DscOverride: override.stretch
 DscIndices: Sources Release . .gz .bz2 .xz
 DebIndices: Packages Release . .gz .bz2 .xz
+
+Origin: szepeviktor.github.io
+Label: szepeviktor.github.io
+Codename: bullseye
+Architectures: amd64
+Components: main
+Description: Modern webserver solutions
+SignWith: 451A4FBA
+DebOverride: override.bullseye
+DscOverride: override.bullseye
+DscIndices: Sources Release . .gz .bz2 .xz
+DebIndices: Packages Release . .gz .bz2 .xz

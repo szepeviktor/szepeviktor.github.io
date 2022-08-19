@@ -18,8 +18,8 @@ cat <<"EOF"
 # Sign it with the packaging GPG key
 GPG_TTY="$(tty)" dpkg-sig --sign "builder" -k "451A4FBA" /opt/results/*.deb
 cd debian/
-# REMOVE:  reprepro remove stretch PACKAGE
-reprepro includedeb stretch /opt/results/*.deb
+# REMOVE:  reprepro remove bullseye PACKAGE
+reprepro includedeb bullseye /opt/results/*.deb
 EOF
 
 (
