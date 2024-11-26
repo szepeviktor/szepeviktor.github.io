@@ -16,3 +16,21 @@ Description: Send alert mail on boot and on shutdown,
  on boot send pstree to know what services are started,
  on halt send a list of who is logged on
 
+Package: opentmpfiles
+Version: 0.2+2019.05.21.git.44a55796ba-2
+Architecture: all
+Maintainer: Thomas Goirand <zigo@debian.org>
+Installed-Size: 40
+Provides: systemd-tmpfiles
+Homepage: https://github.com/OpenRC/opentmpfiles
+Priority: optional
+Section: net
+Filename: pool/main/o/opentmpfiles/opentmpfiles_0.2+2019.05.21.git.44a55796ba-2_all.deb
+Size: 8612
+SHA256: 999d4dfb21e50fe2bb29de5db66dfbff5134be3f52e3aa6633f813646d78e83f
+SHA1: 7333bafbacf2f8f43af7943c593a8e51fe1e01f8
+MD5sum: 27dff9f261fe625eb6d5bfac99fb6e04
+Description: standalone utility written to process systemd-style tmpfiles.d files
+ This is a standalone utility written to process systemd-style tmpfiles.d files
+ so that they can be handled on systems with or without systemd installed.
+
